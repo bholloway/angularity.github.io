@@ -1,5 +1,7 @@
 [![](assets/title.png)](index.md)
 
+[About](about.md)
+
 [Getting Started](getting-started/getting-started.md)
 
 
