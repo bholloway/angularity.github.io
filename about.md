@@ -14,7 +14,7 @@ Our contributors hold a collective vision of best-practice Angular-js developmen
 
 * You like [`SASS`](http://sass-lang.com/) and there are sufficient SASS mixins for you in the [`Bourbon`](http://bourbon.io/) library.
 
-* You deploy to a [`Content Delivery Network`](http://en.wikipedia.org/wiki/Content_delivery_network) and need to version your releases.
+* You deploy to a [`Content Delivery Network (CDN)`](http://en.wikipedia.org/wiki/Content_delivery_network) and need to version your releases.
 
 * You intend to `minify` or obfuscate your javascript.
 
@@ -46,6 +46,8 @@ Primarily Angularity is a javascript build tool build on [`node-js`](http://node
 
 * [`Ecmascript-6`](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29) syntax (using [`es6ify`](http://thlorenz.github.io/es6ify/)). Code import and ES-6 specific features.
 
+* [`jsHint`](http://www.jshint.com/about/) linting.
+
 * [`Bower`](http://bower.io/) for web dependencies.
 
 * Bower or node packages for shared code.
@@ -72,32 +74,44 @@ Regarding `node-angularity`, the angularity build tool:
 
 Version 1.0.0
 
-* Ecmascript-5 development using common-js syntax *[Under consideration]*.
+* Ecmascript-5 development using `common-js` syntax *[Under consideration]*.
  
 * Per-project configuration of `Karma` browser list and other selected unit testing settings.
 
-* Refinement of release versioning, including per-project CDN settings.
+* Refinement of release versioning, including per-project `CDN` settings.
 
 * Generation of an `index.aspx` page in the release bundle and potentially other hooks to easily deploy on .NET systems.
 
 Version 1.x.0
 
+* Build blocking on `js-hint` *[Under consideration]*.
+
 * Generation of API documentation using [`JSdoc`](https://github.com/jsdoc3/jsdoc).
+
+* Incremental compilation.
 
 * Basic or experiemental support for [`Protractor`](https://docs.angularjs.org/guide/e2e-testing) end-to-end testing with local server or [`SauceLabs`](https://saucelabs.com/).
 
-* Integration testing for the system itself *[Under consideration]*.
+* Continuous Integration (`CI`) testing for the system itself *[Under consideration]*.
 
 Version 2.0.0
 
+* Enhanced code-style enforcement using [`eslint (v0.10.0)`](https://github.com/eslint/eslint/wiki/Release-goals#v0100).
+
 * Full support for [`Protractor`](https://docs.angularjs.org/guide/e2e-testing) with private [`Grid2`](https://code.google.com/p/selenium/wiki/Grid2) solution.
+
+* Test console (HTML page) with real-time red/green indication for your unit tests *[under consideration]*.
 
 ### Documentation
 
-Regarding `documentation`, the priority order is as follows:
+Regarding `documentation`.
+
+The following items are listed in priority order but will necessarily be completed before version 1.0.0 release.
 
 * Getting started guide.
 
 * Troubleshooting guide.
 
 * Quick reference for development style, including comparison of ES5 and ES6 use cases.
+
+* Manual for the build tool, including how it works.
