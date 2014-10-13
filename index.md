@@ -6,4 +6,4 @@
 
 > Our contributors hold a collective vision of best-practice Angular-js development and have condensed this into a set of tools and resources known as **Angularity**.
 
-[About &#x27F6;](about.md)
+[About &#x27F6;](about/intro.md)
