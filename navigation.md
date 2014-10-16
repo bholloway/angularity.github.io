@@ -5,8 +5,10 @@
   * [Introduction](about/intro.md)
   * [Roadmap](about/roadmap.md)
 
-[Getting Started](getting-started/getting-started.md)
+[Getting Started]()
 
+  * [Installation](getting-started/installation.md)
+  * [Project Setup](getting-started/project-setup.md)
 
 [Guide]()
 
