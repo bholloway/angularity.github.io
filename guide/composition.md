@@ -36,9 +36,10 @@ Ideally `controllers` are specified only in the routing. The `controller` specif
 
 ### main.js
 
+<div class="es6-start"></div>
+
 ```javascript
 /* globals angular */
-
 import myRoutes      from 'myRoutes';
 import myDirective   from 'myDirective';
 import MyController  from 'MyController';
@@ -50,12 +51,43 @@ angular.module('app', [ 'templates' ])
   .service('MyService', MyService)
 ```
 
-### routes.js
+<div class="es6-stop"></div>
+
+
+<div class="es5-start"></div>
+
 ```javascript
-import MyController from 'MyController';
+var myRoutes = require('../../js-lib/app/myRoutes');
+var MyController = require('../../js-lib/app/MyController');
+var myDirective = require('../../js-lib/app/myDirective');
+var MyService = require('../../js-lib/app/MyService');
+var myFactory = require('../../js-lib/app/myFactory');
+
+angular.module('app', ['ui.router','templates'])
+  .config(['$stateProvider', '$urlRouterProvider', myRoutes])
+  .controller('MyController', MyController)
+  .factory('myFactory',myFactory)
+  .service('MyService',MyService)
+  .directive('myDirective', myDirective)
+
+```
+
+<div class="es5-stop"></div>
+
+
+### routes.js
+
+
+<div class="es6-start"></div>
+
+```javascript
+var MyController = 'MyController';
 
 /**
  * <p>TODO description of this file</p>
+  * @ngInject
+  * @param {object} $urlRouterProvider
+  * @param $stateProvider
  */
 export default function todoRoutes($stateProvider, $urlRouterProvider) {
   'use strict';
@@ -69,3 +101,34 @@ export default function todoRoutes($stateProvider, $urlRouterProvider) {
     });
 }
 ```
+
+<div class="es6-stop"></div>
+
+<div class="es5-start"></div>
+
+```javascript
+/**
+ *  <p>TODO description of this file</p>
+ * @ngInject
+ * @param {object} $urlRouterProvider
+ * @param $stateProvider
+ */
+
+var MyController = require('../app/MyController');
+
+function appRoutes($stateProvider, $urlRouterProvider) {
+  'use strict';
+
+  $urlRouterProvider.otherwise('/');
+  $stateProvider
+    .state('home', {
+      url        : '/',
+      templateUrl: '/partials/partial.html',
+      controller : MyController
+    });
+}
+
+module.exports = myRoutes;
+```
+
+<div class="es5-stop"></div>
