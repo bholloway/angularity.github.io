@@ -43,39 +43,45 @@ function getNotCheckedValue()
 
 function getLanguage()
 {
-    return window.location.hash.split('#')[2].toLowerCase();
+    var language = window.location.hash.split('#')[2];
+
+    return (language) ? language.toLowerCase() : null;
+
 }
 
-function hideSection(sectionName)
-{
-    var children = $('#md-content').children();
-    var hide = false;
-    jQuery.each(children,function(child){
+function hideSection(sectionName) {
+    if (sectionName)
+    {
+        var children = $('#md-content').children();
+        var hide = false;
+        jQuery.each(children,function(child){
 
-        var className = children[child].className;
+            var className = children[child].className;
 
-        if(className.search(/-start/i) != -1 || className.search(/-stop/i) != -1)
-        {
-            if((className != sectionName+'-start') && (className != sectionName+'-stop'))
+            if(className.search(/-start/i) != -1 || className.search(/-stop/i) != -1)
             {
-                hide = !hide;
+                if((className != sectionName+'-start') && (className != sectionName+'-stop'))
+                {
+                    hide = !hide;
+                }
             }
-        }
 
-        // Commented Out code is the Radio Button Implementation.
-        //hide = ((children[child].className == sectionName+'-start') || (children[child].className == sectionName+'-stop')) ? !hide : hide;
+            // Commented Out code is the Radio Button Implementation.
+            //hide = ((children[child].className == sectionName+'-start') || (children[child].className == sectionName+'-stop')) ? !hide : hide;
 
-        if(hide)
-        {
-            //$(children[child]).display
-            $(children[child]).hide();
-        }
-        else
-        {
-            $(children[child]).show();
-        }
+            if(hide)
+            {
+                //$(children[child]).display
+                $(children[child]).hide();
+            }
+            else
+            {
+                $(children[child]).show();
+            }
 
-    });
+        });
+    }
+
 
 
 }
