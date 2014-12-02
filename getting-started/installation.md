@@ -33,12 +33,20 @@ Unless you just installed `node` you may be running npm older than **npm 2.0.0**
 
 However note that it has [**breaking changes**](http://blog.npmjs.org/post/98131109725/npm-2-0-0) for existing projects.
 
+## Install Bower
+
+Bower is a popular Frontend package manager that you can easily package libraries such as angular-ui, bootstrap.
+
+`npm install bower -g`
+
+See more info on the [Bower website](http://bower.io).
+
 ## Install angularity
 
 Angularity is a **global** install.
 
 `npm install angularity -g`
 
-However you will not be able to use it until you have created a project.
+You are now ready to start an angularity project.
 
 [Project Setup &#x27F6;](project-setup.md)
