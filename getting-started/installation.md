@@ -1,17 +1,5 @@
 # Installation
 
-## Install node
-
-[`http://nodejs.org/download/`](http://nodejs.org/download/)
-
-Ensure that you choose the correct binary for your system. Meaning that 64bit systems should choose the 64bit binary.
-
-[![](installation-node.png)]()
-
-Choose the **default settings** whenever prompted.
-
-On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely need to reboot. Once you can see node in the console `echo %PATH%` then you are ready.
-
 ## Install git
 
 [`http://git-scm.com/downloads`](http://git-scm.com/downloads)
@@ -25,17 +13,34 @@ On **Windows** platform choose to **checkout Windows-style, commit Unit-style** 
 [![](installation-git-1.png)]()
 [![](installation-git-2.png)]()
 
-## Update npm
+## Install node
+
+[`http://nodejs.org/download/`](http://nodejs.org/download/)
+
+Ensure that you choose the correct binary for your system. Meaning that 64bit systems should choose the 64bit binary.
+
+[![](installation-node.png)]()
+
+Choose the **default settings** whenever prompted.
+
+On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely need
+to reboot. Once you can see node in the console `echo %PATH%` then you are ready.
+
+## or Update npm
 
 Unless you just installed `node` you may be running npm older than **npm 2.0.0**. In that case it is worth updating.
 
 `npm install npm -g`.
 
-However note that it has [**breaking changes**](http://blog.npmjs.org/post/98131109725/npm-2-0-0) for existing projects.
+On windows you may have some difficulty and should follow the troubleshooting
+[instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows) from the outset.
+
+Be aware however that npm 2 has [**breaking changes**](http://blog.npmjs.org/post/98131109725/npm-2-0-0) for existing
+projects.
 
 ## Install Bower
 
-Bower is a popular Frontend package manager that you can easily package libraries such as angular-ui, bootstrap.
+Bower is a popular Frontend package manager that makes it easier to consume libraries for web development.
 
 `npm install bower -g`
 
