@@ -1,3 +1,3 @@
 # Project setup
 
-Documentation will be forthcomming soon.
+Documentation is coming soon.

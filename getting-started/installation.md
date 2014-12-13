@@ -13,11 +13,11 @@ On **Windows** platform choose to **checkout Windows-style, commit Unit-style** 
 [![](installation-git-1.png)]()
 [![](installation-git-2.png)]()
 
-## Install node
+## Install node.js
 
 [`http://nodejs.org/download/`](http://nodejs.org/download/)
 
-Ensure that you choose the correct binary for your system. Meaning that 64bit systems should choose the 64bit binary.
+Ensure that you choose the correct binary for your system. Meaning that 64 bit systems should choose the 64 bit binary.
 
 [![](installation-node.png)]()
 
@@ -40,18 +40,18 @@ projects.
 
 ## Install Bower
 
-Bower is a popular Frontend package manager that makes it easier to consume libraries for web development.
+Bower is a popular front end package manager that makes it easier to consume libraries for web development.
 
 `npm install bower -g`
 
 See more info on the [Bower website](http://bower.io).
 
-## Install angularity
+## Install Angularity
 
 Angularity is a **global** install.
 
 `npm install angularity -g`
 
-You are now ready to start an angularity project.
+You are now ready to start an Angularity project.
 
 [Project Setup &#x27F6;](project-setup.md)
