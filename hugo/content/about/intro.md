@@ -7,7 +7,7 @@ weight = 210
 	parent = "about"
 +++
 
-Angularity is a philosophy of development.
+Angularity is a development philosophy.
 
 Our focus is maintaining uniformity of development across groups of developers who hold varying experience levels.
 
