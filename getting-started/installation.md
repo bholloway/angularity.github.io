@@ -38,20 +38,54 @@ On windows you may have some difficulty and should follow the troubleshooting
 Be aware however that npm 2 has [**breaking changes**](http://blog.npmjs.org/post/98131109725/npm-2-0-0) for existing
 projects.
 
-## Install Bower
+## Installation
 
-Bower is a popular front end package manager that makes it easier to consume libraries for web development.
+###  Default
 
-`npm install bower -g`
+The default installation is fairly straightforward.
+Installing `npm` simply updates it,
+and Angularity expects bower to be available globally.
 
-See more info on the [Bower website](http://bower.io).
+  npm install -g npm bower angularity
 
-## Install Angularity
+###  Latest
 
-Angularity is a **global** install.
+For those who wish to live on the bleeding edge,
+you will need to symlink the global npm package to
+somewhere.
 
-`npm install angularity -g`
+Assuming `CODE` is a folder where you place your code checkouts,
+and `NODE` is a folder where NodeJs is installed
 
-You are now ready to start an Angularity project.
+  npm install -g npm bower angularity
+  cd ${CODE}
+  git clone git@github.com:angularity/node-angularity.git
+  mv node-angularity angularity
+  cd ${NODE}/lib/node_modules
+  mv angularity angularity.backup
+  ln -s ${CODE}/angularity angularity
+  cd ${CODE}/angularity
+  npm install
 
-[Project Setup &#x27F6;](project-setup.md)
+###  Contributor
+
+If you wish to develop or contribute to the Angularity project,
+set up your git checkout to do so.
+Firstly, fork the project on github:
+[https://github.com/angularity/node-angularity/fork](https://github.com/angularity/node-angularity/fork)
+
+  npm install -g npm bower angularity
+  cd ${CODE}
+  git clone git@github.com:${GITHUB_USERNAME}/node-angularity.git
+  mv node-angularity angularity
+  cd ${NODE}/lib/node_modules
+  mv angularity angularity.backup
+  ln -s ${CODE}/angularity angularity
+  cd ${CODE}/angularity
+  git remote add upstream git@github.com:angularity/node-angularity.git
+  npm install
+
+Be sure to keep your fork in sync with the main repository
+before you start working on any patch.
+This [how to on Github](https://help.github.com/articles/syncing-a-fork/)
+is most helpful.
