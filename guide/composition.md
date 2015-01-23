@@ -5,7 +5,6 @@ It is important not to hide composition. It should be done centrally, at the roo
 In angular there are 2 different resources we must compose in order to build an application
 
 * Using a **composition root** we map `directives`, `controllers`, and `services` into the `injector`.
-
 * Using **routing** we compose views from HTML `partials` and `controllers` for each different **application state**.
 
 ## Composition Root
@@ -17,16 +16,20 @@ It is important for composition that each component (`directives`, `controllers`
 These components fit together all in one place - the **composition root**. The composition root may be organised into multiple files so long as this aids clarity.
 
 We therefore need define only one `module` in the entire application. However that module must be dependent on the  `templates` module. Meaning:
+
 ```
-  angular.module('app', [ 'templates' ])
+  angular.module('app', [ 'templates' ]);
 ```
-This `templates` module is automatically generated from the HTML `partials`. The build system converts the HTML to a javascript routine that populates the angular **template cache**. This makes the `partials` immediately available to angular in a transparent manner.
+
+This `templates` module is automatically generated from the HTML `partials`.
+The build system converts the HTML to a Javascript routine that populates the angular **template cache**.
+This makes the `partials` immediately available to angular in a transparent manner.
 
 ## Routing
 
 > In a single page application it is critical that we encode **application state** in the **route**. This enables bookmarking and **deep linking** to reconstruct the page given only the URL.
 
-For every change in view we need to encode `state` in the route. Where we have hierachical `state`, as with the angular [UI-router](https://github.com/angular-ui/ui-router/wiki), each layer of the state has its own HTML `partial` and recursively contains other views.
+For every change in view we need to encode `state` in the route. Where we have hierarchical `state`, as with the angular [UI-router](https://github.com/angular-ui/ui-router/wiki), each layer of the state has its own HTML `partial` and recursively contains other views.
 
 > If you find your lowest-level partial is large it is likely you do **not** have sufficiently detailed `state`.
 
