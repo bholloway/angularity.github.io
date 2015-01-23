@@ -4,17 +4,17 @@
 
 Ensure that angularity has been installed correctly and is accessible from the command line:
 
-  which angularity
-  #should output the path where it is located
+    which angularity
+    #should output the path where it is located
 
 If you wish to run angularity directly from the project folder,
 instead of from the command line after a global `npm` installation,
 you can do this instead:
 
-  cd angularity # where you have the project checked out
-  node bin/cli.js
+    cd angularity # where you have the project checked out
+    node bin/cli.js
 
-### `.angularity`
+### `.angularity` config
 
 Upon your running angularity,
 you might encounter a warning that looks like this:

@@ -30,7 +30,7 @@ to reboot. Once you can see node in the console `echo %PATH%` then you are ready
 
 Unless you just installed `node` you may be running npm older than **npm 2.0.0**. In that case it is worth updating.
 
-`npm install npm -g`.
+    npm install -g npm
 
 On windows you may have some difficulty and should follow the troubleshooting
 [instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows) from the outset.
@@ -40,13 +40,31 @@ projects.
 
 ## Installation
 
-###  Default
+You will need to install bower, and update npm.
+
+    npm install -g bower
+    npm install -g npm
+
+Next, we will install angularity.
+Decide whether you wish to use the last stable release,
+the latest commit,
+and if you wish to contribute to the project,
+and follow the appropriate set of instructions below.
+
+###  Stable
 
 The default installation is fairly straightforward.
 Installing `npm` simply updates it,
 and Angularity expects bower to be available globally.
 
-  npm install -g npm bower angularity
+    npm install -g angularity
+
+If you wish to install a particular release of angularity,
+you can install from github instead of the npm registry, like so:
+
+    npm install -g angularity/node-angularity#0.0.18
+
+(replace `0.0.18` with the tag you wish to use)
 
 ###  Latest
 
@@ -57,33 +75,37 @@ somewhere.
 Assuming `CODE` is a folder where you place your code checkouts,
 and `NODE` is a folder where NodeJs is installed
 
-  npm install -g npm bower angularity
-  cd ${CODE}
-  git clone git@github.com:angularity/node-angularity.git
-  mv node-angularity angularity
-  cd ${NODE}/lib/node_modules
-  mv angularity angularity.backup
-  ln -s ${CODE}/angularity angularity
-  cd ${CODE}/angularity
-  npm install
+    npm install -g angularity
+    cd ${CODE}
+    git clone git@github.com:angularity/node-angularity.git
+    mv node-angularity angularity
+    cd ${NODE}/lib/node_modules
+    mv angularity angularity.backup
+    ln -s ${CODE}/angularity angularity
+    cd ${CODE}/angularity
+    npm install
 
 ###  Contributor
 
 If you wish to develop or contribute to the Angularity project,
 set up your git checkout to do so.
+
 Firstly, fork the project on github:
 [https://github.com/angularity/node-angularity/fork](https://github.com/angularity/node-angularity/fork)
 
-  npm install -g npm bower angularity
-  cd ${CODE}
-  git clone git@github.com:${GITHUB_USERNAME}/node-angularity.git
-  mv node-angularity angularity
-  cd ${NODE}/lib/node_modules
-  mv angularity angularity.backup
-  ln -s ${CODE}/angularity angularity
-  cd ${CODE}/angularity
-  git remote add upstream git@github.com:angularity/node-angularity.git
-  npm install
+Then run these commands to clone your forked repository,
+and then link it from NodeJs' global folder.
+
+    npm install -g angularity
+    cd ${CODE}
+    git clone git@github.com:${GITHUB_USERNAME}/node-angularity.git
+    mv node-angularity angularity
+    cd ${NODE}/lib/node_modules
+    mv angularity angularity.backup
+    ln -s ${CODE}/angularity angularity
+    cd ${CODE}/angularity
+    git remote add upstream git@github.com:angularity/node-angularity.git
+    npm install
 
 Be sure to keep your fork in sync with the main repository
 before you start working on any patch.
