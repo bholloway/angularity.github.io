@@ -1,5 +1,0 @@
-# baseurl = "http://angularity.github.io"
-languageCode = "en-gb"
-title = "Angularity"
-[params]
-	Description = "An opinionated AngularJs build tool"

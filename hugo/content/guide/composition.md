@@ -1,12 +1,19 @@
-+++
-date = "2014-12-15T13:44:02+11:00"
-draft = true
-title = "Composition"
-weight = 410
-[[menu.main]]
-  parent = "guide"
-
-+++
+---
+title: Composition
+linktitle: Composition
+identifier: guide-composition
+date: 2014-12-15T13:44:02+11:00
+tags:
+  - guide
+  - composition
+menu:
+  main:
+    parent: guide
+# prev: /
+# next: /
+notoc: true
+weight: 3010
+---
 
 It is important not to hide composition. It should be done centrally, at the root of the application.
 

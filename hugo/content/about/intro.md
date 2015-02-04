@@ -1,11 +1,19 @@
-+++
-date = "2014-12-15T13:42:50+11:00"
-draft = true
-title = "Introduction"
-weight = 210
-[[menu.main]]
-	parent = "about"
-+++
+---
+title: Introduction
+linktitle: Introduction
+identifier: about-intro
+date: 2014-12-15T13:42:50+11:00
+tags:
+  - about
+  - intro
+menu:
+  main:
+    parent: about
+# prev: /
+# next: /
+notoc: true
+weight: 1020
+---
 
 Angularity is a development philosophy.
 

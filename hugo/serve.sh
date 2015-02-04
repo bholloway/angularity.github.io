@@ -1,4 +1,4 @@
 #!/bin/bash
 # uses hugo to serve this site
 
-hugo server --watch --buildDrafts --theme=hyde
+hugo server --watch --buildDrafts

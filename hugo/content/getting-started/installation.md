@@ -1,12 +1,19 @@
-+++
-date = "2014-12-15T13:43:30+11:00"
-draft = true
-title = "Installation"
-weight = 310
-[[menu.main]]
-	parent = "getting-started"
-
-+++
+---
+title: Installation
+linktitle: Installation
+identifier: start-installation
+date: 2014-12-15T13:43:30+11:00
+tags:
+  - start
+  - installation
+menu:
+  main:
+    parent: start
+# prev: /
+# next: /
+notoc: true
+weight: 2010
+---
 
 ## Install git
 
