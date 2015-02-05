@@ -1,0 +1,38 @@
+title: Angularity
+version: 0.0.1
+ # baseurl: http://angularity.github.io/
+canonifyurls: true
+publishdir: ../
+MetaDataFormat: yaml
+footnotereturnlinkcontents: "↩"
+
+theme: techdocshugotheme
+
+ #permalinks:
+ #  post: /:year/:month/:title/
+
+params:
+  Subtitle: An opinionated AngularJs build tool
+  AuthorName: angularity
+  GitHubUser: angularity
+  GitHubRepo: node-angularity
+  GithubDocEditPrefix: https://github.com/angularity/angularity.github.io/tree/master/source-hugo
+  GitHubPagesBaseUrl: /
+  GoogleAnalyticsId: UA-37884921-1
+  GoogleAnalyticsDomain: bguiz.com
+  RootRedirect:
+    Url: /about/main
+    Name: Introduction
+
+indexes:
+  category: categories
+  tag: tags
+
+menu:
+  main:
+    - Name: About
+      Weight: 1000
+      Identifier: about
+    - Name: Getting Started
+      Weight: 2000
+      Identifier: start
