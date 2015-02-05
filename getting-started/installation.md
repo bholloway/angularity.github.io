@@ -46,13 +46,17 @@ Most angularity projects want to utilise [bower](http://bower.io/). Perform a gl
 
 ## Install Angularity
 
+### Stable
+
 Perform a global installation using npm.
 
     npm install -g angularity
 
-If you wish to install a particular release of angularity, you can install from github instead of the npm registry.
+### Pre-release
 
-    npm install -g angularity/node-angularity#<TAG>
+You can install from github. However this is considered bleeding edge.
+
+    npm install -g angularity/node-angularity
 
 ## [optional] Angularity Source Code
 
