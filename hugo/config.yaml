@@ -15,7 +15,7 @@ params:
   AuthorName: angularity
   GitHubUser: angularity
   GitHubRepo: node-angularity
-  GithubDocEditPrefix: https://github.com/angularity/angularity.github.io/edit/master
+  GithubDocEditPrefix: https://github.com/angularity/angularity.github.io/tree/master
   GitHubPagesBaseUrl: /
   GoogleAnalyticsId: UA-37884921-1
   GoogleAnalyticsDomain: bguiz.com
