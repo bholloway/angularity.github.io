@@ -178,12 +178,14 @@ If you develop a wide variety of applications you may ultimately find a conventi
 
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform choose to &lt;strong&gt;use GIT from the command prompt&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform choose to &lt;strong&gt;checkout Windows-style, commit Unit-style&lt;/strong&gt; for line endings.&lt;/p&gt;
+&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform choose to &lt;strong&gt;checkout Windows-style,
+commit Unit-style&lt;/strong&gt; for line endings.&lt;/p&gt;
 
-&lt;p&gt;[&lt;img src=&#34;/start/installation-git-1.png&#34; alt=&#34;&#34; /&gt;
-]()
-[&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;&#34; /&gt;
-]()&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/start/installation-git-1.png&#34; alt=&#34;Windows git installation step #1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;Windows git installation step #2&#34; /&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;install-node-js:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install node.js&lt;/h2&gt;
 

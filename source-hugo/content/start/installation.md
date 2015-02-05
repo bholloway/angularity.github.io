@@ -25,10 +25,12 @@ Once again ensure that you choose the correct binary for your system.
 
 On **Windows** platform choose to **use GIT from the command prompt**.
 
-On **Windows** platform choose to **checkout Windows-style, commit Unit-style** for line endings.
+On **Windows** platform choose to **checkout Windows-style,
+commit Unit-style** for line endings.
 
-[![](/start/installation-git-1.png)]()
-[![](/start/installation-git-2.png)]()
+![Windows git installation step #1](/start/installation-git-1.png)
+
+![Windows git installation step #2](/start/installation-git-2.png)
 
 ## Install node.js
 
