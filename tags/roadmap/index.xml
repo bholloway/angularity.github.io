@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roadmap on Angularity</title>
+    <link>/tags/roadmap/</link>
+    <description>Recent content in Roadmap on Angularity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    
+    
+    
+    <lastBuildDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</lastBuildDate>
+    <atom:link href="/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Roadmap</title>
+      <link>/about/roadmap/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</pubDate>
+      
+      <guid>/about/roadmap/</guid>
+      <description>
+
+&lt;h2 id=&#34;documentation:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Regarding &lt;code&gt;documentation&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following items are listed in priority order but will necessarily be completed before version 1.0.0 release of the build tool.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Getting started guide.&lt;/li&gt;
+&lt;li&gt;Troubleshooting guide.&lt;/li&gt;
+&lt;li&gt;Quick reference for development style, including comparison of ES5 and ES6 use cases.&lt;/li&gt;
+&lt;li&gt;Manual for the build tool, including how it works.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;build-tool:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Build tool&lt;/h2&gt;
+
+&lt;p&gt;Regarding &lt;code&gt;node-angularity&lt;/code&gt;, the Angularity build tool.&lt;/p&gt;
+
+&lt;h3 id=&#34;version-1-0-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.0.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ECMAScript 5 development using &lt;code&gt;common-js&lt;/code&gt; syntax &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Per-project configuration of &lt;code&gt;Karma&lt;/code&gt; browser list and other selected unit testing settings.&lt;/li&gt;
+&lt;li&gt;Refinement of release versioning, including per-project &lt;code&gt;CDN&lt;/code&gt; settings.&lt;/li&gt;
+&lt;li&gt;Generation of an &lt;code&gt;index.aspx&lt;/code&gt; page in the release bundle and potentially other hooks to easily deploy on .NET systems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;version-1-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.x.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build blocking on &lt;code&gt;js-hint&lt;/code&gt; &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Generation of API documentation using &lt;a href=&#34;https://github.com/jsdoc3/jsdoc&#34;&gt;&lt;code&gt;JSdoc&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Incremental compilation.&lt;/li&gt;
+&lt;li&gt;Basic or experimental support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; end-to-end testing with local server or &lt;a href=&#34;https://saucelabs.com/&#34;&gt;&lt;code&gt;SauceLabs&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Continuous Integration (&lt;code&gt;CI&lt;/code&gt;) testing for the system itself &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;version-2-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 2.x.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Karma&lt;/code&gt; testing with &lt;a href=&#34;http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html&#34;&gt;&lt;code&gt;PhantomJS 2.0&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enhanced code-style enforcement using &lt;a href=&#34;https://github.com/eslint/eslint/wiki/Release-goals#v0100&#34;&gt;&lt;code&gt;eslint (v0.10.0)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Full support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; with private &lt;a href=&#34;https://code.google.com/p/selenium/wiki/Grid2&#34;&gt;&lt;code&gt;Grid2&lt;/code&gt;&lt;/a&gt; solution.&lt;/li&gt;
+&lt;li&gt;Test console (HTML page) with real-time red/green indication for your unit tests &lt;em&gt;[under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

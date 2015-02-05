@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2014-12-15T13:42:50+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/about/main/</loc>
+    <lastmod>2014-12-15T13:42:50+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/intro/</loc>
+    <lastmod>2014-12-15T13:42:50+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/roadmap/</loc>
+    <lastmod>2014-12-15T13:43:03+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/start/installation/</loc>
+    <lastmod>2014-12-15T13:43:30+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/start/project/</loc>
+    <lastmod>2014-12-15T13:43:41+11:00</lastmod>
+  </url>
+  
+</urlset>
