@@ -64,7 +64,7 @@ Run the angularity version command to make sure the installation worked.
 
     angularity -v
 
-## [optional] Angularity Source Code
+### optionally, Install source code
 
 If you wish to develop or contribute to the Angularity project you will need to [fork the project]([https://github.com/angularity/node-angularity/fork](https://github.com/angularity/node-angularity/fork) on github.
 
