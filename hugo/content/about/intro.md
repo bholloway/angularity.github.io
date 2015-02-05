@@ -9,8 +9,8 @@ tags:
 menu:
   main:
     parent: about
-# prev: /
-# next: /
+prev: /about/main
+next: /about/roadmap
 notoc: true
 weight: 1020
 ---

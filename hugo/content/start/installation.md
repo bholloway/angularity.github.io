@@ -9,8 +9,8 @@ tags:
 menu:
   main:
     parent: start
-# prev: /
-# next: /
+prev: /about/roadmap
+next: /start/project
 notoc: true
 weight: 2010
 ---

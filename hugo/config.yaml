@@ -15,6 +15,7 @@ params:
   AuthorName: angularity
   GitHubUser: angularity
   GitHubRepo: node-angularity
+  GithubDocEditPrefix: https://github.com/angularity/angularity.github.io/edit/master
   GitHubPagesBaseUrl: /
   GoogleAnalyticsId: UA-37884921-1
   GoogleAnalyticsDomain: bguiz.com
@@ -34,7 +35,3 @@ menu:
     - Name: Getting Started
       Weight: 2000
       Identifier: start
-    - Name: Guide
-      Weight: 3000
-      Identifier: guide
-

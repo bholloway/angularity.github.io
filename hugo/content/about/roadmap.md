@@ -9,8 +9,8 @@ tags:
 menu:
   main:
     parent: about
-# prev: /
-# next: /
+prev: /about/intro
+next: /start/installation
 notoc: true
 weight: 1030
 ---

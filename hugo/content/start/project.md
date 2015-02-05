@@ -9,8 +9,8 @@ tags:
 menu:
   main:
     parent: start
-# prev: /
-# next: /
+prev: /start/installation
+next: /about/main
 notoc: true
 weight: 2020
 ---

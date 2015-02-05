@@ -8,8 +8,8 @@ tags:
 menu:
   main:
     parent: about
-# prev: /
-# next: /
+prev: /start/project
+next: /about/intro
 notoc: true
 weight: 1010
 ---
