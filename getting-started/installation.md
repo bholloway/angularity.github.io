@@ -52,11 +52,17 @@ Perform a global installation using npm.
 
     npm install -g angularity
 
-### Pre-release
+### or Pre-release
 
 You can install from github. However this is considered bleeding edge.
 
     npm install -g angularity/node-angularity
+
+### Check installation
+
+Run the angularity version command to make sure the installation worked.
+
+    angularity -v
 
 ## [optional] Angularity Source Code
 
