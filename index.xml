@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Angularity</title>
-    <link>/</link>
-    <description>Recent content on Angularity</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Recent Content on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/index.xml/</link>
     
     
     
-    
-    <lastBuildDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <updated>Mon, 15 Dec 2014 13:42:50 AEDT</updated>
     
     <item>
       <title>Angularity</title>
       <link>/about/main/</link>
-      <pubDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
       <guid>/about/main/</guid>
       <description>
 
-&lt;h1 id=&#34;angularity-logo-assets-logo-png-angularity:379caad01b6ea305187be199bcac1370&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
+&lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
  &lt;em&gt;Angularity&lt;/em&gt;&lt;/h1&gt;
 
 &lt;blockquote&gt;
@@ -36,7 +33,7 @@
     <item>
       <title>Introduction</title>
       <link>/about/intro/</link>
-      <pubDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
       <guid>/about/intro/</guid>
       <description>
@@ -47,7 +44,7 @@
 
 &lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;features:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;&lt;code&gt;node.js&lt;/code&gt;&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
 
@@ -67,9 +64,9 @@
 
 &lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;&lt;code&gt;AngularJS&lt;/code&gt;&lt;/a&gt;. However much of the material you will find on this site is geared to Angular development.&lt;/p&gt;
 
-&lt;h2 id=&#34;suitability:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Suitability&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Suitability&lt;/h2&gt;
 
-&lt;h3 id=&#34;you-should-use-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You have several development teams and need uniformity of development.&lt;/li&gt;
@@ -81,7 +78,7 @@
 &lt;li&gt;You would like your build tool to be an &lt;code&gt;npm global install&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-avoid-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You don&amp;rsquo;t want to work with &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt;, are avoiding &lt;a href=&#34;https://github.com/google/traceur-compiler&#34;&gt;&lt;code&gt;Traceur&lt;/code&gt;&lt;/a&gt; and its runtime, and can live without Object Orientated code.&lt;/li&gt;
@@ -90,7 +87,7 @@
 &lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;&lt;code&gt;PhantomJS&lt;/code&gt;&lt;/a&gt; 1.x, &lt;code&gt;Internet Exporer 8&lt;/code&gt; or lower.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-fork-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You want different build steps to those provided.&lt;/li&gt;
@@ -108,12 +105,12 @@ If you develop a wide variety of applications you may ultimately find a conventi
     <item>
       <title>Roadmap</title>
       <link>/about/roadmap/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
       <guid>/about/roadmap/</guid>
       <description>
 
-&lt;h2 id=&#34;documentation:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Documentation&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;
 
 &lt;p&gt;Regarding &lt;code&gt;documentation&lt;/code&gt;.&lt;/p&gt;
 
@@ -126,11 +123,11 @@ If you develop a wide variety of applications you may ultimately find a conventi
 &lt;li&gt;Manual for the build tool, including how it works.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;build-tool:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Build tool&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Build tool&lt;/h2&gt;
 
 &lt;p&gt;Regarding &lt;code&gt;node-angularity&lt;/code&gt;, the Angularity build tool.&lt;/p&gt;
 
-&lt;h3 id=&#34;version-1-0-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.0.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;Version 1.0.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ECMAScript 5 development using &lt;code&gt;common-js&lt;/code&gt; syntax &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
@@ -139,7 +136,7 @@ If you develop a wide variety of applications you may ultimately find a conventi
 &lt;li&gt;Generation of an &lt;code&gt;index.aspx&lt;/code&gt; page in the release bundle and potentially other hooks to easily deploy on .NET systems.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;version-1-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.x.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Version 1.x.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Build blocking on &lt;code&gt;js-hint&lt;/code&gt; &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
@@ -149,7 +146,7 @@ If you develop a wide variety of applications you may ultimately find a conventi
 &lt;li&gt;Continuous Integration (&lt;code&gt;CI&lt;/code&gt;) testing for the system itself &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;version-2-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 2.x.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Version 2.x.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Karma&lt;/code&gt; testing with &lt;a href=&#34;http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html&#34;&gt;&lt;code&gt;PhantomJS 2.0&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
@@ -163,14 +160,14 @@ If you develop a wide variety of applications you may ultimately find a conventi
     <item>
       <title>Installation</title>
       <link>/start/installation/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:30 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>/start/installation/</guid>
       <description>
 
-&lt;h1 id=&#34;installation:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Installation&lt;/h1&gt;
+&lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
 
-&lt;h2 id=&#34;install-git:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install git&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Install git&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://git-scm.com/downloads&#34;&gt;&lt;code&gt;http://git-scm.com/downloads&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -187,15 +184,15 @@ commit Unit-style&lt;/strong&gt; for line endings.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;Windows git installation step #2&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&#34;install-node-js:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install node.js&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Install node.js&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://nodejs.org/download/&#34;&gt;&lt;code&gt;http://nodejs.org/download/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ensure that you choose the correct binary for your system.
 Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 
-&lt;p&gt;[&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;&#34; /&gt;
-]()&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Choose the &lt;strong&gt;default settings&lt;/strong&gt; whenever prompted.&lt;/p&gt;
 
@@ -203,7 +200,7 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 For that to be active you will most likely need to reboot.
 Once you can see node in the console &lt;code&gt;echo %PATH%&lt;/code&gt; then you are ready.&lt;/p&gt;
 
-&lt;h2 id=&#34;or-update-npm:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;or Update npm&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;or Update npm&lt;/h2&gt;
 
 &lt;p&gt;Unless you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
 In that case it is worth updating.&lt;/p&gt;
@@ -217,7 +214,7 @@ In that case it is worth updating.&lt;/p&gt;
 &lt;p&gt;Be aware however that npm 2 has
 &lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;&lt;strong&gt;breaking changes&lt;/strong&gt;&lt;/a&gt; for existing projects.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-bower:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install Bower&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Install Bower&lt;/h2&gt;
 
 &lt;p&gt;Most angularity projects want to utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.
 Perform a global installation using npm.&lt;/p&gt;
@@ -225,30 +222,30 @@ Perform a global installation using npm.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm install -g bower
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;install-angularity:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install Angularity&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;Install Angularity&lt;/h2&gt;
 
-&lt;h3 id=&#34;stable:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Stable&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Stable&lt;/h3&gt;
 
 &lt;p&gt;Perform a global installation using npm.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;or-pre-release:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;or Pre-release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;or Pre-release&lt;/h3&gt;
 
 &lt;p&gt;You can install from github. However this is considered bleeding edge.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;check-installation:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Check installation&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Check installation&lt;/h3&gt;
 
 &lt;p&gt;Run the angularity version command to make sure the installation worked.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;angularity -v
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;optionally-install-source-code:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;optionally, Install source code&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;optionally, Install source code&lt;/h3&gt;
 
 &lt;p&gt;If you wish to develop or contribute to the Angularity project you will need to
 &lt;a href=&#34;https://github.com/angularity/node-angularity/fork&#34;&gt;fork the project&lt;/a&gt; on github.&lt;/p&gt;
@@ -271,7 +268,7 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     <item>
       <title>Project Setup</title>
       <link>/start/project/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:41 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
       <guid>/start/project/</guid>
       <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;

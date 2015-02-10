@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Starts on Angularity</title>
-    <link>/start/</link>
-    <description>Recent content in Starts on Angularity</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Starts on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/start/index.xml/</link>
     
     
     
-    
-    <lastBuildDate>Mon, 15 Dec 2014 13:43:30 &#43;1100</lastBuildDate>
-    <atom:link href="/start/index.xml" rel="self" type="application/rss+xml" />
+    <updated>Mon, 15 Dec 2014 13:43:30 AEDT</updated>
     
     <item>
       <title>Installation</title>
       <link>/start/installation/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:30 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>/start/installation/</guid>
       <description>
 
-&lt;h1 id=&#34;installation:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Installation&lt;/h1&gt;
+&lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
 
-&lt;h2 id=&#34;install-git:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install git&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Install git&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://git-scm.com/downloads&#34;&gt;&lt;code&gt;http://git-scm.com/downloads&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -39,15 +36,15 @@ commit Unit-style&lt;/strong&gt; for line endings.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;Windows git installation step #2&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&#34;install-node-js:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install node.js&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Install node.js&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://nodejs.org/download/&#34;&gt;&lt;code&gt;http://nodejs.org/download/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ensure that you choose the correct binary for your system.
 Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 
-&lt;p&gt;[&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;&#34; /&gt;
-]()&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Choose the &lt;strong&gt;default settings&lt;/strong&gt; whenever prompted.&lt;/p&gt;
 
@@ -55,7 +52,7 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 For that to be active you will most likely need to reboot.
 Once you can see node in the console &lt;code&gt;echo %PATH%&lt;/code&gt; then you are ready.&lt;/p&gt;
 
-&lt;h2 id=&#34;or-update-npm:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;or Update npm&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;or Update npm&lt;/h2&gt;
 
 &lt;p&gt;Unless you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
 In that case it is worth updating.&lt;/p&gt;
@@ -69,7 +66,7 @@ In that case it is worth updating.&lt;/p&gt;
 &lt;p&gt;Be aware however that npm 2 has
 &lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;&lt;strong&gt;breaking changes&lt;/strong&gt;&lt;/a&gt; for existing projects.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-bower:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install Bower&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Install Bower&lt;/h2&gt;
 
 &lt;p&gt;Most angularity projects want to utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.
 Perform a global installation using npm.&lt;/p&gt;
@@ -77,30 +74,30 @@ Perform a global installation using npm.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm install -g bower
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;install-angularity:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Install Angularity&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;Install Angularity&lt;/h2&gt;
 
-&lt;h3 id=&#34;stable:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Stable&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Stable&lt;/h3&gt;
 
 &lt;p&gt;Perform a global installation using npm.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;or-pre-release:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;or Pre-release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;or Pre-release&lt;/h3&gt;
 
 &lt;p&gt;You can install from github. However this is considered bleeding edge.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;check-installation:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;Check installation&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Check installation&lt;/h3&gt;
 
 &lt;p&gt;Run the angularity version command to make sure the installation worked.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;angularity -v
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;optionally-install-source-code:4c40a97dcf30b230e73eabba1323c21c&#34;&gt;optionally, Install source code&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;optionally, Install source code&lt;/h3&gt;
 
 &lt;p&gt;If you wish to develop or contribute to the Angularity project you will need to
 &lt;a href=&#34;https://github.com/angularity/node-angularity/fork&#34;&gt;fork the project&lt;/a&gt; on github.&lt;/p&gt;
@@ -123,7 +120,7 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     <item>
       <title>Project Setup</title>
       <link>/start/project/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:41 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
       <guid>/start/project/</guid>
       <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;

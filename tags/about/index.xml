@@ -1,26 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Angularity</title>
-    <link>/tags/about/</link>
-    <description>Recent content in About on Angularity</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>About on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/tags/about/index.xml/</link>
     
     
     
+    <updated>Mon, 15 Dec 2014 13:43:03 AEDT</updated>
     
-    <lastBuildDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</lastBuildDate>
-    <atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roadmap</title>
+      <link>/about/roadmap/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
+      
+      <guid>/about/roadmap/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Regarding &lt;code&gt;documentation&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following items are listed in priority order but will necessarily be completed before version 1.0.0 release of the build tool.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Getting started guide.&lt;/li&gt;
+&lt;li&gt;Troubleshooting guide.&lt;/li&gt;
+&lt;li&gt;Quick reference for development style, including comparison of ES5 and ES6 use cases.&lt;/li&gt;
+&lt;li&gt;Manual for the build tool, including how it works.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Build tool&lt;/h2&gt;
+
+&lt;p&gt;Regarding &lt;code&gt;node-angularity&lt;/code&gt;, the Angularity build tool.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Version 1.0.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ECMAScript 5 development using &lt;code&gt;common-js&lt;/code&gt; syntax &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Per-project configuration of &lt;code&gt;Karma&lt;/code&gt; browser list and other selected unit testing settings.&lt;/li&gt;
+&lt;li&gt;Refinement of release versioning, including per-project &lt;code&gt;CDN&lt;/code&gt; settings.&lt;/li&gt;
+&lt;li&gt;Generation of an &lt;code&gt;index.aspx&lt;/code&gt; page in the release bundle and potentially other hooks to easily deploy on .NET systems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Version 1.x.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build blocking on &lt;code&gt;js-hint&lt;/code&gt; &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Generation of API documentation using &lt;a href=&#34;https://github.com/jsdoc3/jsdoc&#34;&gt;&lt;code&gt;JSdoc&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Incremental compilation.&lt;/li&gt;
+&lt;li&gt;Basic or experimental support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; end-to-end testing with local server or &lt;a href=&#34;https://saucelabs.com/&#34;&gt;&lt;code&gt;SauceLabs&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Continuous Integration (&lt;code&gt;CI&lt;/code&gt;) testing for the system itself &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Version 2.x.0&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Karma&lt;/code&gt; testing with &lt;a href=&#34;http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html&#34;&gt;&lt;code&gt;PhantomJS 2.0&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enhanced code-style enforcement using &lt;a href=&#34;https://github.com/eslint/eslint/wiki/Release-goals#v0100&#34;&gt;&lt;code&gt;eslint (v0.10.0)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Full support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; with private &lt;a href=&#34;https://code.google.com/p/selenium/wiki/Grid2&#34;&gt;&lt;code&gt;Grid2&lt;/code&gt;&lt;/a&gt; solution.&lt;/li&gt;
+&lt;li&gt;Test console (HTML page) with real-time red/green indication for your unit tests &lt;em&gt;[under consideration]&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Angularity</title>
       <link>/about/main/</link>
-      <pubDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
       <guid>/about/main/</guid>
       <description>
 
-&lt;h1 id=&#34;angularity-logo-assets-logo-png-angularity:379caad01b6ea305187be199bcac1370&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
+&lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
  &lt;em&gt;Angularity&lt;/em&gt;&lt;/h1&gt;
 
 &lt;blockquote&gt;
@@ -36,7 +88,7 @@
     <item>
       <title>Introduction</title>
       <link>/about/intro/</link>
-      <pubDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
       <guid>/about/intro/</guid>
       <description>
@@ -47,7 +99,7 @@
 
 &lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;features:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;&lt;code&gt;node.js&lt;/code&gt;&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
 
@@ -67,9 +119,9 @@
 
 &lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;&lt;code&gt;AngularJS&lt;/code&gt;&lt;/a&gt;. However much of the material you will find on this site is geared to Angular development.&lt;/p&gt;
 
-&lt;h2 id=&#34;suitability:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Suitability&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Suitability&lt;/h2&gt;
 
-&lt;h3 id=&#34;you-should-use-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You have several development teams and need uniformity of development.&lt;/li&gt;
@@ -81,7 +133,7 @@
 &lt;li&gt;You would like your build tool to be an &lt;code&gt;npm global install&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-avoid-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You don&amp;rsquo;t want to work with &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt;, are avoiding &lt;a href=&#34;https://github.com/google/traceur-compiler&#34;&gt;&lt;code&gt;Traceur&lt;/code&gt;&lt;/a&gt; and its runtime, and can live without Object Orientated code.&lt;/li&gt;
@@ -90,7 +142,7 @@
 &lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;&lt;code&gt;PhantomJS&lt;/code&gt;&lt;/a&gt; 1.x, &lt;code&gt;Internet Exporer 8&lt;/code&gt; or lower.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-fork-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You want different build steps to those provided.&lt;/li&gt;
@@ -102,61 +154,6 @@ Per-project customisation should be minimal.
 If you develop a wide variety of applications you may ultimately find a conventional build (with something like &lt;a href=&#34;http://gulpjs.com/&#34;&gt;&lt;code&gt;Gulp&lt;/code&gt;&lt;/a&gt;) will work better for you.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;roadmap.md&#34;&gt;Roadmap &amp;#x27F6;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Roadmap</title>
-      <link>/about/roadmap/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</pubDate>
-      
-      <guid>/about/roadmap/</guid>
-      <description>
-
-&lt;h2 id=&#34;documentation:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Documentation&lt;/h2&gt;
-
-&lt;p&gt;Regarding &lt;code&gt;documentation&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The following items are listed in priority order but will necessarily be completed before version 1.0.0 release of the build tool.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Getting started guide.&lt;/li&gt;
-&lt;li&gt;Troubleshooting guide.&lt;/li&gt;
-&lt;li&gt;Quick reference for development style, including comparison of ES5 and ES6 use cases.&lt;/li&gt;
-&lt;li&gt;Manual for the build tool, including how it works.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;build-tool:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Build tool&lt;/h2&gt;
-
-&lt;p&gt;Regarding &lt;code&gt;node-angularity&lt;/code&gt;, the Angularity build tool.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-1-0-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.0.0&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ECMAScript 5 development using &lt;code&gt;common-js&lt;/code&gt; syntax &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Per-project configuration of &lt;code&gt;Karma&lt;/code&gt; browser list and other selected unit testing settings.&lt;/li&gt;
-&lt;li&gt;Refinement of release versioning, including per-project &lt;code&gt;CDN&lt;/code&gt; settings.&lt;/li&gt;
-&lt;li&gt;Generation of an &lt;code&gt;index.aspx&lt;/code&gt; page in the release bundle and potentially other hooks to easily deploy on .NET systems.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;version-1-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.x.0&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Build blocking on &lt;code&gt;js-hint&lt;/code&gt; &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Generation of API documentation using &lt;a href=&#34;https://github.com/jsdoc3/jsdoc&#34;&gt;&lt;code&gt;JSdoc&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Incremental compilation.&lt;/li&gt;
-&lt;li&gt;Basic or experimental support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; end-to-end testing with local server or &lt;a href=&#34;https://saucelabs.com/&#34;&gt;&lt;code&gt;SauceLabs&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Continuous Integration (&lt;code&gt;CI&lt;/code&gt;) testing for the system itself &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;version-2-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 2.x.0&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Karma&lt;/code&gt; testing with &lt;a href=&#34;http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html&#34;&gt;&lt;code&gt;PhantomJS 2.0&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Enhanced code-style enforcement using &lt;a href=&#34;https://github.com/eslint/eslint/wiki/Release-goals#v0100&#34;&gt;&lt;code&gt;eslint (v0.10.0)&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Full support for &lt;a href=&#34;https://docs.angularjs.org/guide/e2e-testing&#34;&gt;&lt;code&gt;Protractor&lt;/code&gt;&lt;/a&gt; with private &lt;a href=&#34;https://code.google.com/p/selenium/wiki/Grid2&#34;&gt;&lt;code&gt;Grid2&lt;/code&gt;&lt;/a&gt; solution.&lt;/li&gt;
-&lt;li&gt;Test console (HTML page) with real-time red/green indication for your unit tests &lt;em&gt;[under consideration]&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

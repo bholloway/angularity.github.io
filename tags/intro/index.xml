@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Intro on Angularity</title>
-    <link>/tags/intro/</link>
-    <description>Recent content in Intro on Angularity</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Intro on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/tags/intro/index.xml/</link>
     
     
     
-    
-    <lastBuildDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</lastBuildDate>
-    <atom:link href="/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    <updated>Mon, 15 Dec 2014 13:42:50 AEDT</updated>
     
     <item>
       <title>Introduction</title>
       <link>/about/intro/</link>
-      <pubDate>Mon, 15 Dec 2014 13:42:50 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
       <guid>/about/intro/</guid>
       <description>
@@ -26,7 +23,7 @@
 
 &lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;features:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;&lt;code&gt;node.js&lt;/code&gt;&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
 
@@ -46,9 +43,9 @@
 
 &lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;&lt;code&gt;AngularJS&lt;/code&gt;&lt;/a&gt;. However much of the material you will find on this site is geared to Angular development.&lt;/p&gt;
 
-&lt;h2 id=&#34;suitability:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Suitability&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Suitability&lt;/h2&gt;
 
-&lt;h3 id=&#34;you-should-use-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You have several development teams and need uniformity of development.&lt;/li&gt;
@@ -60,7 +57,7 @@
 &lt;li&gt;You would like your build tool to be an &lt;code&gt;npm global install&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-avoid-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You don&amp;rsquo;t want to work with &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt;, are avoiding &lt;a href=&#34;https://github.com/google/traceur-compiler&#34;&gt;&lt;code&gt;Traceur&lt;/code&gt;&lt;/a&gt; and its runtime, and can live without Object Orientated code.&lt;/li&gt;
@@ -69,7 +66,7 @@
 &lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;&lt;code&gt;PhantomJS&lt;/code&gt;&lt;/a&gt; 1.x, &lt;code&gt;Internet Exporer 8&lt;/code&gt; or lower.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;you-should-fork-angularity-when:34c4da6d4768d05e50db99357a299b5c&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You want different build steps to those provided.&lt;/li&gt;

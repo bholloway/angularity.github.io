@@ -38,46 +38,40 @@ function initializeJS() {
             jQuery("#sidebar").scrollTo("+="+Math.abs(diff),500);
     });
 
+    var isMenu = true;
 
     // sidebar menu toggle
+    var widthLast = 0;
     jQuery(function() {
         function responsiveView() {
-            var wSize = jQuery(window).width();
-            if (wSize <= 768) {
-                jQuery('#container').addClass('sidebar-close');
-                jQuery('#sidebar > ul').hide();
-            }
-
-            if (wSize > 768) {
-                jQuery('#container').removeClass('sidebar-close');
-                jQuery('#sidebar > ul').show();
-            }
+            var width = jQuery(window).width();
+            var delta = (width < 768) && (widthLast >= 768) ? -1: (width >= 768) && (widthLast < 768) ? +1 : 0;
+            widthLast = width;
+            isMenu = (delta > 0) ? true : (delta < 0) ? false : isMenu;
+            showHideNav(isMenu);
         }
         jQuery(window).on('load', responsiveView);
         jQuery(window).on('resize', responsiveView);
     });
 
     jQuery('.toggle-nav').click(function () {
-        if (jQuery('#sidebar > ul').is(":visible") === true) {
-            jQuery('#main-content').css({
-                'margin-left': '0px'
-            });
-            jQuery('#sidebar').css({
-                'margin-left': '-180px'
-            });
-            jQuery('#sidebar > ul').hide();
-            jQuery("#container").addClass("sidebar-closed");
-        } else {
-            jQuery('#main-content').css({
-                'margin-left': '180px'
-            });
-            jQuery('#sidebar > ul').show();
-            jQuery('#sidebar').css({
-                'margin-left': '0'
-            });
-            jQuery("#container").removeClass("sidebar-closed");
-        }
+        isMenu = !isMenu;
+        showHideNav(isMenu);
     });
+
+    function showHideNav(isShow) {
+        if (isShow) {
+            jQuery('#sidebar').show();
+            jQuery('#container')
+                .addClass('sidebar-open')
+                .removeClass('sidebar-closed');
+        } else {
+            jQuery('#sidebar').hide();
+            jQuery('#container')
+                .removeClass('sidebar-open')
+                .addClass('sidebar-closed');
+        }
+    }
 
     //bar chart
     if (jQuery(".custom-custom-bar-chart")) {

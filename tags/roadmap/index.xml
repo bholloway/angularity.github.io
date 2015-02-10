@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Roadmap on Angularity</title>
-    <link>/tags/roadmap/</link>
-    <description>Recent content in Roadmap on Angularity</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Roadmap on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/tags/roadmap/index.xml/</link>
     
     
     
-    
-    <lastBuildDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</lastBuildDate>
-    <atom:link href="/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <updated>Mon, 15 Dec 2014 13:43:03 AEDT</updated>
     
     <item>
       <title>Roadmap</title>
       <link>/about/roadmap/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:03 &#43;1100</pubDate>
+      <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
       <guid>/about/roadmap/</guid>
       <description>
 
-&lt;h2 id=&#34;documentation:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Documentation&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;
 
 &lt;p&gt;Regarding &lt;code&gt;documentation&lt;/code&gt;.&lt;/p&gt;
 
@@ -33,11 +30,11 @@
 &lt;li&gt;Manual for the build tool, including how it works.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;build-tool:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Build tool&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Build tool&lt;/h2&gt;
 
 &lt;p&gt;Regarding &lt;code&gt;node-angularity&lt;/code&gt;, the Angularity build tool.&lt;/p&gt;
 
-&lt;h3 id=&#34;version-1-0-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.0.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;Version 1.0.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ECMAScript 5 development using &lt;code&gt;common-js&lt;/code&gt; syntax &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
@@ -46,7 +43,7 @@
 &lt;li&gt;Generation of an &lt;code&gt;index.aspx&lt;/code&gt; page in the release bundle and potentially other hooks to easily deploy on .NET systems.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;version-1-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 1.x.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Version 1.x.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Build blocking on &lt;code&gt;js-hint&lt;/code&gt; &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
@@ -56,7 +53,7 @@
 &lt;li&gt;Continuous Integration (&lt;code&gt;CI&lt;/code&gt;) testing for the system itself &lt;em&gt;[Under consideration]&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;version-2-x-0:cd4a1b36ed2b93cfc52abf77a7d25d03&#34;&gt;Version 2.x.0&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Version 2.x.0&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Karma&lt;/code&gt; testing with &lt;a href=&#34;http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html&#34;&gt;&lt;code&gt;PhantomJS 2.0&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;

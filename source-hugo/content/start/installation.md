@@ -39,7 +39,7 @@ commit Unit-style** for line endings.
 Ensure that you choose the correct binary for your system.
 Meaning that 64 bit systems should choose the 64 bit binary.
 
-[![](/start/installation-node.png)]()
+![](/start/installation-node.png)
 
 Choose the **default settings** whenever prompted.
 
