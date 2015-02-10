@@ -24,7 +24,7 @@ function initializeJS() {
             jQuery(sub).removeClass("open")
         } else {
             jQuery('.menu-arrow', this).addClass('fa-angle-down');
-			jQuery('.menu-arrow', this).removeClass('fa-angle-right');
+			      jQuery('.menu-arrow', this).removeClass('fa-angle-right');
             sub.slideDown(200);
             jQuery(sub).addClass("open")
         }
@@ -38,16 +38,15 @@ function initializeJS() {
             jQuery("#sidebar").scrollTo("+="+Math.abs(diff),500);
     });
 
-    var isMenu = true;
-
     // sidebar menu toggle
-    var widthLast = 0;
+    var isWideLast;
     jQuery(function() {
         function responsiveView() {
-            var width = jQuery(window).width();
-            var delta = (width < 768) && (widthLast >= 768) ? -1: (width >= 768) && (widthLast < 768) ? +1 : 0;
-            widthLast = width;
-            isMenu = (delta > 0) ? true : (delta < 0) ? false : isMenu;
+            var isWide = (jQuery(window).width() >= 768);
+            if ((isWideLast === undefined) || (isWideLast !== isWide)) {
+              isMenu = isWide;
+            }
+            isWideLast = isWide;
             showHideNav(isMenu);
         }
         jQuery(window).on('load', responsiveView);

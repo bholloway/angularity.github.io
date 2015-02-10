@@ -31,7 +31,7 @@
     }
 
     #sidebar ul.sidebar-menu {
-        padding: 10px 0px;
+        padding: 0 15px;
         border: 5px solid rgba(20,20,20,0.9);
         border-top: none;
     }
