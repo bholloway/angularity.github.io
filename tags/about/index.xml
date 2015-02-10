@@ -3,7 +3,7 @@
   <channel>
       <title>About on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/about/index.xml/</link>
+    <link>/tags/about/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Roadmap</title>
-      <link>http://localhost:1313/about/roadmap/</link>
+      <link>/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/roadmap/</guid>
+      <guid>/about/roadmap/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;
@@ -66,10 +66,10 @@
     
     <item>
       <title>Angularity</title>
-      <link>http://localhost:1313/about/main/</link>
+      <link>/about/main/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/main/</guid>
+      <guid>/about/main/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
@@ -87,10 +87,10 @@
     
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/about/intro/</link>
+      <link>/about/intro/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/intro/</guid>
+      <guid>/about/intro/</guid>
       <description>
 
 &lt;p&gt;Angularity is a development philosophy.&lt;/p&gt;

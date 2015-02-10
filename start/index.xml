@@ -3,7 +3,7 @@
   <channel>
       <title>Starts on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/start/index.xml/</link>
+    <link>/start/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/start/installation/</link>
+      <link>/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/installation/</guid>
+      <guid>/start/installation/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
@@ -119,10 +119,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Setup</title>
-      <link>http://localhost:1313/start/project/</link>
+      <link>/start/project/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/project/</guid>
+      <guid>/start/project/</guid>
       <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;
 </description>
     </item>

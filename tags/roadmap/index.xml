@@ -3,7 +3,7 @@
   <channel>
       <title>Roadmap on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/roadmap/index.xml/</link>
+    <link>/tags/roadmap/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Roadmap</title>
-      <link>http://localhost:1313/about/roadmap/</link>
+      <link>/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/roadmap/</guid>
+      <guid>/about/roadmap/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;

@@ -3,7 +3,7 @@
   <channel>
       <title>Intro on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/intro/index.xml/</link>
+    <link>/tags/intro/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/about/intro/</link>
+      <link>/about/intro/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/intro/</guid>
+      <guid>/about/intro/</guid>
       <description>
 
 &lt;p&gt;Angularity is a development philosophy.&lt;/p&gt;

@@ -3,7 +3,7 @@
   <channel>
       <title>Project on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/project/index.xml/</link>
+    <link>/tags/project/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Project Setup</title>
-      <link>http://localhost:1313/start/project/</link>
+      <link>/start/project/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/project/</guid>
+      <guid>/start/project/</guid>
       <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;
 </description>
     </item>
