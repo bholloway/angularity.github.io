@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/index.xml/</link>
+    <link>http://localhost:1313/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Angularity</title>
-      <link>/about/main/</link>
+      <link>http://localhost:1313/about/main/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>/about/main/</guid>
+      <guid>http://localhost:1313/about/main/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>Introduction</title>
-      <link>/about/intro/</link>
+      <link>http://localhost:1313/about/intro/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>/about/intro/</guid>
+      <guid>http://localhost:1313/about/intro/</guid>
       <description>
 
 &lt;p&gt;Angularity is a development philosophy.&lt;/p&gt;
@@ -104,10 +104,10 @@ If you develop a wide variety of applications you may ultimately find a conventi
     
     <item>
       <title>Roadmap</title>
-      <link>/about/roadmap/</link>
+      <link>http://localhost:1313/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>/about/roadmap/</guid>
+      <guid>http://localhost:1313/about/roadmap/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Documentation&lt;/h2&gt;
@@ -159,10 +159,10 @@ If you develop a wide variety of applications you may ultimately find a conventi
     
     <item>
       <title>Installation</title>
-      <link>/start/installation/</link>
+      <link>http://localhost:1313/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>/start/installation/</guid>
+      <guid>http://localhost:1313/start/installation/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
@@ -267,10 +267,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Setup</title>
-      <link>/start/project/</link>
+      <link>http://localhost:1313/start/project/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>/start/project/</guid>
+      <guid>http://localhost:1313/start/project/</guid>
       <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;
 </description>
     </item>
