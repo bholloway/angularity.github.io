@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <title>Installation</title>
+    <title>Project Anatomy</title>
 
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Installation </h1>
+                <h1 class="nav top-menu"> Project Anatomy </h1>
             </div>
       </header>
       
@@ -84,9 +84,9 @@
                 </a>
                 <ul class="sub open">
                     
-                    <li class="active"><a href="/start/installation/"> Installation </a> </li>
+                    <li><a href="/start/installation/"> Installation </a> </li>
                     
-                    <li><a href="/start/project-anatomy/"> Project Anatomy </a> </li>
+                    <li class="active"><a href="/start/project-anatomy/"> Project Anatomy </a> </li>
                     
                 </ul>
             
@@ -117,7 +117,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="/about/roadmap">
+                      <a class="navigation prev" href="/start/installation">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -126,109 +126,11 @@
                     <div class="panel-body">
 
 
-
-<h1 id="toc_0">Installation</h1>
-
-<h2 id="toc_1">Install git</h2>
-
-<p><a href="http://git-scm.com/downloads"><code>http://git-scm.com/downloads</code></a></p>
-
-<p>Once again ensure that you choose the correct binary for your system.</p>
-
-<p>On <strong>Windows</strong> platform choose to <strong>use GIT from the command prompt</strong>.</p>
-
-<p>On <strong>Windows</strong> platform choose to <strong>checkout Windows-style,
-commit Unit-style</strong> for line endings.</p>
-
-<p><img src="/start/installation-git-1.png" alt="Windows git installation step #1" />
-</p>
-
-<p><img src="/start/installation-git-2.png" alt="Windows git installation step #2" />
-</p>
-
-<h2 id="toc_2">Install node.js</h2>
-
-<p><a href="http://nodejs.org/download/"><code>http://nodejs.org/download/</code></a></p>
-
-<p>Ensure that you choose the correct binary for your system.
-Meaning that 64 bit systems should choose the 64 bit binary.</p>
-
-<p><img src="/start/installation-node.png" alt="" />
-</p>
-
-<p>Choose the <strong>default settings</strong> whenever prompted.</p>
-
-<p>On <strong>Windows</strong> platform the installer will add a <strong>path</strong> entry to node.
-For that to be active you will most likely need to reboot.
-Once you can see node in the console <code>echo %PATH%</code> then you are ready.</p>
-
-<h2 id="toc_3">Update npm</h2>
-
-<p>Even if you just installed <code>node</code> you may be running npm older than <strong>npm 2.0.0</strong>.
-In that case it is worth updating.</p>
-
-<pre><code>npm install -g npm
-</code></pre>
-
-<p>On windows you may have some difficulty and should follow the troubleshooting
-<a href="https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows">instructions</a> from the outset.</p>
-
-<p>Be aware however that older projects that you may also be working on may <em>not be compatible</em> with npm 2.</p>
-
-<h2 id="toc_4">Install Bower</h2>
-
-<p>Most angularity projects want to utilise <a href="http://bower.io/">bower</a>.
-Perform a global installation using npm.</p>
-
-<pre><code>npm install -g bower
-</code></pre>
-
-<h2 id="toc_5">Install Angularity</h2>
-
-<h3 id="toc_6">Stable</h3>
-
-<p>Perform a global installation using npm.</p>
-
-<pre><code>npm install -g angularity
-</code></pre>
-
-<h3 id="toc_7">or Pre-release</h3>
-
-<p>You can install from github. However this is considered bleeding edge.</p>
-
-<pre><code>npm install -g angularity/node-angularity
-</code></pre>
-
-<h3 id="toc_8">Check installation</h3>
-
-<p>Run the angularity version command to make sure the installation worked.</p>
-
-<pre><code>angularity -v
-</code></pre>
-
-<h3 id="toc_9">optionally, Install source code</h3>
-
-<p>If you wish to develop or contribute to the Angularity project you will need to
-<a href="https://github.com/angularity/node-angularity/fork">fork the project</a> on github.</p>
-
-<p>Get local a working copy of your fork.</p>
-
-<pre><code>git clone git@github.com:&lt;YOUR_GITHUB_USERNAME&gt;/node-angularity.git
-</code></pre>
-
-<p>Force the global install to defer to this working copy. You still need to have performed the global install above.</p>
-
-<pre><code>npm link
-</code></pre>
-
-<p>Be sure to keep your fork in sync with the main repository before you start working on any patch.
-This <a href="https://help.github.com/articles/syncing-a-fork/">how to on Github</a> is most helpful.</p>
-
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="/start/project">
+                    <a class="navigation prev" href="/about/main">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

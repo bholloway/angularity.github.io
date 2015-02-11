@@ -1,10 +1,10 @@
 ---
-title: Project Setup
-linktitle: Project Setup
-identifier: start-project
+title: Project Anatomy
+linktitle: Project Anatomy
+identifier: project-anatomy
 date: 2014-12-15T13:43:41+11:00
 tags:
-  - start
+  - anatomy
   - project
 menu:
   main:
@@ -15,4 +15,4 @@ notoc: true
 weight: 2020
 ---
 
-Documentation is coming soon.
+

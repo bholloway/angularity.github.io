@@ -15,39 +15,31 @@ notoc: true
 weight: 1030
 ---
 
-## Documentation
+### Version 0.1.0
 
-Regarding `documentation`.
+* Command line invocation of tasks.
+* Customisation of jsHint reporter.
+* Customisation of Karma using `karma.conf.js`.
+* CDN fingerprinting for the `release` task.
+* Retire `angularity.json` and move contents to `package.json` "angularity" property.
+* Webstorm integration.
+* Documentation:
+  * Basic usage
+  * Coding style
+  * Troubleshooting.
 
-The following items are listed in priority order but will necessarily be completed before version 1.0.0 release of the build tool.
+### Version 0.x.0
 
-* Getting started guide.
-* Troubleshooting guide.
-* Quick reference for development style, including comparison of ES5 and ES6 use cases.
-* Manual for the build tool, including how it works.
-
-## Build tool
-
-Regarding `node-angularity`, the Angularity build tool.
+To be determined.
 
 ### Version 1.0.0
 
-* ECMAScript 5 development using `common-js` syntax *[Under consideration]*.
-* Per-project configuration of `Karma` browser list and other selected unit testing settings.
-* Refinement of release versioning, including per-project `CDN` settings.
-* Generation of an `index.aspx` page in the release bundle and potentially other hooks to easily deploy on .NET systems.
-
-### Version 1.x.0
-
-* Build blocking on `js-hint` *[Under consideration]*.
-* Generation of API documentation using [`JSdoc`](https://github.com/jsdoc3/jsdoc).
-* Incremental compilation.
-* Basic or experimental support for [`Protractor`](https://docs.angularjs.org/guide/e2e-testing) end-to-end testing with local server or [`SauceLabs`](https://saucelabs.com/).
-* Continuous Integration (`CI`) testing for the system itself *[Under consideration]*.
-
-### Version 2.x.0
-
-* `Karma` testing with [`PhantomJS 2.0`](http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html).
-* Enhanced code-style enforcement using [`eslint (v0.10.0)`](https://github.com/eslint/eslint/wiki/Release-goals#v0100).
-* Full support for [`Protractor`](https://docs.angularjs.org/guide/e2e-testing) with private [`Grid2`](https://code.google.com/p/selenium/wiki/Grid2) solution.
-* Test console (HTML page) with real-time red/green indication for your unit tests *[under consideration]*.
+* Global invocation defers to a local Angularity instance, where present.
+* Synchronisation task the keep selected `package.json` and `bower.json` properties in sync.
+* Interactive command line menus.
+* Sprite sheeting my browserify composition.
+* Better extensibility (code cleanup, modularisation)
+* Unit/Integration tests.
+* Documentation:
+  * Angularity architecture
+  * Guidance on extending Angularity.

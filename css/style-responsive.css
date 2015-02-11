@@ -36,6 +36,11 @@
         border-top: none;
     }
 
+    ul.sidebar-menu li a {
+        margin-top: -1px;
+        border: 1px solid #D7D7D7;
+    }
+
     #sidebar > ul > li > a > span {
         line-height: 35px;
     }
@@ -52,9 +57,6 @@
 
     #sidebar > ul > li > a, #sidebar > ul > li > ul.sub > li {
         width: 100%;
-    }
-    #sidebar > ul > li > ul.sub > li > a {
-        background: transparent !important ;
     }
 
     /*--sidebar toggle---*/

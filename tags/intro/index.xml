@@ -21,63 +21,65 @@
 
 &lt;p&gt;Our focus is maintaining uniformity of development across groups of developers who hold varying experience levels.&lt;/p&gt;
 
-&lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of
+tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Features&lt;/h2&gt;
 
-&lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;&lt;code&gt;node.js&lt;/code&gt;&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
+&lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Single &lt;code&gt;npm global install&lt;/code&gt; for all projects.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt; syntax (using &lt;a href=&#34;http://thlorenz.github.io/es6ify/&#34;&gt;&lt;code&gt;es6ify&lt;/code&gt;&lt;/a&gt;), including code import and other ES6 specific features.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jshint.com/about/&#34;&gt;&lt;code&gt;jsHint&lt;/code&gt;&lt;/a&gt; linting.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sass-lang.com/&#34;&gt;&lt;code&gt;SASS&lt;/code&gt;&lt;/a&gt; 3.2 (using &lt;a href=&#34;http://libsass.org/&#34;&gt;&lt;code&gt;libsass&lt;/code&gt;&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bourbon.io/&#34;&gt;&lt;code&gt;Bourbon&lt;/code&gt;&lt;/a&gt; mixin library for SASS.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;&lt;code&gt;Bower&lt;/code&gt;&lt;/a&gt; for web dependencies.&lt;/li&gt;
+&lt;li&gt;Bundling of &lt;code&gt;require()&lt;/code&gt;&amp;rsquo;d files per &lt;a href=&#34;http://browserify.org/&#34;&gt;browserify&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;ECMAScript 6&lt;/a&gt; syntax
+(using &lt;a href=&#34;https://github.com/6to5/6to5ify&#34;&gt;6to5ify&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Composition of &lt;em&gt;html&lt;/em&gt; templates in &lt;em&gt;javascript&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jshint.com/about/&#34;&gt;jsHint&lt;/a&gt; linting.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt; 3.2 (using &lt;a href=&#34;http://libsass.org/&#34;&gt;libsass&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; for web dependencies.&lt;/li&gt;
 &lt;li&gt;Bower or node packages for shared code.&lt;/li&gt;
-&lt;li&gt;Javascript unit testing (using &lt;a href=&#34;http://karma-runner.github.io/0.12/index.html&#34;&gt;&lt;code&gt;Karma&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;http://jasmine.github.io/2.0/introduction.html&#34;&gt;&lt;code&gt;Jasmine 2.0&lt;/code&gt;&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Source maps for Javascript (from ECMAScript 6 through minification).&lt;/li&gt;
+&lt;li&gt;Javascript unit testing (using &lt;a href=&#34;http://karma-runner.github.io/0.12/index.html&#34;&gt;Karma&lt;/a&gt; and
+&lt;a href=&#34;http://jasmine.github.io/2.0/introduction.html&#34;&gt;Jasmine 2.0&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Source maps for Javascript.&lt;/li&gt;
 &lt;li&gt;Source maps for CSS.&lt;/li&gt;
-&lt;li&gt;Release versioning &lt;em&gt;[experimental]&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;&lt;code&gt;AngularJS&lt;/code&gt;&lt;/a&gt;. However much of the material you will find on this site is geared to Angular development.&lt;/p&gt;
+&lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;. However much of the
+material you will find on this site is geared to Angular development.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Suitability&lt;/h2&gt;
 
 &lt;h3 id=&#34;toc_2&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You have several development teams and need uniformity of development.&lt;/li&gt;
-&lt;li&gt;You develop with &lt;a href=&#34;https://angularjs.org/&#34;&gt;&lt;code&gt;AngularJS&lt;/code&gt;&lt;/a&gt; and are open to working with &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt;, especially ES6 Classes.&lt;/li&gt;
-&lt;li&gt;You use &lt;a href=&#34;http://sass-lang.com/&#34;&gt;&lt;code&gt;SASS&lt;/code&gt;&lt;/a&gt;, or are prepared to switch, and there are sufficient SASS mixins for you in the &lt;a href=&#34;http://bourbon.io/&#34;&gt;&lt;code&gt;Bourbon&lt;/code&gt;&lt;/a&gt; library.&lt;/li&gt;
+&lt;li&gt;You develop build tooling for one or more development teams.&lt;/li&gt;
+&lt;li&gt;You develop with &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; and would like a path to
+&lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;ECMAScript 6&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You use &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;, or are prepared to switch, and can live without
+&lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;You intend to minify or obfuscate your Javascript.&lt;/li&gt;
-&lt;li&gt;You deploy to a &lt;a href=&#34;http://en.wikipedia.org/wiki/Content_delivery_network&#34;&gt;&lt;code&gt;Content Delivery Network (CDN)&lt;/code&gt;&lt;/a&gt; and need to version your releases.&lt;/li&gt;
-&lt;li&gt;You your browser support list permits &lt;a href=&#34;http://kangax.github.io/compat-table/es5/&#34;&gt;&lt;code&gt;ECMAScript 5.1&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You would like your build tool to be an &lt;code&gt;npm global install&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You your browser support list permits &lt;a href=&#34;http://kangax.github.io/compat-table/es5/&#34;&gt;ECMAScript 5.1&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You would like your build tool to be a self contained npm package with the option of a global install.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_3&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You don&amp;rsquo;t want to work with &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;&lt;code&gt;ECMAScript 6&lt;/code&gt;&lt;/a&gt;, are avoiding &lt;a href=&#34;https://github.com/google/traceur-compiler&#34;&gt;&lt;code&gt;Traceur&lt;/code&gt;&lt;/a&gt; and its runtime, and can live without Object Orientated code.&lt;/li&gt;
-&lt;li&gt;You want to use a CSS preprocessor other than &lt;a href=&#34;http://sass-lang.com/&#34;&gt;&lt;code&gt;SASS&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You would like to use &lt;a href=&#34;http://compass-style.org/&#34;&gt;&lt;code&gt;Compass&lt;/code&gt;&lt;/a&gt; with your SASS.&lt;/li&gt;
-&lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;&lt;code&gt;PhantomJS&lt;/code&gt;&lt;/a&gt; 1.x, &lt;code&gt;Internet Exporer 8&lt;/code&gt; or lower.&lt;/li&gt;
+&lt;li&gt;Your projects are all different and need customised build steps that cannot be generalised.&lt;/li&gt;
+&lt;li&gt;You want to use a CSS preprocessor other than &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You would like to use &lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt; with your SASS.&lt;/li&gt;
+&lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;PhantomJS 1.x&lt;/a&gt;, Internet Explorer 8 (or lower), or any other platform
+inconsistent with &lt;a href=&#34;https://6to5.org/&#34;&gt;6to5&lt;/a&gt; generated code.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_4&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You want different build steps to those provided.&lt;/li&gt;
-&lt;li&gt;You want features that are not on our roadmap.&lt;/li&gt;
+&lt;li&gt;You can generalise you build requirements but want different build steps to those provided.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Angularity is about uniformity.
-Per-project customisation should be minimal.
-If you develop a wide variety of applications you may ultimately find a conventional build (with something like &lt;a href=&#34;http://gulpjs.com/&#34;&gt;&lt;code&gt;Gulp&lt;/code&gt;&lt;/a&gt;) will work better for you.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;roadmap.md&#34;&gt;Roadmap &amp;#x27F6;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Angularity is about uniformity. Per-project customisation should be minimal. If you develop a wide variety of
+applications we recommend you use &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, which Angularity uses under the hood.&lt;/p&gt;
 </description>
     </item>
     

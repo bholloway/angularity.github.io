@@ -86,7 +86,7 @@
                     
                     <li><a href="/start/installation/"> Installation </a> </li>
                     
-                    <li><a href="/start/project/"> Project Setup </a> </li>
+                    <li><a href="/start/project-anatomy/"> Project Anatomy </a> </li>
                     
                 </ul>
             
@@ -131,63 +131,65 @@
 
 <p>Our focus is maintaining uniformity of development across groups of developers who hold varying experience levels.</p>
 
-<p>Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as <strong>Angularity</strong>.</p>
+<p>Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of
+tools and resources known as <strong>Angularity</strong>.</p>
 
 <h2 id="toc_0">Features</h2>
 
-<p>Primarily Angularity is a <a href="http://nodejs.org/"><code>node.js</code></a> build tool. Its features include:</p>
+<p>Primarily Angularity is a <a href="http://nodejs.org/">node.js</a> build tool. Its features include:</p>
 
 <ul>
 <li>Single <code>npm global install</code> for all projects.</li>
-<li><a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29"><code>ECMAScript 6</code></a> syntax (using <a href="http://thlorenz.github.io/es6ify/"><code>es6ify</code></a>), including code import and other ES6 specific features.</li>
-<li><a href="http://www.jshint.com/about/"><code>jsHint</code></a> linting.</li>
-<li><a href="http://sass-lang.com/"><code>SASS</code></a> 3.2 (using <a href="http://libsass.org/"><code>libsass</code></a>).</li>
-<li><a href="http://bourbon.io/"><code>Bourbon</code></a> mixin library for SASS.</li>
-<li><a href="http://bower.io/"><code>Bower</code></a> for web dependencies.</li>
+<li>Bundling of <code>require()</code>&rsquo;d files per <a href="http://browserify.org/">browserify</a>.</li>
+<li><a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a> syntax
+(using <a href="https://github.com/6to5/6to5ify">6to5ify</a>).</li>
+<li>Composition of <em>html</em> templates in <em>javascript</em>.</li>
+<li><a href="http://www.jshint.com/about/">jsHint</a> linting.</li>
+<li><a href="http://sass-lang.com/">SASS</a> 3.2 (using <a href="http://libsass.org/">libsass</a>).</li>
+<li><a href="http://bower.io/">Bower</a> for web dependencies.</li>
 <li>Bower or node packages for shared code.</li>
-<li>Javascript unit testing (using <a href="http://karma-runner.github.io/0.12/index.html"><code>Karma</code></a> and <a href="http://jasmine.github.io/2.0/introduction.html"><code>Jasmine 2.0</code></a>).</li>
-<li>Source maps for Javascript (from ECMAScript 6 through minification).</li>
+<li>Javascript unit testing (using <a href="http://karma-runner.github.io/0.12/index.html">Karma</a> and
+<a href="http://jasmine.github.io/2.0/introduction.html">Jasmine 2.0</a>).</li>
+<li>Source maps for Javascript.</li>
 <li>Source maps for CSS.</li>
-<li>Release versioning <em>[experimental]</em>.</li>
 </ul>
 
-<p>At its heart, none of these features are specifically tied to <a href="https://angularjs.org/"><code>AngularJS</code></a>. However much of the material you will find on this site is geared to Angular development.</p>
+<p>At its heart, none of these features are specifically tied to <a href="https://angularjs.org/">AngularJS</a>. However much of the
+material you will find on this site is geared to Angular development.</p>
 
 <h2 id="toc_1">Suitability</h2>
 
 <h3 id="toc_2">You should use <em>Angularity</em> when&hellip;</h3>
 
 <ul>
-<li>You have several development teams and need uniformity of development.</li>
-<li>You develop with <a href="https://angularjs.org/"><code>AngularJS</code></a> and are open to working with <a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29"><code>ECMAScript 6</code></a>, especially ES6 Classes.</li>
-<li>You use <a href="http://sass-lang.com/"><code>SASS</code></a>, or are prepared to switch, and there are sufficient SASS mixins for you in the <a href="http://bourbon.io/"><code>Bourbon</code></a> library.</li>
+<li>You develop build tooling for one or more development teams.</li>
+<li>You develop with <a href="https://angularjs.org/">AngularJS</a> and would like a path to
+<a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a>.</li>
+<li>You use <a href="http://sass-lang.com/">SASS</a>, or are prepared to switch, and can live without
+<a href="http://compass-style.org/">Compass</a>.</li>
 <li>You intend to minify or obfuscate your Javascript.</li>
-<li>You deploy to a <a href="http://en.wikipedia.org/wiki/Content_delivery_network"><code>Content Delivery Network (CDN)</code></a> and need to version your releases.</li>
-<li>You your browser support list permits <a href="http://kangax.github.io/compat-table/es5/"><code>ECMAScript 5.1</code></a>.</li>
-<li>You would like your build tool to be an <code>npm global install</code>.</li>
+<li>You your browser support list permits <a href="http://kangax.github.io/compat-table/es5/">ECMAScript 5.1</a>.</li>
+<li>You would like your build tool to be a self contained npm package with the option of a global install.</li>
 </ul>
 
 <h3 id="toc_3">You should avoid <em>Angularity</em> when&hellip;</h3>
 
 <ul>
-<li>You don&rsquo;t want to work with <a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29"><code>ECMAScript 6</code></a>, are avoiding <a href="https://github.com/google/traceur-compiler"><code>Traceur</code></a> and its runtime, and can live without Object Orientated code.</li>
-<li>You want to use a CSS preprocessor other than <a href="http://sass-lang.com/"><code>SASS</code></a>.</li>
-<li>You would like to use <a href="http://compass-style.org/"><code>Compass</code></a> with your SASS.</li>
-<li>You need to support <a href="http://phantomjs.org/"><code>PhantomJS</code></a> 1.x, <code>Internet Exporer 8</code> or lower.</li>
+<li>Your projects are all different and need customised build steps that cannot be generalised.</li>
+<li>You want to use a CSS preprocessor other than <a href="http://sass-lang.com/">SASS</a>.</li>
+<li>You would like to use <a href="http://compass-style.org/">Compass</a> with your SASS.</li>
+<li>You need to support <a href="http://phantomjs.org/">PhantomJS 1.x</a>, Internet Explorer 8 (or lower), or any other platform
+inconsistent with <a href="https://6to5.org/">6to5</a> generated code.</li>
 </ul>
 
 <h3 id="toc_4">You should fork <em>Angularity</em> when&hellip;</h3>
 
 <ul>
-<li>You want different build steps to those provided.</li>
-<li>You want features that are not on our roadmap.</li>
+<li>You can generalise you build requirements but want different build steps to those provided.</li>
 </ul>
 
-<p>Angularity is about uniformity.
-Per-project customisation should be minimal.
-If you develop a wide variety of applications you may ultimately find a conventional build (with something like <a href="http://gulpjs.com/"><code>Gulp</code></a>) will work better for you.</p>
-
-<p><a href="roadmap.md">Roadmap &#x27F6;</a></p>
+<p>Angularity is about uniformity. Per-project customisation should be minimal. If you develop a wide variety of
+applications we recommend you use <a href="http://gulpjs.com/">Gulp</a>, which Angularity uses under the hood.</p>
 
                     </div> 
                     </section> 

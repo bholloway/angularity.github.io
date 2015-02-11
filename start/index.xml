@@ -52,9 +52,9 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 For that to be active you will most likely need to reboot.
 Once you can see node in the console &lt;code&gt;echo %PATH%&lt;/code&gt; then you are ready.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;or Update npm&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Update npm&lt;/h2&gt;
 
-&lt;p&gt;Unless you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
+&lt;p&gt;Even if you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
 In that case it is worth updating.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g npm
@@ -63,8 +63,7 @@ In that case it is worth updating.&lt;/p&gt;
 &lt;p&gt;On windows you may have some difficulty and should follow the troubleshooting
 &lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt; from the outset.&lt;/p&gt;
 
-&lt;p&gt;Be aware however that npm 2 has
-&lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;&lt;strong&gt;breaking changes&lt;/strong&gt;&lt;/a&gt; for existing projects.&lt;/p&gt;
+&lt;p&gt;Be aware however that older projects that you may also be working on may &lt;em&gt;not be compatible&lt;/em&gt; with npm 2.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_4&#34;&gt;Install Bower&lt;/h2&gt;
 
@@ -107,7 +106,7 @@ Perform a global installation using npm.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;git clone git@github.com:&amp;lt;YOUR_GITHUB_USERNAME&amp;gt;/node-angularity.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Force the global install to defer to this working copy.&lt;/p&gt;
+&lt;p&gt;Force the global install to defer to this working copy. You still need to have performed the global install above.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm link
 &lt;/code&gt;&lt;/pre&gt;
@@ -118,13 +117,12 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     </item>
     
     <item>
-      <title>Project Setup</title>
-      <link>/start/project/</link>
+      <title>Project Anatomy</title>
+      <link>/start/project-anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>/start/project/</guid>
-      <description>&lt;p&gt;Documentation is coming soon.&lt;/p&gt;
-</description>
+      <guid>/start/project-anatomy/</guid>
+      <description></description>
     </item>
     
   </channel>

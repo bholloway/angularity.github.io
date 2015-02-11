@@ -47,9 +47,9 @@ On **Windows** platform the installer will add a **path** entry to node.
 For that to be active you will most likely need to reboot.
 Once you can see node in the console `echo %PATH%` then you are ready.
 
-## or Update npm
+## Update npm
 
-Unless you just installed `node` you may be running npm older than **npm 2.0.0**.
+Even if you just installed `node` you may be running npm older than **npm 2.0.0**.
 In that case it is worth updating.
 
     npm install -g npm
@@ -57,8 +57,7 @@ In that case it is worth updating.
 On windows you may have some difficulty and should follow the troubleshooting
 [instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows) from the outset.
 
-Be aware however that npm 2 has
-[**breaking changes**](http://blog.npmjs.org/post/98131109725/npm-2-0-0) for existing projects.
+Be aware however that older projects that you may also be working on may *not be compatible* with npm 2.
 
 ## Install Bower
 
@@ -96,7 +95,7 @@ Get local a working copy of your fork.
 
     git clone git@github.com:<YOUR_GITHUB_USERNAME>/node-angularity.git
 
-Force the global install to defer to this working copy.
+Force the global install to defer to this working copy. You still need to have performed the global install above.
 
     npm link
 

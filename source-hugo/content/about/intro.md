@@ -19,52 +19,54 @@ Angularity is a development philosophy.
 
 Our focus is maintaining uniformity of development across groups of developers who hold varying experience levels.
 
-Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of tools and resources known as **Angularity**.
+Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of
+tools and resources known as **Angularity**.
 
 ## Features
 
-Primarily Angularity is a [`node.js`](http://nodejs.org/) build tool. Its features include:
+Primarily Angularity is a [node.js](http://nodejs.org/) build tool. Its features include:
 
 * Single `npm global install` for all projects.
-* [`ECMAScript 6`](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29) syntax (using [`es6ify`](http://thlorenz.github.io/es6ify/)), including code import and other ES6 specific features.
-* [`jsHint`](http://www.jshint.com/about/) linting.
-* [`SASS`](http://sass-lang.com/) 3.2 (using [`libsass`](http://libsass.org/)).
-* [`Bourbon`](http://bourbon.io/) mixin library for SASS.
-* [`Bower`](http://bower.io/) for web dependencies.
+* Bundling of `require()`'d files per [browserify](http://browserify.org/).
+* [ECMAScript 6](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29) syntax
+(using [6to5ify](https://github.com/6to5/6to5ify)).
+* Composition of *html* templates in *javascript*.
+* [jsHint](http://www.jshint.com/about/) linting.
+* [SASS](http://sass-lang.com/) 3.2 (using [libsass](http://libsass.org/)).
+* [Bower](http://bower.io/) for web dependencies.
 * Bower or node packages for shared code.
-* Javascript unit testing (using [`Karma`](http://karma-runner.github.io/0.12/index.html) and [`Jasmine 2.0`](http://jasmine.github.io/2.0/introduction.html)).
-* Source maps for Javascript (from ECMAScript 6 through minification).
+* Javascript unit testing (using [Karma](http://karma-runner.github.io/0.12/index.html) and
+[Jasmine 2.0](http://jasmine.github.io/2.0/introduction.html)).
+* Source maps for Javascript.
 * Source maps for CSS.
-* Release versioning *[experimental]*.
 
-At its heart, none of these features are specifically tied to [`AngularJS`](https://angularjs.org/). However much of the material you will find on this site is geared to Angular development.
+At its heart, none of these features are specifically tied to [AngularJS](https://angularjs.org/). However much of the
+material you will find on this site is geared to Angular development.
 
 ## Suitability
 
 ### You should use *Angularity* when...
 
-* You have several development teams and need uniformity of development.
-* You develop with [`AngularJS`](https://angularjs.org/) and are open to working with [`ECMAScript 6`](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29), especially ES6 Classes.
-* You use [`SASS`](http://sass-lang.com/), or are prepared to switch, and there are sufficient SASS mixins for you in the [`Bourbon`](http://bourbon.io/) library.
+* You develop build tooling for one or more development teams.
+* You develop with [AngularJS](https://angularjs.org/) and would like a path to
+[ECMAScript 6](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29).
+* You use [SASS](http://sass-lang.com/), or are prepared to switch, and can live without
+[Compass](http://compass-style.org/).
 * You intend to minify or obfuscate your Javascript.
-* You deploy to a [`Content Delivery Network (CDN)`](http://en.wikipedia.org/wiki/Content_delivery_network) and need to version your releases.
-* You your browser support list permits [`ECMAScript 5.1`](http://kangax.github.io/compat-table/es5/).
-* You would like your build tool to be an `npm global install`.
+* You your browser support list permits [ECMAScript 5.1](http://kangax.github.io/compat-table/es5/).
+* You would like your build tool to be a self contained npm package with the option of a global install.
 
 ### You should avoid *Angularity* when...
 
-* You don't want to work with [`ECMAScript 6`](http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29), are avoiding [`Traceur`](https://github.com/google/traceur-compiler) and its runtime, and can live without Object Orientated code.
-* You want to use a CSS preprocessor other than [`SASS`](http://sass-lang.com/).
-* You would like to use [`Compass`](http://compass-style.org/) with your SASS.
-* You need to support [`PhantomJS`](http://phantomjs.org/) 1.x, `Internet Exporer 8` or lower.
+* Your projects are all different and need customised build steps that cannot be generalised.
+* You want to use a CSS preprocessor other than [SASS](http://sass-lang.com/).
+* You would like to use [Compass](http://compass-style.org/) with your SASS.
+* You need to support [PhantomJS 1.x](http://phantomjs.org/), Internet Explorer 8 (or lower), or any other platform
+inconsistent with [6to5](https://6to5.org/) generated code.
 
 ### You should fork *Angularity* when...
 
-* You want different build steps to those provided.
-* You want features that are not on our roadmap.
+* You can generalise you build requirements but want different build steps to those provided.
 
-Angularity is about uniformity.
-Per-project customisation should be minimal.
-If you develop a wide variety of applications you may ultimately find a conventional build (with something like [`Gulp`](http://gulpjs.com/)) will work better for you.
-
-[Roadmap &#x27F6;](roadmap.md)
+Angularity is about uniformity. Per-project customisation should be minimal. If you develop a wide variety of
+applications we recommend you use [Gulp](http://gulpjs.com/), which Angularity uses under the hood.

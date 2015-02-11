@@ -86,7 +86,7 @@
                     
                     <li><a href="/start/installation/"> Installation </a> </li>
                     
-                    <li><a href="/start/project/"> Project Setup </a> </li>
+                    <li><a href="/start/project-anatomy/"> Project Anatomy </a> </li>
                     
                 </ul>
             
@@ -127,49 +127,43 @@
 
 
 
-<h2 id="toc_0">Documentation</h2>
-
-<p>Regarding <code>documentation</code>.</p>
-
-<p>The following items are listed in priority order but will necessarily be completed before version 1.0.0 release of the build tool.</p>
+<h3 id="toc_0">Version 0.1.0</h3>
 
 <ul>
-<li>Getting started guide.</li>
-<li>Troubleshooting guide.</li>
-<li>Quick reference for development style, including comparison of ES5 and ES6 use cases.</li>
-<li>Manual for the build tool, including how it works.</li>
+<li>Command line invocation of tasks.</li>
+<li>Customisation of jsHint reporter.</li>
+<li>Customisation of Karma using <code>karma.conf.js</code>.</li>
+<li>CDN fingerprinting for the <code>release</code> task.</li>
+<li>Retire <code>angularity.json</code> and move contents to <code>package.json</code> &ldquo;angularity&rdquo; property.</li>
+<li>Webstorm integration.</li>
+<li>Documentation:
+
+<ul>
+<li>Basic usage</li>
+<li>Coding style</li>
+<li>Troubleshooting.</li>
+</ul></li>
 </ul>
 
-<h2 id="toc_1">Build tool</h2>
+<h3 id="toc_1">Version 0.x.0</h3>
 
-<p>Regarding <code>node-angularity</code>, the Angularity build tool.</p>
+<p>To be determined.</p>
 
 <h3 id="toc_2">Version 1.0.0</h3>
 
 <ul>
-<li>ECMAScript 5 development using <code>common-js</code> syntax <em>[Under consideration]</em>.</li>
-<li>Per-project configuration of <code>Karma</code> browser list and other selected unit testing settings.</li>
-<li>Refinement of release versioning, including per-project <code>CDN</code> settings.</li>
-<li>Generation of an <code>index.aspx</code> page in the release bundle and potentially other hooks to easily deploy on .NET systems.</li>
-</ul>
-
-<h3 id="toc_3">Version 1.x.0</h3>
-
-<ul>
-<li>Build blocking on <code>js-hint</code> <em>[Under consideration]</em>.</li>
-<li>Generation of API documentation using <a href="https://github.com/jsdoc3/jsdoc"><code>JSdoc</code></a>.</li>
-<li>Incremental compilation.</li>
-<li>Basic or experimental support for <a href="https://docs.angularjs.org/guide/e2e-testing"><code>Protractor</code></a> end-to-end testing with local server or <a href="https://saucelabs.com/"><code>SauceLabs</code></a>.</li>
-<li>Continuous Integration (<code>CI</code>) testing for the system itself <em>[Under consideration]</em>.</li>
-</ul>
-
-<h3 id="toc_4">Version 2.x.0</h3>
+<li>Global invocation defers to a local Angularity instance, where present.</li>
+<li>Synchronisation task the keep selected <code>package.json</code> and <code>bower.json</code> properties in sync.</li>
+<li>Interactive command line menus.</li>
+<li>Sprite sheeting my browserify composition.</li>
+<li>Better extensibility (code cleanup, modularisation)</li>
+<li>Unit/Integration tests.</li>
+<li>Documentation:
 
 <ul>
-<li><code>Karma</code> testing with <a href="http://ariya.ofilabs.com/2014/07/towards-phantomjs-2.html"><code>PhantomJS 2.0</code></a>.</li>
-<li>Enhanced code-style enforcement using <a href="https://github.com/eslint/eslint/wiki/Release-goals#v0100"><code>eslint (v0.10.0)</code></a>.</li>
-<li>Full support for <a href="https://docs.angularjs.org/guide/e2e-testing"><code>Protractor</code></a> with private <a href="https://code.google.com/p/selenium/wiki/Grid2"><code>Grid2</code></a> solution.</li>
-<li>Test console (HTML page) with real-time red/green indication for your unit tests <em>[under consideration]</em>.</li>
+<li>Angularity architecture</li>
+<li>Guidance on extending Angularity.</li>
+</ul></li>
 </ul>
 
                     </div> 
