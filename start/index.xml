@@ -3,7 +3,7 @@
   <channel>
       <title>Starts on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/start/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Installation</title>
-      <link>/start/installation/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>/start/installation/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
@@ -118,10 +118,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>/start/project-anatomy/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>/start/project-anatomy/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</guid>
       <description></description>
     </item>
     

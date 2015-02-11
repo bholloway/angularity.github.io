@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/about/main/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/intro/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/roadmap/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</loc>
     <lastmod>2014-12-15T13:43:03+11:00</lastmod>
   </url>
   
   <url>
-    <loc>/start/installation/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>/start/project-anatomy/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   

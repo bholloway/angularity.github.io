@@ -3,7 +3,7 @@
   <channel>
       <title>Project on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/tags/project/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/project/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Project Anatomy</title>
-      <link>/start/project-anatomy/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>/start/project-anatomy/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</guid>
       <description></description>
     </item>
     
