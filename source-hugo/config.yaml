@@ -1,6 +1,6 @@
 title: Angularity
 version: 0.0.1
-# baseurl: http://demo.mathletics.com/static.mathletics.com/angularity.github.io
+ # baseurl: http://angularity.github.io
 canonifyurls: true
 publishdir: ../
 MetaDataFormat: yaml
