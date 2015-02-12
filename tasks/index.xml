@@ -3,7 +3,7 @@
   <channel>
       <title>Tasks on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Init</title>
-      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project and optionally an IDE
   environment. The given options initialise project defaults. Where omitted the
   global default will be in effect for the project.
@@ -76,10 +76,10 @@ Options:
     
     <item>
       <title>Webstorm</title>
-      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;webstorm&amp;quot; task initialises webstorm for a project in the current working
   directory and launches the IDE.
 
