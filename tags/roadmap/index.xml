@@ -3,7 +3,7 @@
   <channel>
       <title>Roadmap on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/roadmap/index.xml/</link>
+    <link>=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/roadmap/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Roadmap</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</link>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</guid>
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</guid>
       <description>
 
 &lt;h3 id=&#34;toc_0&#34;&gt;Version 0.1.0&lt;/h3&gt;
@@ -24,7 +24,7 @@
 &lt;li&gt;Customisation of jsHint reporter.&lt;/li&gt;
 &lt;li&gt;Customisation of Karma using &lt;code&gt;karma.conf.js&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;CDN fingerprinting for the &lt;code&gt;release&lt;/code&gt; task.&lt;/li&gt;
-&lt;li&gt;Retire &lt;code&gt;angularity.json&lt;/code&gt; and move contents to &lt;code&gt;package.json&lt;/code&gt; &amp;ldquo;angularity&amp;rdquo; property.&lt;/li&gt;
+&lt;li&gt;Retire &lt;code&gt;angularity.json&lt;/code&gt; and move contents to &lt;code&gt;package.json&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Webstorm integration.&lt;/li&gt;
 &lt;li&gt;Documentation:
 

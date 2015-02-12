@@ -10,42 +10,42 @@ menu:
   main:
     parent: start
 prev: /about/roadmap
-next: /start/project
+next: /start/anatomy
 notoc: true
 weight: 2010
 ---
-
-# Installation
 
 ## Install git
 
 [`http://git-scm.com/downloads`](http://git-scm.com/downloads)
 
-Once again ensure that you choose the correct binary for your system.
+Ensure that you choose the correct binary for your system.
+Meaning that 64 bit systems should choose the 64 bit binary.
 
-On **Windows** platform choose to **use GIT from the command prompt**.
+For **windows platform**:
 
-On **Windows** platform choose to **checkout Windows-style,
-commit Unit-style** for line endings.
+  * Choose to **use GIT from the command prompt**.<br/>
+  ![Windows git installation step #1](/start/installation-git-1.png)
 
-![Windows git installation step #1](/start/installation-git-1.png)
-
-![Windows git installation step #2](/start/installation-git-2.png)
+  * Choose to **checkout Windows-style, commit Unit-style** for line endings.<br/>
+  ![Windows git installation step #2](/start/installation-git-2.png)
 
 ## Install node.js
 
 [`http://nodejs.org/download/`](http://nodejs.org/download/)
 
-Ensure that you choose the correct binary for your system.
-Meaning that 64 bit systems should choose the 64 bit binary.
+Once again nsure that you choose the correct binary for your system.
 
-![](/start/installation-node.png)
+![Install node](/start/installation-node.png)
 
 Choose the **default settings** whenever prompted.
 
-On **Windows** platform the installer will add a **path** entry to node.
-For that to be active you will most likely need to reboot.
-Once you can see node in the console `echo %PATH%` then you are ready.
+On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely
+need to reboot. Once you can see the path to node in the console then you are ready.
+
+```
+echo %PATH%
+```
 
 ## Update npm
 
@@ -68,25 +68,35 @@ Perform a global installation using npm.
 
 ## Install Angularity
 
-### Stable
+### Latest Release
+
+Use the latest release unless if you are new to Angularity or just want the most stable version.
 
 Perform a global installation using npm.
 
     npm install -g angularity
 
-### or Pre-release
+### *or* Pre-Release
 
 You can install from github. However this is considered bleeding edge.
 
     npm install -g angularity/node-angularity
 
-### Check installation
+### *or* Tagged Release
+
+You can install from github from a tag.
+
+    npm install -g angularity/node-angularity#<TAG>
+
+## Check installation
 
 Run the angularity version command to make sure the installation worked.
 
     angularity -v
 
-### optionally, Install source code
+## Install source code
+
+**OPTIONAL**
 
 If you wish to develop or contribute to the Angularity project you will need to
 [fork the project](https://github.com/angularity/node-angularity/fork) on github.

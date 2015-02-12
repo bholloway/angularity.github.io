@@ -3,7 +3,7 @@
   <channel>
       <title>Intro on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/intro/index.xml/</link>
+    <link>=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/intro/index.xml/</link>
     
     
     
@@ -11,20 +11,30 @@
     
     <item>
       <title>Introduction</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</link>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</guid>
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</guid>
       <description>
 
-&lt;p&gt;Angularity is a development philosophy.&lt;/p&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Concept&lt;/h2&gt;
 
-&lt;p&gt;Our focus is maintaining uniformity of development across groups of developers who hold varying experience levels.&lt;/p&gt;
+&lt;p&gt;Angularity is built upon &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; but does not require a per-project &lt;code&gt;gulpfile.js&lt;/code&gt;. You use it as a
+npm global install as you would Gulp. But unlike Gulp it is self-contained.&lt;/p&gt;
 
-&lt;p&gt;Our contributors hold a collective vision of best-practice AngularJS development and have condensed this into a set of
-tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Angularity has a large emphasis on &lt;strong&gt;composition&lt;/strong&gt;. Each project contains one deployable application and any number of
+additional non-deployable applications (as needed for development). Each application features a
+&lt;a href=&#34;http://blog.ploeh.dk/2011/07/28/CompositionRoot/&#34;&gt;Composition Root&lt;/a&gt; for both Javascript and SASS.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Features&lt;/h2&gt;
+&lt;p&gt;SASS will inherantly bundle any &lt;code&gt;@import&lt;/code&gt;ed files. We use &lt;a href=&#34;http://browserify.org/&#34;&gt;browserify&lt;/a&gt; to bundle &lt;code&gt;require()&lt;/code&gt;d
+Javascript, HTML template (strings), and sprited images (coming soon). This minimises the application footprint to only
+that which is needed.&lt;/p&gt;
+
+&lt;p&gt;If you have experience with NInject for .NET, or RobotLegs or Parsley in Flash/Flex these concepts will be familiar to
+you. You will see from our &lt;a href=&#34;/style/composition&#34;&gt;style guide&lt;/a&gt; that this pattern is also a superior approach for
+AngularJS.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Features&lt;/h2&gt;
 
 &lt;p&gt;Primarily Angularity is a &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt; build tool. Its features include:&lt;/p&gt;
 
@@ -47,12 +57,13 @@ tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;At its heart, none of these features are specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;. However much of the
 material you will find on this site is geared to Angular development.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Suitability&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Suitability&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;You should use &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You develop build tooling for one or more development teams.&lt;/li&gt;
+&lt;li&gt;Your organisation has a large code/asset library and want to include only the elements you &lt;code&gt;require()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You want your development teams&amp;rsquo; build tooling to be turn-key and immutable.&lt;/li&gt;
 &lt;li&gt;You develop with &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; and would like a path to
 &lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;ECMAScript 6&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;You use &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;, or are prepared to switch, and can live without
@@ -62,24 +73,40 @@ material you will find on this site is geared to Angular development.&lt;/p&gt;
 &lt;li&gt;You would like your build tool to be a self contained npm package with the option of a global install.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Your projects are all different and need customised build steps that cannot be generalised.&lt;/li&gt;
-&lt;li&gt;You want to use a CSS preprocessor other than &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You would like to use &lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt; with your SASS.&lt;/li&gt;
-&lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;PhantomJS 1.x&lt;/a&gt;, Internet Explorer 8 (or lower), or any other platform
-inconsistent with &lt;a href=&#34;https://6to5.org/&#34;&gt;6to5&lt;/a&gt; generated code.&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;toc_4&#34;&gt;You should fork &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You can generalise you build requirements but want different build steps to those provided.&lt;/li&gt;
+&lt;li&gt;You want to use a CSS preprocessor other than &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt; (You need replace Libsass).&lt;/li&gt;
+&lt;li&gt;You would like to use &lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt; with your SASS (You need replace Libsass with Ruby Sass).&lt;/li&gt;
+&lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;PhantomJS 1.x&lt;/a&gt;, Internet Explorer 8 (or lower), or any other platform
+inconsistent with &lt;a href=&#34;https://6to5.org/&#34;&gt;6to5&lt;/a&gt; generated code (You need to remove the 6to5ify transform)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Angularity is about uniformity. Per-project customisation should be minimal. If you develop a wide variety of
-applications we recommend you use &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, which Angularity uses under the hood.&lt;/p&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;You should avoid &lt;em&gt;Angularity&lt;/em&gt; when&amp;hellip;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your projects are all different and need customised build steps that cannot be generalised.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;You should be aware&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;We have additional features that support &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE and
+&lt;a href=&#34;https://www.google.com.au/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;espv=2&amp;amp;ie=UTF-8#q=team%20city&#34;&gt;Team City&lt;/a&gt;
+Continuous Integration server.&lt;/p&gt;
+
+&lt;p&gt;Following version 1.0.0 we will be looking for contributors to add first class support for other popular IDEs and CI
+reporters.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Angularity is about uniformity. Per-project customisation is minimal. There is customisation but it is focused on
+supporting different environments, such as development vs CI server.&lt;/p&gt;
+
+&lt;p&gt;If you can generalise you build requirements but want different build steps to those provided then you can fork
+Angularity and make your own flavour.&lt;/p&gt;
+
+&lt;p&gt;However if you develop a wide variety of applications we recommend you use &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, which Angularity
+uses under the hood.&lt;/p&gt;
 </description>
     </item>
     

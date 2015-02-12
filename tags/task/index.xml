@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Task on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/task/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:43:30 AEDT</updated>
+    
+    <item>
+      <title>Init</title>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project and optionally an IDE
+  environment. The given options initialise project defaults. Where omitted the
+  global default will be in effect for the project.
+
+  The following steps are taken. Some steps are gated by respective a flag.
+  Default options may be globally defined or reset using the --defaults
+  option.
+
+  * project directory    exists, else create    --subdir
+  * /app                 exists, else create
+  * /app/*.html          exists, else create
+  * /app/*.scss          exists, else create
+  * angularity.json      exists, else create
+  * package.json         exists, else create    --npm
+  * bower.json           exists, else create    --bower
+  * karma.conf.js        exists, else create    --karma
+  * .jshintrc            exists, else create    --jshint
+  * .gitignore           exists, else create    --gitignore
+  * run IDE task                                --ide
+
+  By default, a subdirectory is created for the project
+
+  Where run on an exising project existing files will not be altered, delete
+  existing files in order to change properties.
+
+  Both the npm and bower packages are initially set private which you will need
+  to clear in order to publish.
+
+  Available IDE tasks include:
+  webstorm
+
+  Any given IDE is initialised per its task defaults. Use the task separately
+  to review these options.
+
+Examples:
+  angularity init -n todo -i webstorm      Create &amp;quot;todo&amp;quot; and initialise webstorm
+  angularity init --defaults -n pending    Change the name default to &amp;quot;pending
+  angularity init --defaults reset         Reset defaults
+
+
+Options:
+  --help, -h, -?     This help message
+  --defaults, -z     Set defaults
+  --subdir, -s       Create a sub-directory per name             [default: true]
+  --name, -n         The project name                    [default: &amp;quot;my-project&amp;quot;]
+  --version, -v      The project version                      [default: &amp;quot;0.0.0&amp;quot;]
+  --description, -d  The project description                       [default: &amp;quot;&amp;quot;]
+  --tag, -t          A project tag                                   [default: ]
+  --port, -p         A port for the development web server   [default: &amp;quot;random&amp;quot;]
+  --npm              Create package.json                         [default: true]
+  --bower            Create bower.json                           [default: true]
+  --karma            Create karma.conf.js                        [default: true]
+  --jshint           Create .jshintrc                            [default: true]
+  --gitignore        Create .gitignore                           [default: true]
+  --ide              Run an IDE initialisation task            [default: &amp;quot;none&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webstorm</title>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;webstorm&amp;quot; task initialises webstorm for a project in the current working
+  directory and launches the IDE.
+
+  Where the IDE is installed in a non-standard location the full path to the
+  IDE should be used in place of the boolean in --launch.
+
+  The following steps are taken. Some steps are gated by respective a flag.
+  Default options may be globally defined or reset using the --defaults
+  option.
+
+  * Setup project (resources, debug config, suppressors)   --project
+  * Create external tools that launch angularity           --tools
+  * Set coding style rules                                 --rules
+  * Add code templates                                     --templates
+  * Launch IDE                                             --launch
+
+Examples:
+  angularity webstorm                              Run this task
+  angularity webstorm --defaults -l &amp;lt;some-path&amp;gt;    Set a default executable path
+  angularity webstorm --defaults reset             Reset defaults
+
+
+Options:
+  --help, -h, -?   This help message
+  --defaults, -z   Set defaults
+  --subdir, -s     Navigate to the sub-directory specified
+  --project, -p    Setup project                                 [default: true]
+  --tools, -t      Install external tools                        [default: true]
+  --rules, -r      Set style rules                               [default: true]
+  --templates, -t  Add code templates                            [default: true]
+  --launch, -l     Launch the IDE following setup                [default: true]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

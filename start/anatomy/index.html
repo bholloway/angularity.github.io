@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
 
-    <title>Roadmap</title>
+    <title>Project Anatomy</title>
 
     <link href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
     <link href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Roadmap </h1>
+                <h1 class="nav top-menu"> Project Anatomy </h1>
             </div>
       </header>
       
@@ -74,36 +74,36 @@
               </li>
           
             
-              <li class="sub-menu active">
+              <li class="sub-menu">
                 <a href="javascript:;" class="">
                     
                     <span>About</span>
-                    <span class="menu-arrow fa fa-angle-down"></span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
                 </a>
-                <ul class="sub open">
+                <ul class="sub">
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/"> Angularity </a> </li>
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
                     
-                    <li class="active"><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
+                    <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
                 </ul>
             
               </li>
           
             
-              <li class="sub-menu">
+              <li class="sub-menu active">
                 <a href="javascript:;" class="">
                     
                     <span>Getting Started</span>
-                    <span class="menu-arrow fa fa-angle-right"></span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
                 </a>
-                <ul class="sub">
+                <ul class="sub open">
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/"> Installation </a> </li>
                     
-                    <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
+                    <li class="active"><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
                     
                 </ul>
             
@@ -125,7 +125,7 @@
             </li>
             
                 <li>
-                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/about/" target="blank">
+                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/start/" target="blank">
                         <i class='fa fa-edit'></i> Edit
                     </a>
                 </li>
@@ -143,7 +143,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro">
+                      <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -153,50 +153,74 @@
 
 
 
-<h3 id="toc_0">Version 0.1.0</h3>
+<h2 id="toc_0">init task</h2>
 
-<ul>
-<li>Command line invocation of tasks.</li>
-<li>Customisation of jsHint reporter.</li>
-<li>Customisation of Karma using <code>karma.conf.js</code>.</li>
-<li>CDN fingerprinting for the <code>release</code> task.</li>
-<li>Retire <code>angularity.json</code> and move contents to <code>package.json</code>.</li>
-<li>Webstorm integration.</li>
-<li>Documentation:
+<p>The best place to start on project anatomy is to create a blank project.</p>
 
-<ul>
-<li>Basic usage</li>
-<li>Coding style</li>
-<li>Troubleshooting.</li>
-</ul></li>
-</ul>
+<p>Angularity has an <a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init"><code>init</code></a> task that will create a new project and initialise it. By default, it will
+create a new subdirectory.</p>
 
-<h3 id="toc_1">Version 0.x.0</h3>
+<p>All Angularity tasks will have default values for any options. So we can go ahead and invoke <code>init</code> simply as below.</p>
 
-<p>To be determined.</p>
+<pre><code>angularity init
+</code></pre>
 
-<h3 id="toc_2">Version 1.0.0</h3>
+<p>You will receive the following files.</p>
 
-<ul>
-<li>Global invocation defers to a local Angularity instance, where present.</li>
-<li>Synchronisation task the keep selected <code>package.json</code> and <code>bower.json</code> properties in sync.</li>
-<li>Interactive command line menus.</li>
-<li>Sprite sheeting my browserify composition.</li>
-<li>Better extensibility (code cleanup, modularisation)</li>
-<li>Unit/Integration tests.</li>
-<li>Documentation:
+<p><img src="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/anatomy-directory.png" alt="new project directory" />
+</p>
 
-<ul>
-<li>Angularity architecture</li>
-<li>Guidance on extending Angularity.</li>
-</ul></li>
-</ul>
+<h2 id="toc_1">Composition Root</h2>
+
+<p>The <code>init</code> task will create an <code>/app</code> directory with files <code>index.html</code>, <code>index.js</code>, <code>index.scss</code>.</p>
+
+<p>These files compose the primary application for this project. The entire <code>/app</code> directory should be version controlled.</p>
+
+<blockquote>
+<p>You can create additional applications in sub-folders. However they will be development only since they will
+ not be deployed by the <code>release</code> task.</p>
+</blockquote>
+
+<p>Angularity generates other directories as part of its build process. These are prefixed with <code>app</code>, such as <code>app-build</code>
+and <code>app-test</code>. These generated directories should be ignored for version control.</p>
+
+<p>All other directories are considered your local library. These files must be <code>require()</code>d or <code>@import</code>ed into <code>index.js</code>
+or <code>index.scss</code> respectively.</p>
+
+<h2 id="toc_2">Dependency Management</h2>
+
+<p>The composition roots may import from any node or bower packages. The <code>init</code> task creates basic <code>package.json</code> and
+<code>bower.json</code> for node and bower respectively.</p>
+
+<p>Each item in the bower <code>dependencies</code> map will be considered distributions and contribute directly to the HTML. Each
+item in bower <code>devDependencies</code> will not contribute to the HTML but may be <code>require()</code>d or <code>@import</code>ed into the
+composition roots.</p>
+
+<p>Each item in the node package <code>depencencies</code> or <code>devDependencies</code> may be <code>require()</code>d or <code>@import</code>ed into the
+composition roots. You may use the simple <code>require(&lt;PACKAGE_NAME&gt;)</code>, meaning that the experience is the same as
+developing for the node platform.</p>
+
+<h2 id="toc_3">Angularity Config</h2>
+
+<p>Angularity has a limited number of settings that control your project. These are found in <code>angularity.json</code>.</p>
+
+<h2 id="toc_4">Karma Config</h2>
+
+<p>Angularity uses <a href="http://karma-runner.github.io/">Karma</a> for unit tests. This is configured using <code>karma.conf.js</code>.</p>
+
+<p>Since Angularity performs a build step, the <code>files</code> and <code>reporter</code> entries will be overwritten by Angularity to create a
+derived file <code>/app-test/karma.conf.js</code>.</p>
+
+<h2 id="toc_5">JS Hint</h2>
+
+<p>A javascript linter is important to ensure code quality. Angularity uses <a href="http://jshint.com/">JS Hint</a>. The JS Hint
+rule set is encoded in the <code>.jshintrc</code> file.</p>
 
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation">
+                    <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/anatomy">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

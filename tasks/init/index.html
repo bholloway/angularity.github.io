@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
 
-    <title>Roadmap</title>
+    <title>Init</title>
 
     <link href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
     <link href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Roadmap </h1>
+                <h1 class="nav top-menu"> Init </h1>
             </div>
       </header>
       
@@ -57,15 +57,15 @@
           
           
             
-              <li class="sub-menu">
+              <li class="sub-menu active">
                 <a href="javascript:;" class="">
                     
                     <span>tasks</span>
-                    <span class="menu-arrow fa fa-angle-right"></span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
                 </a>
-                <ul class="sub">
+                <ul class="sub open">
                     
-                    <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/"> Init </a> </li>
+                    <li class="active"><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/"> Init </a> </li>
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/"> Webstorm </a> </li>
                     
@@ -74,19 +74,19 @@
               </li>
           
             
-              <li class="sub-menu active">
+              <li class="sub-menu">
                 <a href="javascript:;" class="">
                     
                     <span>About</span>
-                    <span class="menu-arrow fa fa-angle-down"></span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
                 </a>
-                <ul class="sub open">
+                <ul class="sub">
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/"> Angularity </a> </li>
                     
                     <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
                     
-                    <li class="active"><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
+                    <li><a href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
                 </ul>
             
@@ -125,7 +125,7 @@
             </li>
             
                 <li>
-                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/about/" target="blank">
+                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/tasks/" target="blank">
                         <i class='fa fa-edit'></i> Edit
                     </a>
                 </li>
@@ -143,7 +143,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro">
+                      <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -151,52 +151,68 @@
                     <section class="panel">
                     <div class="panel-body">
 
+<pre><code>  The &quot;init&quot; task initialises a blank project and optionally an IDE
+  environment. The given options initialise project defaults. Where omitted the
+  global default will be in effect for the project.
+
+  The following steps are taken. Some steps are gated by respective a flag.
+  Default options may be globally defined or reset using the --defaults
+  option.
+
+  * project directory    exists, else create    --subdir
+  * /app                 exists, else create
+  * /app/*.html          exists, else create
+  * /app/*.scss          exists, else create
+  * angularity.json      exists, else create
+  * package.json         exists, else create    --npm
+  * bower.json           exists, else create    --bower
+  * karma.conf.js        exists, else create    --karma
+  * .jshintrc            exists, else create    --jshint
+  * .gitignore           exists, else create    --gitignore
+  * run IDE task                                --ide
+
+  By default, a subdirectory is created for the project
+
+  Where run on an exising project existing files will not be altered, delete
+  existing files in order to change properties.
+
+  Both the npm and bower packages are initially set private which you will need
+  to clear in order to publish.
+
+  Available IDE tasks include:
+  webstorm
+
+  Any given IDE is initialised per its task defaults. Use the task separately
+  to review these options.
+
+Examples:
+  angularity init -n todo -i webstorm      Create &quot;todo&quot; and initialise webstorm
+  angularity init --defaults -n pending    Change the name default to &quot;pending
+  angularity init --defaults reset         Reset defaults
 
 
-<h3 id="toc_0">Version 0.1.0</h3>
-
-<ul>
-<li>Command line invocation of tasks.</li>
-<li>Customisation of jsHint reporter.</li>
-<li>Customisation of Karma using <code>karma.conf.js</code>.</li>
-<li>CDN fingerprinting for the <code>release</code> task.</li>
-<li>Retire <code>angularity.json</code> and move contents to <code>package.json</code>.</li>
-<li>Webstorm integration.</li>
-<li>Documentation:
-
-<ul>
-<li>Basic usage</li>
-<li>Coding style</li>
-<li>Troubleshooting.</li>
-</ul></li>
-</ul>
-
-<h3 id="toc_1">Version 0.x.0</h3>
-
-<p>To be determined.</p>
-
-<h3 id="toc_2">Version 1.0.0</h3>
-
-<ul>
-<li>Global invocation defers to a local Angularity instance, where present.</li>
-<li>Synchronisation task the keep selected <code>package.json</code> and <code>bower.json</code> properties in sync.</li>
-<li>Interactive command line menus.</li>
-<li>Sprite sheeting my browserify composition.</li>
-<li>Better extensibility (code cleanup, modularisation)</li>
-<li>Unit/Integration tests.</li>
-<li>Documentation:
-
-<ul>
-<li>Angularity architecture</li>
-<li>Guidance on extending Angularity.</li>
-</ul></li>
-</ul>
+Options:
+  --help, -h, -?     This help message
+  --defaults, -z     Set defaults
+  --subdir, -s       Create a sub-directory per name             [default: true]
+  --name, -n         The project name                    [default: &quot;my-project&quot;]
+  --version, -v      The project version                      [default: &quot;0.0.0&quot;]
+  --description, -d  The project description                       [default: &quot;&quot;]
+  --tag, -t          A project tag                                   [default: ]
+  --port, -p         A port for the development web server   [default: &quot;random&quot;]
+  --npm              Create package.json                         [default: true]
+  --bower            Create bower.json                           [default: true]
+  --karma            Create karma.conf.js                        [default: true]
+  --jshint           Create .jshintrc                            [default: true]
+  --gitignore        Create .gitignore                           [default: true]
+  --ide              Run an IDE initialisation task            [default: &quot;none&quot;]
+</code></pre>
 
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation">
+                    <a class="navigation prev" href="=http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

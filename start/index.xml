@@ -3,7 +3,7 @@
   <channel>
       <title>Starts on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/index.xml/</link>
+    <link>=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/index.xml/</link>
     
     
     
@@ -11,48 +11,49 @@
     
     <item>
       <title>Installation</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
       <description>
 
-&lt;h1 id=&#34;toc_0&#34;&gt;Installation&lt;/h1&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Install git&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Install git&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://git-scm.com/downloads&#34;&gt;&lt;code&gt;http://git-scm.com/downloads&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once again ensure that you choose the correct binary for your system.&lt;/p&gt;
-
-&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform choose to &lt;strong&gt;use GIT from the command prompt&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform choose to &lt;strong&gt;checkout Windows-style,
-commit Unit-style&lt;/strong&gt; for line endings.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/start/installation-git-1.png&#34; alt=&#34;Windows git installation step #1&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;Windows git installation step #2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;Install node.js&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nodejs.org/download/&#34;&gt;&lt;code&gt;http://nodejs.org/download/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ensure that you choose the correct binary for your system.
 Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;For &lt;strong&gt;windows platform&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Choose to &lt;strong&gt;use GIT from the command prompt&lt;/strong&gt;.&lt;br/&gt;
+&lt;img src=&#34;/start/installation-git-1.png&#34; alt=&#34;Windows git installation step #1&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Choose to &lt;strong&gt;checkout Windows-style, commit Unit-style&lt;/strong&gt; for line endings.&lt;br/&gt;
+&lt;img src=&#34;/start/installation-git-2.png&#34; alt=&#34;Windows git installation step #2&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Install node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodejs.org/download/&#34;&gt;&lt;code&gt;http://nodejs.org/download/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once again nsure that you choose the correct binary for your system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/start/installation-node.png&#34; alt=&#34;Install node&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Choose the &lt;strong&gt;default settings&lt;/strong&gt; whenever prompted.&lt;/p&gt;
 
-&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node.
-For that to be active you will most likely need to reboot.
-Once you can see node in the console &lt;code&gt;echo %PATH%&lt;/code&gt; then you are ready.&lt;/p&gt;
+&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
+need to reboot. Once you can see the path to node in the console then you are ready.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Update npm&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;echo %PATH%
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
 
 &lt;p&gt;Even if you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
 In that case it is worth updating.&lt;/p&gt;
@@ -65,7 +66,7 @@ In that case it is worth updating.&lt;/p&gt;
 
 &lt;p&gt;Be aware however that older projects that you may also be working on may &lt;em&gt;not be compatible&lt;/em&gt; with npm 2.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Install Bower&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Install Bower&lt;/h2&gt;
 
 &lt;p&gt;Most angularity projects want to utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.
 Perform a global installation using npm.&lt;/p&gt;
@@ -73,30 +74,41 @@ Perform a global installation using npm.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm install -g bower
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_5&#34;&gt;Install Angularity&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Install Angularity&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Stable&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;Latest Release&lt;/h3&gt;
+
+&lt;p&gt;Use the latest release unless if you are new to Angularity or just want the most stable version.&lt;/p&gt;
 
 &lt;p&gt;Perform a global installation using npm.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;or Pre-release&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;&lt;em&gt;or&lt;/em&gt; Pre-Release&lt;/h3&gt;
 
 &lt;p&gt;You can install from github. However this is considered bleeding edge.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Check installation&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;&lt;em&gt;or&lt;/em&gt; Tagged Release&lt;/h3&gt;
+
+&lt;p&gt;You can install from github from a tag.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity#&amp;lt;TAG&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_8&#34;&gt;Check installation&lt;/h2&gt;
 
 &lt;p&gt;Run the angularity version command to make sure the installation worked.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;angularity -v
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_9&#34;&gt;optionally, Install source code&lt;/h3&gt;
+&lt;h2 id=&#34;toc_9&#34;&gt;Install source code&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;OPTIONAL&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;If you wish to develop or contribute to the Angularity project you will need to
 &lt;a href=&#34;https://github.com/angularity/node-angularity/fork&#34;&gt;fork the project&lt;/a&gt; on github.&lt;/p&gt;
@@ -118,11 +130,75 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</link>
+      <link>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/project-anatomy/</guid>
-      <description></description>
+      <guid>/=http:/demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;init task&lt;/h2&gt;
+
+&lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
+
+&lt;p&gt;Angularity has an &lt;a href=&#34;/tasks/init&#34;&gt;&lt;code&gt;init&lt;/code&gt;&lt;/a&gt; task that will create a new project and initialise it. By default, it will
+create a new subdirectory.&lt;/p&gt;
+
+&lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will receive the following files.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/anatomy-directory.png&#34; alt=&#34;new project directory&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Composition Root&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;init&lt;/code&gt; task will create an &lt;code&gt;/app&lt;/code&gt; directory with files &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;index.js&lt;/code&gt;, &lt;code&gt;index.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;These files compose the primary application for this project. The entire &lt;code&gt;/app&lt;/code&gt; directory should be version controlled.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You can create additional applications in sub-folders. However they will be development only since they will
+ not be deployed by the &lt;code&gt;release&lt;/code&gt; task.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Angularity generates other directories as part of its build process. These are prefixed with &lt;code&gt;app&lt;/code&gt;, such as &lt;code&gt;app-build&lt;/code&gt;
+and &lt;code&gt;app-test&lt;/code&gt;. These generated directories should be ignored for version control.&lt;/p&gt;
+
+&lt;p&gt;All other directories are considered your local library. These files must be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into &lt;code&gt;index.js&lt;/code&gt;
+or &lt;code&gt;index.scss&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Dependency Management&lt;/h2&gt;
+
+&lt;p&gt;The composition roots may import from any node or bower packages. The &lt;code&gt;init&lt;/code&gt; task creates basic &lt;code&gt;package.json&lt;/code&gt; and
+&lt;code&gt;bower.json&lt;/code&gt; for node and bower respectively.&lt;/p&gt;
+
+&lt;p&gt;Each item in the bower &lt;code&gt;dependencies&lt;/code&gt; map will be considered distributions and contribute directly to the HTML. Each
+item in bower &lt;code&gt;devDependencies&lt;/code&gt; will not contribute to the HTML but may be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into the
+composition roots.&lt;/p&gt;
+
+&lt;p&gt;Each item in the node package &lt;code&gt;depencencies&lt;/code&gt; or &lt;code&gt;devDependencies&lt;/code&gt; may be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into the
+composition roots. You may use the simple &lt;code&gt;require(&amp;lt;PACKAGE_NAME&amp;gt;)&lt;/code&gt;, meaning that the experience is the same as
+developing for the node platform.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
+
+&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Karma Config&lt;/h2&gt;
+
+&lt;p&gt;Angularity uses &lt;a href=&#34;http://karma-runner.github.io/&#34;&gt;Karma&lt;/a&gt; for unit tests. This is configured using &lt;code&gt;karma.conf.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since Angularity performs a build step, the &lt;code&gt;files&lt;/code&gt; and &lt;code&gt;reporter&lt;/code&gt; entries will be overwritten by Angularity to create a
+derived file &lt;code&gt;/app-test/karma.conf.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;JS Hint&lt;/h2&gt;
+
+&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
+rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

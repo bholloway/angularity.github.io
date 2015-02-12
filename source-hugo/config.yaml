@@ -36,3 +36,6 @@ menu:
     - Name: Getting Started
       Weight: 2000
       Identifier: start
+    - Name: Task Reference
+      Weight: 3000
+      Identifier: task-reference

@@ -21,7 +21,7 @@ weight: 1030
 * Customisation of jsHint reporter.
 * Customisation of Karma using `karma.conf.js`.
 * CDN fingerprinting for the `release` task.
-* Retire `angularity.json` and move contents to `package.json` "angularity" property.
+* Retire `angularity.json` and move contents to `package.json`.
 * Webstorm integration.
 * Documentation:
   * Basic usage
