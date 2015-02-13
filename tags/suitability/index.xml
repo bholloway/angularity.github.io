@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Suitability on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/suitability/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:42:50 AEDT</updated>
+    
+    <item>
+      <title>Suitability</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</link>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;You should use Angularity when&amp;hellip;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your organisation has a large code/asset library and want to include only the elements you require.&lt;/li&gt;
+&lt;li&gt;You want your development teams&amp;rsquo; build tooling to be turn-key and immutable.&lt;/li&gt;
+&lt;li&gt;You develop with &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; and would like a path to
+&lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;ECMAScript 6&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You use &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;, or are prepared to switch, and can live without
+&lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You intend to minify or obfuscate your Javascript.&lt;/li&gt;
+&lt;li&gt;You your browser support list permits &lt;a href=&#34;http://kangax.github.io/compat-table/es5/&#34;&gt;ECMAScript 5.1&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You would like your build tool to be a self contained npm package with the option of a global install.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;You should fork Angularity when&amp;hellip;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You want to use a CSS preprocessor other than &lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You would like to use &lt;a href=&#34;http://compass-style.org/&#34;&gt;Compass&lt;/a&gt; with your SASS.&lt;/li&gt;
+&lt;li&gt;You need to support &lt;a href=&#34;http://phantomjs.org/&#34;&gt;PhantomJS 1.x&lt;/a&gt;, Internet Explorer 8 (or lower), or any other platform
+inconsistent with &lt;a href=&#34;https://6to5.org/&#34;&gt;6to5&lt;/a&gt; generated code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;You should avoid Angularity when&amp;hellip;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your projects are all different and need customised build steps that cannot be generalised.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Best fit&lt;/h2&gt;
+
+&lt;p&gt;Angularity has additional features that support &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE and
+&lt;a href=&#34;https://www.google.com.au/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;espv=2&amp;amp;ie=UTF-8#q=team%20city&#34;&gt;Team City&lt;/a&gt;
+Continuous Integration server.&lt;/p&gt;
+
+&lt;p&gt;Following version 1.0.0 we will be looking for contributors to add first class support for other popular IDEs and CI
+reporters.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Bottom line&lt;/h2&gt;
+
+&lt;p&gt;Angularity is about uniformity. Per-project customisation is minimal. What customisation exists is focused on
+supporting different environments (such as development vs CI server).&lt;/p&gt;
+
+&lt;p&gt;If you can generalise you build requirements but want different build steps to those provided then you can fork
+Angularity and make your own flavour.&lt;/p&gt;
+
+&lt;p&gt;However if you develop a wide variety of applications we recommend you use &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, which Angularity
+uses under the hood.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Concept on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/concept/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:42:50 AEDT</updated>
+    
+    <item>
+      <title>Concept</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</link>
+      <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</guid>
+      <description>
+
+&lt;p&gt;Angularity is primarily a &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt; build tool.&lt;/p&gt;
+
+&lt;p&gt;It is intended for organisations with one or more teams developing &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Immutable&lt;/h2&gt;
+
+&lt;p&gt;Angularity is a wrapper around &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; such that it does not require a per-project &lt;code&gt;gulpfile.js&lt;/code&gt; and
+may be distributed as a self-contained npm package.&lt;/p&gt;
+
+&lt;p&gt;This allows distribution of a turn-key gulp-like build system to developers.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Angularity&lt;/th&gt;
+&lt;th&gt;Gulp&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;angularity (global)&lt;/td&gt;
+&lt;td&gt;gulp (global)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;gulp&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;gulpfile.js&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;..&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;N x modules&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;There are plans to allow customisation of the immutable package (for organisations) as well a plugin system (for single
+developers). It is more accurate to say Angularity will be somewhat mutable to the degree you allow.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Richer&lt;/h2&gt;
+
+&lt;p&gt;Angularity is superior to &lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt; in that it implements a richer command line interface.&lt;/p&gt;
+
+&lt;p&gt;It also provides support for selected development IDEs and Continuous Integration servers.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Efficient&lt;/h2&gt;
+
+&lt;p&gt;Angularity has an emphasis on &lt;strong&gt;composition&lt;/strong&gt;. Each project contains one deployable application and any number of
+additional non-deployable applications (as needed for development). Each application features a
+&lt;a href=&#34;http://blog.ploeh.dk/2011/07/28/CompositionRoot/&#34;&gt;Composition Root&lt;/a&gt; for both Javascript and SASS.&lt;/p&gt;
+
+&lt;p&gt;SASS will inherantly bundle any &lt;code&gt;@import&lt;/code&gt;ed files and &lt;a href=&#34;http://browserify.org/&#34;&gt;browserify&lt;/a&gt; can bundle &lt;code&gt;require()&lt;/code&gt;d
+Javascript, HTML template (strings), and sprited images (coming soon). This minimises the application footprint to only
+that which is needed.&lt;/p&gt;
+
+&lt;p&gt;If you have experience with NInject for .NET, or RobotLegs or Parsley in Flash/Flex these concepts will be familiar to
+you. You will see from our &lt;a href=&#34;/style/composition&#34;&gt;style guide&lt;/a&gt; that this pattern is also a superior approach for
+AngularJS.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Core Features&lt;/h2&gt;
+
+&lt;p&gt;Angularity consists the following core features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Single &lt;a href=&#34;http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation&#34;&gt;global install&lt;/a&gt; for all projects.&lt;/li&gt;
+&lt;li&gt;Bundling of &lt;code&gt;require()&lt;/code&gt;&amp;rsquo;d files per &lt;a href=&#34;http://browserify.org/&#34;&gt;browserify&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29&#34;&gt;ECMAScript 6&lt;/a&gt; syntax
+(using &lt;a href=&#34;https://github.com/6to5/6to5ify&#34;&gt;6to5ify&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Composition of &lt;em&gt;html&lt;/em&gt; templates in &lt;em&gt;javascript&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jshint.com/about/&#34;&gt;jsHint&lt;/a&gt; linting.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sass-lang.com/&#34;&gt;SASS&lt;/a&gt; 3.2 (using &lt;a href=&#34;http://libsass.org/&#34;&gt;libsass&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; for web dependencies.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt; or &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;node packages&lt;/a&gt; for common code.&lt;/li&gt;
+&lt;li&gt;Javascript unit testing (using &lt;a href=&#34;http://karma-runner.github.io/0.12/index.html&#34;&gt;Karma&lt;/a&gt; and
+&lt;a href=&#34;http://jasmine.github.io/2.0/introduction.html&#34;&gt;Jasmine 2.0&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Source maps for Javascript, allowing continuous minification.&lt;/li&gt;
+&lt;li&gt;Source maps for CSS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Many of these features are not specifically tied to &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;. However much of
+the material you will find on this site is geared to Angular development.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

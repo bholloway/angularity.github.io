@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Building on Angularity </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/building/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 15 Dec 2014 13:43:41 AEDT</updated>
+    
+    <item>
+      <title>Building Todo</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Watch&lt;/h2&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Release&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
