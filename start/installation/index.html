@@ -65,9 +65,11 @@
                 </a>
                 <ul class="sub">
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/"> Angularity </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/"> Angularity </a> </li>
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
@@ -89,6 +91,8 @@
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/"> Todo Example </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/"> Building Todo </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
                     
@@ -181,25 +185,39 @@ Meaning that 64 bit systems should choose the 64 bit binary.</p>
 <p>On <strong>Windows</strong> platform the installer will add a <strong>path</strong> entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.</p>
 
-<p>echo %PATH%</p>
+<pre><code>echo %PATH%
+</code></pre>
 
 <h2 id="toc_2">Update npm</h2>
 
-<p>Even if you just installed <code>node</code> you may be running npm older than <strong>npm 2.0.0</strong>.
-In that case it is worth updating.</p>
+<p>Even if you just installed NodeJS you may be running npm older than
+<a href="http://blog.npmjs.org/post/98131109725/npm-2-0-0">npm <code>2.0.0</code></a>. Check your version.</p>
+
+<pre><code>npm -v
+</code></pre>
+
+<p>In our experience if your version is <code>1.x</code> you will have problems installing Angularity.</p>
+
+<p>We recommend upgrading. Be aware however that older projects (not angularity) may not be compatible with
+<a href="http://blog.npmjs.org/post/98131109725/npm-2-0-0">npm <code>2.0.0</code></a>.</p>
 
 <pre><code>npm install -g npm
 </code></pre>
 
-<p>On windows you may have some difficulty and should follow the troubleshooting
-<a href="https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows">instructions</a> from the outset.</p>
+<p>Check the version again. You are expecting to now see version <code>2.x</code>.</p>
 
-<p>Be aware however that older projects that you may also be working on may not be compatible with npm 2.</p>
+<pre><code>npm -v
+</code></pre>
+
+<p>On <strong>windows</strong> you will have some difficulty and the npm version will likely remain at <code>1.x</code>. You will need to follow
+these <a href="https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows">instructions</a>. We recommend deleting the
+npm instance in <code>program files</code> and keeping the one in your <code>users</code> directory.</p>
 
 <h2 id="toc_3">Install Bower</h2>
 
-<p>Most angularity projects want to utilise <a href="http://bower.io/">bower</a>.
-Perform a global installation using npm.</p>
+<p>Most angularity projects will utilise <a href="http://bower.io/">bower</a>.</p>
+
+<p>Perform a global installation using npm.</p>
 
 <pre><code>npm install -g bower
 </code></pre>
@@ -217,14 +235,14 @@ Perform a global installation using npm.</p>
 
 <h3 id="toc_6"><em>or</em> Pre-Release</h3>
 
-<p>You can install from github. However this is considered bleeding edge.</p>
+<p>You can install from <a href="https://github.com/angularity/node-angularity">Github</a>. However this is considered bleeding edge.</p>
 
 <pre><code>npm install -g angularity/node-angularity
 </code></pre>
 
 <h3 id="toc_7"><em>or</em> Tagged Release</h3>
 
-<p>You can install from github from a tag.</p>
+<p>You can also install from a <a href="https://github.com/angularity/node-angularity">Github</a> tag.</p>
 
 <pre><code>npm install -g angularity/node-angularity#&lt;TAG&gt;
 </code></pre>

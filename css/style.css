@@ -81,7 +81,11 @@ thead {
 }
 
 table {
-    width: 100%;
+    margin-bottom: 10px;
+}
+
+table td, table th {
+    padding: 0 10px;
 }
 
 
@@ -243,10 +247,6 @@ ul.sidebar-menu li a {
     transition: all 0.3s ease;
     border-bottom: 1px solid #D7D7D7;
     overflow:hidden;
-}
-
-ul.sub.open {
-    margin-top: -7px !important;
 }
 
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {

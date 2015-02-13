@@ -50,25 +50,39 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.&lt;/p&gt;
 
-&lt;p&gt;echo %PATH%&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo %PATH%
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
 
-&lt;p&gt;Even if you just installed &lt;code&gt;node&lt;/code&gt; you may be running npm older than &lt;strong&gt;npm 2.0.0&lt;/strong&gt;.
-In that case it is worth updating.&lt;/p&gt;
+&lt;p&gt;Even if you just installed NodeJS you may be running npm older than
+&lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;npm &lt;code&gt;2.0.0&lt;/code&gt;&lt;/a&gt;. Check your version.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In our experience if your version is &lt;code&gt;1.x&lt;/code&gt; you will have problems installing Angularity.&lt;/p&gt;
+
+&lt;p&gt;We recommend upgrading. Be aware however that older projects (not angularity) may not be compatible with
+&lt;a href=&#34;http://blog.npmjs.org/post/98131109725/npm-2-0-0&#34;&gt;npm &lt;code&gt;2.0.0&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g npm
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;On windows you may have some difficulty and should follow the troubleshooting
-&lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt; from the outset.&lt;/p&gt;
+&lt;p&gt;Check the version again. You are expecting to now see version &lt;code&gt;2.x&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Be aware however that older projects that you may also be working on may not be compatible with npm 2.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On &lt;strong&gt;windows&lt;/strong&gt; you will have some difficulty and the npm version will likely remain at &lt;code&gt;1.x&lt;/code&gt;. You will need to follow
+these &lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt;. We recommend deleting the
+npm instance in &lt;code&gt;program files&lt;/code&gt; and keeping the one in your &lt;code&gt;users&lt;/code&gt; directory.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Install Bower&lt;/h2&gt;
 
-&lt;p&gt;Most angularity projects want to utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.
-Perform a global installation using npm.&lt;/p&gt;
+&lt;p&gt;Most angularity projects will utilise &lt;a href=&#34;http://bower.io/&#34;&gt;bower&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Perform a global installation using npm.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g bower
 &lt;/code&gt;&lt;/pre&gt;
@@ -86,14 +100,14 @@ Perform a global installation using npm.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;&lt;em&gt;or&lt;/em&gt; Pre-Release&lt;/h3&gt;
 
-&lt;p&gt;You can install from github. However this is considered bleeding edge.&lt;/p&gt;
+&lt;p&gt;You can install from &lt;a href=&#34;https://github.com/angularity/node-angularity&#34;&gt;Github&lt;/a&gt;. However this is considered bleeding edge.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;toc_7&#34;&gt;&lt;em&gt;or&lt;/em&gt; Tagged Release&lt;/h3&gt;
 
-&lt;p&gt;You can install from github from a tag.&lt;/p&gt;
+&lt;p&gt;You can also install from a &lt;a href=&#34;https://github.com/angularity/node-angularity&#34;&gt;Github&lt;/a&gt; tag.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;npm install -g angularity/node-angularity#&amp;lt;TAG&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;

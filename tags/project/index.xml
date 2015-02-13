@@ -24,7 +24,8 @@ create a new subdirectory.&lt;/p&gt;
 
 &lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
 
-&lt;p&gt;angularity init&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;angularity init
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You will receive the following files.&lt;/p&gt;
 
@@ -118,6 +119,20 @@ make sure that you are back in the parent directory.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;git clone https://github.com/angularity/angularity-todo-es5.git
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;This gives the following files (or similar)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/todo-directory.png&#34; alt=&#34;todo directory&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Including an npm &lt;a href=&#34;https://docs.npmjs.com/files/package.json#bundleddependencies&#34;&gt;bundled dependency&lt;/a&gt; which we consider a
+ common library.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/todo-bundled.png&#34; alt=&#34;todo bundled&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You will notice that the folder structure is feature based. There is no restriction as to where images or javascript or
+html lives. You may use the scheme that best suits your needs.&lt;/p&gt;
+
 &lt;h2 id=&#34;toc_0&#34;&gt;Dependencies&lt;/h2&gt;
 
 &lt;p&gt;Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
@@ -143,6 +158,9 @@ angular.module(&#39;app&#39;, [ &#39;ui.router&#39;, &#39;ui.bootstrap&#39; ])
   .directive(&#39;focus&#39;, focusElementDirective.forAttribute(&#39;focus&#39;))
   .value(&#39;storage&#39;, new LocalStorage(&#39;todos-angularjs&#39;));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is a second compostion root, &lt;code&gt;app/no-storage/index.js&lt;/code&gt; that has a mock storage component. We will not discuss this
+except to point out that you may make as many additional applications as you need for development purposes.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_2&#34;&gt;Module definition&lt;/h3&gt;
 
@@ -199,6 +217,10 @@ you can split your composition root over several files as appropriate.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_4&#34;&gt;Directives&lt;/h3&gt;
 
+&lt;p&gt;Note that there are no directives in the local library, they are
+&lt;a href=&#34;https://docs.npmjs.com/files/package.json#bundleddependencies&#34;&gt;bundled dependencies&lt;/a&gt; in order to illustrate how a
+library package may be used.&lt;/p&gt;
+
 &lt;p&gt;The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.&lt;/p&gt;
 
 &lt;p&gt;Each of the directives shown, &lt;code&gt;escapeKeyDirective&lt;/code&gt; and &lt;code&gt;focusElementDirective&lt;/code&gt; are invoked by attribute and need to read
@@ -233,14 +255,6 @@ against the same name in the composition root.&lt;/p&gt;
 component does not require any dependency injection and does require implementation. As such it perhaps a bad example.&lt;/p&gt;
 
 &lt;p&gt;Be that as it may, factories and services may be mapped just as easily by specifying an import.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_6&#34;&gt;Building&lt;/h2&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Test&lt;/h3&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Watch&lt;/h3&gt;
-
-&lt;h3 id=&#34;toc_9&#34;&gt;Release&lt;/h3&gt;
 </description>
     </item>
     

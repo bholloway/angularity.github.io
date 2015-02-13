@@ -21,8 +21,8 @@ params:
   GoogleAnalyticsId: UA-37884921-1
   GoogleAnalyticsDomain: bguiz.com
   RootRedirect:
-    Url: /about/main
-    Name: Introduction
+    Url: /about/mission
+    Name: Angularity
 
 indexes:
   category: categories

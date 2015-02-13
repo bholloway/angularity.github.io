@@ -65,9 +65,11 @@
                 </a>
                 <ul class="sub">
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/"> Angularity </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/"> Angularity </a> </li>
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
@@ -89,6 +91,8 @@
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
                     
                     <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/"> Todo Example </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/"> Building Todo </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
                     
@@ -161,6 +165,20 @@ make sure that you are back in the parent directory.</p>
 <pre><code>git clone https://github.com/angularity/angularity-todo-es5.git
 </code></pre>
 
+<p>This gives the following files (or similar)</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/todo-directory.png" alt="todo directory" />
+</p>
+
+<p>Including an npm <a href="https://docs.npmjs.com/files/package.json#bundleddependencies">bundled dependency</a> which we consider a
+ common library.</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/todo-bundled.png" alt="todo bundled" />
+</p>
+
+<p>You will notice that the folder structure is feature based. There is no restriction as to where images or javascript or
+html lives. You may use the scheme that best suits your needs.</p>
+
 <h2 id="toc_0">Dependencies</h2>
 
 <p>Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
@@ -186,6 +204,9 @@ angular.module('app', [ 'ui.router', 'ui.bootstrap' ])
   .directive('focus', focusElementDirective.forAttribute('focus'))
   .value('storage', new LocalStorage('todos-angularjs'));
 </code></pre>
+
+<p>There is a second compostion root, <code>app/no-storage/index.js</code> that has a mock storage component. We will not discuss this
+except to point out that you may make as many additional applications as you need for development purposes.</p>
 
 <h3 id="toc_2">Module definition</h3>
 
@@ -242,6 +263,10 @@ you can split your composition root over several files as appropriate.</p>
 
 <h3 id="toc_4">Directives</h3>
 
+<p>Note that there are no directives in the local library, they are
+<a href="https://docs.npmjs.com/files/package.json#bundleddependencies">bundled dependencies</a> in order to illustrate how a
+library package may be used.</p>
+
 <p>The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.</p>
 
 <p>Each of the directives shown, <code>escapeKeyDirective</code> and <code>focusElementDirective</code> are invoked by attribute and need to read
@@ -277,19 +302,11 @@ component does not require any dependency injection and does require implementat
 
 <p>Be that as it may, factories and services may be mapped just as easily by specifying an import.</p>
 
-<h2 id="toc_6">Building</h2>
-
-<h3 id="toc_7">Test</h3>
-
-<h3 id="toc_8">Watch</h3>
-
-<h3 id="toc_9">Release</h3>
-
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm">
+                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

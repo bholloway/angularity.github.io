@@ -24,7 +24,8 @@ create a new subdirectory.&lt;/p&gt;
 
 &lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
 
-&lt;p&gt;angularity init&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;angularity init
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You will receive the following files.&lt;/p&gt;
 

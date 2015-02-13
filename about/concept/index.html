@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
 
-    <title>Using Webstorm</title>
+    <title>Concept</title>
 
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Using Webstorm </h1>
+                <h1 class="nav top-menu"> Concept </h1>
             </div>
       </header>
       
@@ -57,17 +57,17 @@
           
           
             
-              <li class="sub-menu">
+              <li class="sub-menu active">
                 <a href="javascript:;" class="">
                     
                     <span>About</span>
-                    <span class="menu-arrow fa fa-angle-right"></span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
                 </a>
-                <ul class="sub">
+                <ul class="sub open">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/"> Angularity </a> </li>
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
+                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
                     
@@ -78,13 +78,13 @@
               </li>
           
             
-              <li class="sub-menu active">
+              <li class="sub-menu">
                 <a href="javascript:;" class="">
                     
                     <span>Getting Started</span>
-                    <span class="menu-arrow fa fa-angle-down"></span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
                 </a>
-                <ul class="sub open">
+                <ul class="sub">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/"> Installation </a> </li>
                     
@@ -94,7 +94,7 @@
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/"> Building Todo </a> </li>
                     
-                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
                     
                 </ul>
             
@@ -124,7 +124,7 @@
             </li>
             
                 <li>
-                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/start/" target="blank">
+                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/about/" target="blank">
                         <i class='fa fa-edit'></i> Edit
                     </a>
                 </li>
@@ -142,7 +142,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building">
+                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -150,16 +150,106 @@
                     <section class="panel">
                     <div class="panel-body">
 
-<blockquote>
-<p>Angularity favours development in the <a href="https://www.jetbrains.com/webstorm/">Webstorm</a> IDE. In time we hope to
-similarly support other popular IDEs. If you don&rsquo;t use Webstorm you may skip this section.</p>
-</blockquote>
+
+
+<p>Angularity is primarily a <a href="http://nodejs.org/">node.js</a> build tool.</p>
+
+<p>It is intended for organisations with one or more teams developing <a href="https://angularjs.org/">AngularJS</a> applications.</p>
+
+<h2 id="toc_0">Immutable</h2>
+
+<p>Angularity is a wrapper around <a href="http://gulpjs.com/">Gulp</a> such that it does not require a per-project <code>gulpfile.js</code> and
+may be distributed as a self-contained npm package.</p>
+
+<p>This allows distribution of a turn-key gulp-like build system to developers.</p>
+
+<table>
+<thead>
+<tr>
+<th>Angularity</th>
+<th>Gulp</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>angularity (global)</td>
+<td>gulp (global)</td>
+</tr>
+
+<tr>
+<td></td>
+<td>gulp</td>
+</tr>
+
+<tr>
+<td></td>
+<td>gulpfile.js</td>
+</tr>
+
+<tr>
+<td></td>
+<td>..</td>
+</tr>
+
+<tr>
+<td></td>
+<td><em>N x modules</em></td>
+</tr>
+</tbody>
+</table>
+
+<p>There are plans to allow customisation of the immutable package (for organisations) as well a plugin system (for single
+developers). It is more accurate to say Angularity will be somewhat mutable to the degree you allow.</p>
+
+<h2 id="toc_1">Richer</h2>
+
+<p>Angularity is superior to <a href="http://gulpjs.com/">Gulp</a> in that it implements a richer command line interface.</p>
+
+<p>It also provides support for selected development IDEs and Continuous Integration servers.</p>
+
+<h2 id="toc_2">Efficient</h2>
+
+<p>Angularity has an emphasis on <strong>composition</strong>. Each project contains one deployable application and any number of
+additional non-deployable applications (as needed for development). Each application features a
+<a href="http://blog.ploeh.dk/2011/07/28/CompositionRoot/">Composition Root</a> for both Javascript and SASS.</p>
+
+<p>SASS will inherantly bundle any <code>@import</code>ed files and <a href="http://browserify.org/">browserify</a> can bundle <code>require()</code>d
+Javascript, HTML template (strings), and sprited images (coming soon). This minimises the application footprint to only
+that which is needed.</p>
+
+<p>If you have experience with NInject for .NET, or RobotLegs or Parsley in Flash/Flex these concepts will be familiar to
+you. You will see from our <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/style/composition">style guide</a> that this pattern is also a superior approach for
+AngularJS.</p>
+
+<h2 id="toc_3">Core Features</h2>
+
+<p>Angularity consists the following core features:</p>
+
+<ul>
+<li>Single <a href="http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation">global install</a> for all projects.</li>
+<li>Bundling of <code>require()</code>&rsquo;d files per <a href="http://browserify.org/">browserify</a>.</li>
+<li><a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a> syntax
+(using <a href="https://github.com/6to5/6to5ify">6to5ify</a>).</li>
+<li>Composition of <em>html</em> templates in <em>javascript</em>.</li>
+<li><a href="http://www.jshint.com/about/">jsHint</a> linting.</li>
+<li><a href="http://sass-lang.com/">SASS</a> 3.2 (using <a href="http://libsass.org/">libsass</a>).</li>
+<li><a href="http://bower.io/">Bower</a> for web dependencies.</li>
+<li><a href="http://bower.io/">Bower</a> or <a href="https://www.npmjs.com/">node packages</a> for common code.</li>
+<li>Javascript unit testing (using <a href="http://karma-runner.github.io/0.12/index.html">Karma</a> and
+<a href="http://jasmine.github.io/2.0/introduction.html">Jasmine 2.0</a>).</li>
+<li>Source maps for Javascript, allowing continuous minification.</li>
+<li>Source maps for CSS.</li>
+</ul>
+
+<p>Many of these features are not specifically tied to <a href="https://angularjs.org/">AngularJS</a>. However much of
+the material you will find on this site is geared to Angular development.</p>
 
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init">
+                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

@@ -43,23 +43,34 @@ Choose the **default settings** whenever prompted.
 On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.
 
-  echo %PATH%
+    echo %PATH%
 
 ## Update npm
 
-Even if you just installed `node` you may be running npm older than **npm 2.0.0**.
-In that case it is worth updating.
+Even if you just installed NodeJS you may be running npm older than
+[npm `2.0.0`](http://blog.npmjs.org/post/98131109725/npm-2-0-0). Check your version.
+
+    npm -v
+
+In our experience if your version is `1.x` you will have problems installing Angularity.
+
+We recommend upgrading. Be aware however that older projects (not angularity) may not be compatible with
+[npm `2.0.0`](http://blog.npmjs.org/post/98131109725/npm-2-0-0).
 
     npm install -g npm
 
-On windows you may have some difficulty and should follow the troubleshooting
-[instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows) from the outset.
+Check the version again. You are expecting to now see version `2.x`.
 
-Be aware however that older projects that you may also be working on may not be compatible with npm 2.
+    npm -v
+
+On **windows** you will have some difficulty and the npm version will likely remain at `1.x`. You will need to follow
+these [instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows). We recommend deleting the
+npm instance in `program files` and keeping the one in your `users` directory.
 
 ## Install Bower
 
-Most angularity projects want to utilise [bower](http://bower.io/).
+Most angularity projects will utilise [bower](http://bower.io/).
+
 Perform a global installation using npm.
 
     npm install -g bower
@@ -76,13 +87,13 @@ Perform a global installation using npm.
 
 ### *or* Pre-Release
 
-You can install from github. However this is considered bleeding edge.
+You can install from [Github](https://github.com/angularity/node-angularity). However this is considered bleeding edge.
 
     npm install -g angularity/node-angularity
 
 ### *or* Tagged Release
 
-You can install from github from a tag.
+You can also install from a [Github](https://github.com/angularity/node-angularity) tag.
 
     npm install -g angularity/node-angularity#<TAG>
 

@@ -22,7 +22,7 @@ create a new subdirectory.
 
 All Angularity tasks will have default values for any options. So we can go ahead and invoke `init` simply as below.
 
-  angularity init
+    angularity init
 
 You will receive the following files.
 

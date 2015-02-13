@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
 
-    <title>Using Webstorm</title>
+    <title>Suitability</title>
 
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Using Webstorm </h1>
+                <h1 class="nav top-menu"> Suitability </h1>
             </div>
       </header>
       
@@ -57,19 +57,19 @@
           
           
             
-              <li class="sub-menu">
+              <li class="sub-menu active">
                 <a href="javascript:;" class="">
                     
                     <span>About</span>
-                    <span class="menu-arrow fa fa-angle-right"></span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
                 </a>
-                <ul class="sub">
+                <ul class="sub open">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/"> Angularity </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/"> Concept </a> </li>
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
+                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/"> Suitability </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
@@ -78,13 +78,13 @@
               </li>
           
             
-              <li class="sub-menu active">
+              <li class="sub-menu">
                 <a href="javascript:;" class="">
                     
                     <span>Getting Started</span>
-                    <span class="menu-arrow fa fa-angle-down"></span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
                 </a>
-                <ul class="sub open">
+                <ul class="sub">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/"> Installation </a> </li>
                     
@@ -94,7 +94,7 @@
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/"> Building Todo </a> </li>
                     
-                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
                     
                 </ul>
             
@@ -124,7 +124,7 @@
             </li>
             
                 <li>
-                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/start/" target="blank">
+                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/about/" target="blank">
                         <i class='fa fa-edit'></i> Edit
                     </a>
                 </li>
@@ -142,7 +142,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building">
+                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -150,16 +150,62 @@
                     <section class="panel">
                     <div class="panel-body">
 
-<blockquote>
-<p>Angularity favours development in the <a href="https://www.jetbrains.com/webstorm/">Webstorm</a> IDE. In time we hope to
-similarly support other popular IDEs. If you don&rsquo;t use Webstorm you may skip this section.</p>
-</blockquote>
+
+
+<h2 id="toc_0">You should use Angularity when&hellip;</h2>
+
+<ul>
+<li>Your organisation has a large code/asset library and want to include only the elements you require.</li>
+<li>You want your development teams&rsquo; build tooling to be turn-key and immutable.</li>
+<li>You develop with <a href="https://angularjs.org/">AngularJS</a> and would like a path to
+<a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a>.</li>
+<li>You use <a href="http://sass-lang.com/">SASS</a>, or are prepared to switch, and can live without
+<a href="http://compass-style.org/">Compass</a>.</li>
+<li>You intend to minify or obfuscate your Javascript.</li>
+<li>You your browser support list permits <a href="http://kangax.github.io/compat-table/es5/">ECMAScript 5.1</a>.</li>
+<li>You would like your build tool to be a self contained npm package with the option of a global install.</li>
+</ul>
+
+<h2 id="toc_1">You should fork Angularity when&hellip;</h2>
+
+<ul>
+<li>You want to use a CSS preprocessor other than <a href="http://sass-lang.com/">SASS</a>.</li>
+<li>You would like to use <a href="http://compass-style.org/">Compass</a> with your SASS.</li>
+<li>You need to support <a href="http://phantomjs.org/">PhantomJS 1.x</a>, Internet Explorer 8 (or lower), or any other platform
+inconsistent with <a href="https://6to5.org/">6to5</a> generated code.</li>
+</ul>
+
+<h2 id="toc_2">You should avoid Angularity when&hellip;</h2>
+
+<ul>
+<li>Your projects are all different and need customised build steps that cannot be generalised.</li>
+</ul>
+
+<h2 id="toc_3">Best fit</h2>
+
+<p>Angularity has additional features that support <a href="https://www.jetbrains.com/webstorm/">Webstorm</a> IDE and
+<a href="https://www.google.com.au/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=team%20city">Team City</a>
+Continuous Integration server.</p>
+
+<p>Following version 1.0.0 we will be looking for contributors to add first class support for other popular IDEs and CI
+reporters.</p>
+
+<h2 id="toc_4">Bottom line</h2>
+
+<p>Angularity is about uniformity. Per-project customisation is minimal. What customisation exists is focused on
+supporting different environments (such as development vs CI server).</p>
+
+<p>If you can generalise you build requirements but want different build steps to those provided then you can fork
+Angularity and make your own flavour.</p>
+
+<p>However if you develop a wide variety of applications we recommend you use <a href="http://gulpjs.com/">Gulp</a>, which Angularity
+uses under the hood.</p>
 
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init">
+                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

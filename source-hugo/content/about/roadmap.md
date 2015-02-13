@@ -9,10 +9,10 @@ tags:
 menu:
   main:
     parent: about
-prev: /about/intro
+prev: /about/suitability
 next: /start/installation
 notoc: true
-weight: 1030
+weight: 1040
 ---
 
 ### Version 0.1.0

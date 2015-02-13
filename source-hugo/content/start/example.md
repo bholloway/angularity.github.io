@@ -11,7 +11,7 @@ menu:
   main:
     parent: start
 prev: /start/anatomy
-next: /start/webstorm
+next: /start/building
 notoc: true
 weight: 2030
 ---
@@ -25,6 +25,18 @@ You can go ahead and clone it using Git.
 make sure that you are back in the parent directory.
 
     git clone https://github.com/angularity/angularity-todo-es5.git
+
+This gives the following files (or similar)
+
+![todo directory](/img/todo-directory.png)
+
+Including an npm [bundled dependency](https://docs.npmjs.com/files/package.json#bundleddependencies) which we consider a
+ common library.
+
+![todo bundled](/img/todo-bundled.png)
+
+You will notice that the folder structure is feature based. There is no restriction as to where images or javascript or
+html lives. You may use the scheme that best suits your needs.
 
 ## Dependencies
 
@@ -49,6 +61,9 @@ The place to start is always the composition root, so take a look at `/app/index
       .directive('escape', escapeKeyDirective.forAttribute('escape'))
       .directive('focus', focusElementDirective.forAttribute('focus'))
       .value('storage', new LocalStorage('todos-angularjs'));
+
+There is a second compostion root, `app/no-storage/index.js` that has a mock storage component. We will not discuss this
+except to point out that you may make as many additional applications as you need for development purposes.
 
 ### Module definition
 
@@ -100,6 +115,10 @@ you can split your composition root over several files as appropriate.
 
 ### Directives
 
+Note that there are no directives in the local library, they are
+[bundled dependencies](https://docs.npmjs.com/files/package.json#bundleddependencies) in order to illustrate how a
+library package may be used.
+
 The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.
 
 Each of the directives shown, `escapeKeyDirective` and `focusElementDirective` are invoked by attribute and need to read
@@ -133,15 +152,3 @@ This example does not have and factories or services, but instead maps a `value(
 component does not require any dependency injection and does require implementation. As such it perhaps a bad example.
 
 Be that as it may, factories and services may be mapped just as easily by specifying an import.
-
-## Building
-
-### Test
-
-
-
-### Watch
-
-
-
-### Release

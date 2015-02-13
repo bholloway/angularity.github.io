@@ -9,10 +9,10 @@ tags:
 menu:
   main:
     parent: start
-prev: /start/example
+prev: /start/building
 next: /tasks/init
 notoc: true
-weight: 2040
+weight: 2050
 ---
 
 > Angularity favours development in the [Webstorm](https://www.jetbrains.com/webstorm/) IDE. In time we hope to

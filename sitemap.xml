@@ -8,12 +8,17 @@
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/</loc>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</loc>
+    <lastmod>2014-12-15T13:42:50+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
@@ -34,6 +39,11 @@
   
   <url>
     <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</loc>
+    <lastmod>2014-12-15T13:43:41+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
