@@ -50,8 +50,7 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;echo %PATH%
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;echo %PATH%&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
 
@@ -64,7 +63,7 @@ In that case it is worth updating.&lt;/p&gt;
 &lt;p&gt;On windows you may have some difficulty and should follow the troubleshooting
 &lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt; from the outset.&lt;/p&gt;
 
-&lt;p&gt;Be aware however that older projects that you may also be working on may &lt;em&gt;not be compatible&lt;/em&gt; with npm 2.&lt;/p&gt;
+&lt;p&gt;Be aware however that older projects that you may also be working on may not be compatible with npm 2.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Install Bower&lt;/h2&gt;
 

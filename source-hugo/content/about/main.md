@@ -5,6 +5,7 @@ identifier: about-main
 date: 2014-12-15T13:42:50+11:00
 tags:
   - about
+  - mission
 menu:
   main:
     parent: about

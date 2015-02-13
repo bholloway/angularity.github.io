@@ -222,8 +222,7 @@ Meaning that 64 bit systems should choose the 64 bit binary.&lt;/p&gt;
 &lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; platform the installer will add a &lt;strong&gt;path&lt;/strong&gt; entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;echo %PATH%
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;echo %PATH%&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Update npm&lt;/h2&gt;
 
@@ -236,7 +235,7 @@ In that case it is worth updating.&lt;/p&gt;
 &lt;p&gt;On windows you may have some difficulty and should follow the troubleshooting
 &lt;a href=&#34;https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows&#34;&gt;instructions&lt;/a&gt; from the outset.&lt;/p&gt;
 
-&lt;p&gt;Be aware however that older projects that you may also be working on may &lt;em&gt;not be compatible&lt;/em&gt; with npm 2.&lt;/p&gt;
+&lt;p&gt;Be aware however that older projects that you may also be working on may not be compatible with npm 2.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Install Bower&lt;/h2&gt;
 
@@ -308,8 +307,6 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
       <description>
 
-&lt;h2 id=&#34;toc_0&#34;&gt;init task&lt;/h2&gt;
-
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
 
 &lt;p&gt;Angularity has an &lt;a href=&#34;/tasks/init&#34;&gt;&lt;code&gt;init&lt;/code&gt;&lt;/a&gt; task that will create a new project and initialise it. By default, it will
@@ -317,15 +314,14 @@ create a new subdirectory.&lt;/p&gt;
 
 &lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;angularity init
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;angularity init&lt;/p&gt;
 
 &lt;p&gt;You will receive the following files.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/anatomy-directory.png&#34; alt=&#34;new project directory&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Composition Root&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Composition Root&lt;/h2&gt;
 
 &lt;p&gt;The &lt;code&gt;init&lt;/code&gt; task will create an &lt;code&gt;/app&lt;/code&gt; directory with files &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;index.js&lt;/code&gt;, &lt;code&gt;index.scss&lt;/code&gt;.&lt;/p&gt;
 
@@ -342,7 +338,21 @@ and &lt;code&gt;app-test&lt;/code&gt;. These generated directories should be ign
 &lt;p&gt;All other directories are considered your local library. These files must be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into &lt;code&gt;index.js&lt;/code&gt;
 or &lt;code&gt;index.scss&lt;/code&gt; respectively.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Dependency Management&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Git Ignore&lt;/h2&gt;
+
+&lt;p&gt;Presuming you are using GIT, this file ensures version control will ignore generated directories and bower and npm
+packages.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;JS Hint Config&lt;/h2&gt;
+
+&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
+rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
+
+&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Node and Bower Config&lt;/h2&gt;
 
 &lt;p&gt;The composition roots may import from any node or bower packages. The &lt;code&gt;init&lt;/code&gt; task creates basic &lt;code&gt;package.json&lt;/code&gt; and
 &lt;code&gt;bower.json&lt;/code&gt; for node and bower respectively.&lt;/p&gt;
@@ -355,21 +365,185 @@ composition roots.&lt;/p&gt;
 composition roots. You may use the simple &lt;code&gt;require(&amp;lt;PACKAGE_NAME&amp;gt;)&lt;/code&gt;, meaning that the experience is the same as
 developing for the node platform.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
-
-&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Karma Config&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;Karma Config&lt;/h2&gt;
 
 &lt;p&gt;Angularity uses &lt;a href=&#34;http://karma-runner.github.io/&#34;&gt;Karma&lt;/a&gt; for unit tests. This is configured using &lt;code&gt;karma.conf.js&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since Angularity performs a build step, the &lt;code&gt;files&lt;/code&gt; and &lt;code&gt;reporter&lt;/code&gt; entries will be overwritten by Angularity to create a
 derived file &lt;code&gt;/app-test/karma.conf.js&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_5&#34;&gt;JS Hint&lt;/h2&gt;
+&lt;h2 id=&#34;toc_6&#34;&gt;&amp;hellip; Everything Else&lt;/h2&gt;
 
-&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
-rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;The remaining directories (baring installed bower and node packages) are considered your local library.&lt;/p&gt;
+
+&lt;p&gt;There are no special directories for sprites, images, javascript, html partials, css and scss. It is up to you what
+conventions you choose. However you organise these files, the composition root will import them will fully relative
+paths.&lt;/p&gt;
+
+&lt;p&gt;Any file can also import from bower and node packages that are installed, much like you would do when developing for
+the NodeJS platform.&lt;/p&gt;
+
+&lt;p&gt;This will be more apparent in the next section, when we look at an actual project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Todo Example</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <description>
+
+&lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
+&lt;a href=&#34;https://github.com/angularity/angularity-todo-es5&#34;&gt;Todo Application&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can go ahead and clone it using Git.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;By default &lt;code&gt;git clone&lt;/code&gt; will create a subdirectory. If you have been working with the blank project from last page,
+make sure that you are back in the parent directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/angularity/angularity-todo-es5.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;p&gt;Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
+the project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install
+
+bower install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Composition Root&lt;/h2&gt;
+
+&lt;p&gt;The place to start is always the composition root, so take a look at &lt;code&gt;/app/index.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var todoRoutes            = require(&#39;../todo/todo-routes&#39;),
+    escapeKeyDirective    = require(&#39;examplelib/interaction/escape-key-directive&#39;),
+    focusElementDirective = require(&#39;examplelib/interaction/focus-element-directive&#39;),
+    LocalStorage          = require(&#39;../storage/local-storage&#39;);
+
+angular.module(&#39;app&#39;, [ &#39;ui.router&#39;, &#39;ui.bootstrap&#39; ])
+  .config(todoRoutes)
+  .directive(&#39;escape&#39;, escapeKeyDirective.forAttribute(&#39;escape&#39;))
+  .directive(&#39;focus&#39;, focusElementDirective.forAttribute(&#39;focus&#39;))
+  .value(&#39;storage&#39;, new LocalStorage(&#39;todos-angularjs&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Module definition&lt;/h3&gt;
+
+&lt;p&gt;Per the module definition we see that we can name the module anything we like - An angularity project is not split
+between angular modules. Unless we intend this project to be a module for distribution the name does not matter.&lt;/p&gt;
+
+&lt;p&gt;We can see here that module definition lists a few dependencies:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/ui-router/site/#/api/ui.router&#34;&gt;UI router&lt;/a&gt; because its a better router.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/bootstrap/&#34;&gt;UI bootstrap&lt;/a&gt; for bootstrap components.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are satisfied by bower. If you look at the &lt;code&gt;bower.json&lt;/code&gt; you will see them listed. The first place to start for any
+new project is usually to sort out this list of dependencies. Each bower dependency is automatically injected into the
+ &lt;code&gt;index.html&lt;/code&gt; during the build process.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Routes&lt;/h3&gt;
+
+&lt;p&gt;The routes are a key part of composition, for this project they happen to be found in &lt;code&gt;/todo/todo-routes.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/**
+ * &amp;lt;p&amp;gt;Routing for the to-do app.&amp;lt;/p&amp;gt;
+ * @ngInject
+ * @param {object} $StateProvider
+ * @param {object} $urlRouterProvider
+ */
+function todoRoutes($stateProvider, $urlRouterProvider) {
+  &#39;use strict&#39;;
+  $urlRouterProvider.otherwise(&#39;/&#39;)
+  $stateProvider
+    .state(&#39;home&#39;, {
+      url:        &#39;/:status&#39;,
+      template:   require(&#39;./view/todo.html&#39;),
+      controller: require(&#39;./controller/todo-controller&#39;)
+    });
+}
+module.exports = todoRoutes;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a pretty simple example of &lt;a href=&#34;http://angular-ui.github.io/ui-router/site/#/api/ui.router&#34;&gt;UI-router&lt;/a&gt;, with some
+important distinctions.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;As with every file we will import into the composition root, we must use the explicit annotation &lt;code&gt;@ngInject&lt;/code&gt;. This
+is super important to ensure proper minification.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We can directly &lt;code&gt;require()&lt;/code&gt; the template and controller items. We do not need to hack the template cache or map the
+controller separately.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Routes are also composition so there is no reason why this cannot be defined in-line in the composition root. Similarly,
+you can split your composition root over several files as appropriate.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Directives&lt;/h3&gt;
+
+&lt;p&gt;The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.&lt;/p&gt;
+
+&lt;p&gt;Each of the directives shown, &lt;code&gt;escapeKeyDirective&lt;/code&gt; and &lt;code&gt;focusElementDirective&lt;/code&gt; are invoked by attribute and need to read
+a value from that attribute. However, in the configuration root we can map them against any attribute and need to tell
+them what attribute that is.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;forAttribute()&lt;/code&gt; method is a factory for creating the directive. That way we can close it as
+ &lt;code&gt;focusElementDirective.forAttribute(&#39;focus&#39;)&lt;/code&gt; and yield a function for mapping.&lt;/p&gt;
+
+&lt;p&gt;Lets take a closer look at that code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;focusElementDirective.forAttribute = function forAttribute(attribute) {
+  return /** @ngInject */ function ($timeout) {
+    return focusElementDirective($timeout, attribute);
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All that is happening is that we capture the given &lt;code&gt;attribute&lt;/code&gt; name and pass it to the directive along with the injected
+&lt;code&gt;$timeout&lt;/code&gt; dependency.&lt;/p&gt;
+
+&lt;p&gt;Note the use of &lt;code&gt;@ngInject&lt;/code&gt; comment inline, since it is the inner function that is provided to the Angular directive
+map.&lt;/p&gt;
+
+&lt;p&gt;These implementations are maximally correct. In a practical situation you may prefer to avoid the &lt;code&gt;forAttribute()&lt;/code&gt;
+factory and just hard-code the directive to a particular element. In this case you must ensure you map the directive
+against the same name in the composition root.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Factories and Services&lt;/h3&gt;
+
+&lt;p&gt;This example does not have and factories or services, but instead maps a &lt;code&gt;value()&lt;/code&gt;. This is because the &lt;code&gt;LocalStorage&lt;/code&gt;
+component does not require any dependency injection and does require implementation. As such it perhaps a bad example.&lt;/p&gt;
+
+&lt;p&gt;Be that as it may, factories and services may be mapped just as easily by specifying an import.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_6&#34;&gt;Building&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Test&lt;/h3&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Watch&lt;/h3&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Release&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Webstorm</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
+similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

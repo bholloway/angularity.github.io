@@ -10,7 +10,7 @@
     <meta name="keyword" content="">
     <link rel="shortcut icon" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/favicon.ico" type="image/x-icon" />
 
-    <title>Introduction</title>
+    <title>Todo Example</title>
 
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/css/bootstrap-theme.css" rel="stylesheet">
     <link href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
             </div>
 
             <div class="nav title-row" id="top_menu">
-                <h1 class="nav top-menu"> Introduction </h1>
+                <h1 class="nav top-menu"> Todo Example </h1>
             </div>
       </header>
       
@@ -57,17 +57,17 @@
           
           
             
-              <li class="sub-menu active">
+              <li class="sub-menu">
                 <a href="javascript:;" class="">
                     
                     <span>About</span>
-                    <span class="menu-arrow fa fa-angle-down"></span>
+                    <span class="menu-arrow fa fa-angle-right"></span>
                 </a>
-                <ul class="sub open">
+                <ul class="sub">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main/"> Angularity </a> </li>
                     
-                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/intro/"> Introduction </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/"> Roadmap </a> </li>
                     
@@ -76,19 +76,19 @@
               </li>
           
             
-              <li class="sub-menu">
+              <li class="sub-menu active">
                 <a href="javascript:;" class="">
                     
                     <span>Getting Started</span>
-                    <span class="menu-arrow fa fa-angle-right"></span>
+                    <span class="menu-arrow fa fa-angle-down"></span>
                 </a>
-                <ul class="sub">
+                <ul class="sub open">
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/"> Installation </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/"> Project Anatomy </a> </li>
                     
-                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/"> Todo Example </a> </li>
+                    <li class="active"><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/"> Todo Example </a> </li>
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/"> Using Webstorm </a> </li>
                     
@@ -120,7 +120,7 @@
             </li>
             
                 <li>
-                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/about/" target="blank">
+                    <a href="https://github.com/angularity/angularity.github.io/tree/master/source-hugo/start/" target="blank">
                         <i class='fa fa-edit'></i> Edit
                     </a>
                 </li>
@@ -138,7 +138,7 @@
 
               <div class="row">
                   <div class="row-nav-prev col-md-1">
-                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/main">
+                      <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy">
                       <i class="fa fa-angle-left"></i>
                       </a>
                   </div>
@@ -148,102 +148,148 @@
 
 
 
-<h2 id="toc_0">Concept</h2>
+<p>Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
+<a href="https://github.com/angularity/angularity-todo-es5">Todo Application</a>.</p>
 
-<p>Angularity is built upon <a href="http://gulpjs.com/">Gulp</a> but does not require a per-project <code>gulpfile.js</code>. You use it as a
-npm global install as you would Gulp. But unlike Gulp it is self-contained.</p>
+<p>You can go ahead and clone it using Git.</p>
 
-<p>Angularity has a large emphasis on <strong>composition</strong>. Each project contains one deployable application and any number of
-additional non-deployable applications (as needed for development). Each application features a
-<a href="http://blog.ploeh.dk/2011/07/28/CompositionRoot/">Composition Root</a> for both Javascript and SASS.</p>
+<blockquote>
+<p>By default <code>git clone</code> will create a subdirectory. If you have been working with the blank project from last page,
+make sure that you are back in the parent directory.</p>
+</blockquote>
 
-<p>SASS will inherantly bundle any <code>@import</code>ed files. We use <a href="http://browserify.org/">browserify</a> to bundle <code>require()</code>d
-Javascript, HTML template (strings), and sprited images (coming soon). This minimises the application footprint to only
-that which is needed.</p>
+<pre><code>git clone https://github.com/angularity/angularity-todo-es5.git
+</code></pre>
 
-<p>If you have experience with NInject for .NET, or RobotLegs or Parsley in Flash/Flex these concepts will be familiar to
-you. You will see from our <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/style/composition">style guide</a> that this pattern is also a superior approach for
-AngularJS.</p>
+<h2 id="toc_0">Dependencies</h2>
 
-<h2 id="toc_1">Features</h2>
+<p>Obviously there will be a few external dependencies (not least AngularJS) so go ahead and do a bower and npm install in
+the project directory.</p>
 
-<p>Primarily Angularity is a <a href="http://nodejs.org/">node.js</a> build tool. Its features include:</p>
+<pre><code>npm install
 
-<ul>
-<li>Single <code>npm global install</code> for all projects.</li>
-<li>Bundling of <code>require()</code>&rsquo;d files per <a href="http://browserify.org/">browserify</a>.</li>
-<li><a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a> syntax
-(using <a href="https://github.com/6to5/6to5ify">6to5ify</a>).</li>
-<li>Composition of <em>html</em> templates in <em>javascript</em>.</li>
-<li><a href="http://www.jshint.com/about/">jsHint</a> linting.</li>
-<li><a href="http://sass-lang.com/">SASS</a> 3.2 (using <a href="http://libsass.org/">libsass</a>).</li>
-<li><a href="http://bower.io/">Bower</a> for web dependencies.</li>
-<li>Bower or node packages for shared code.</li>
-<li>Javascript unit testing (using <a href="http://karma-runner.github.io/0.12/index.html">Karma</a> and
-<a href="http://jasmine.github.io/2.0/introduction.html">Jasmine 2.0</a>).</li>
-<li>Source maps for Javascript.</li>
-<li>Source maps for CSS.</li>
-</ul>
+bower install
+</code></pre>
 
-<p>At its heart, none of these features are specifically tied to <a href="https://angularjs.org/">AngularJS</a>. However much of the
-material you will find on this site is geared to Angular development.</p>
+<h2 id="toc_1">Composition Root</h2>
 
-<h2 id="toc_2">Suitability</h2>
+<p>The place to start is always the composition root, so take a look at <code>/app/index.js</code>.</p>
 
-<h3 id="toc_3">You should use <em>Angularity</em> when&hellip;</h3>
+<pre><code>var todoRoutes            = require('../todo/todo-routes'),
+    escapeKeyDirective    = require('examplelib/interaction/escape-key-directive'),
+    focusElementDirective = require('examplelib/interaction/focus-element-directive'),
+    LocalStorage          = require('../storage/local-storage');
 
-<ul>
-<li>Your organisation has a large code/asset library and want to include only the elements you <code>require()</code>.</li>
-<li>You want your development teams&rsquo; build tooling to be turn-key and immutable.</li>
-<li>You develop with <a href="https://angularjs.org/">AngularJS</a> and would like a path to
-<a href="http://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony_.286th_Edition.29">ECMAScript 6</a>.</li>
-<li>You use <a href="http://sass-lang.com/">SASS</a>, or are prepared to switch, and can live without
-<a href="http://compass-style.org/">Compass</a>.</li>
-<li>You intend to minify or obfuscate your Javascript.</li>
-<li>You your browser support list permits <a href="http://kangax.github.io/compat-table/es5/">ECMAScript 5.1</a>.</li>
-<li>You would like your build tool to be a self contained npm package with the option of a global install.</li>
-</ul>
+angular.module('app', [ 'ui.router', 'ui.bootstrap' ])
+  .config(todoRoutes)
+  .directive('escape', escapeKeyDirective.forAttribute('escape'))
+  .directive('focus', focusElementDirective.forAttribute('focus'))
+  .value('storage', new LocalStorage('todos-angularjs'));
+</code></pre>
 
-<h3 id="toc_4">You should fork <em>Angularity</em> when&hellip;</h3>
+<h3 id="toc_2">Module definition</h3>
+
+<p>Per the module definition we see that we can name the module anything we like - An angularity project is not split
+between angular modules. Unless we intend this project to be a module for distribution the name does not matter.</p>
+
+<p>We can see here that module definition lists a few dependencies:</p>
 
 <ul>
-<li>You want to use a CSS preprocessor other than <a href="http://sass-lang.com/">SASS</a> (You need replace Libsass).</li>
-<li>You would like to use <a href="http://compass-style.org/">Compass</a> with your SASS (You need replace Libsass with Ruby Sass).</li>
-<li>You need to support <a href="http://phantomjs.org/">PhantomJS 1.x</a>, Internet Explorer 8 (or lower), or any other platform
-inconsistent with <a href="https://6to5.org/">6to5</a> generated code (You need to remove the 6to5ify transform)</li>
+<li><a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router">UI router</a> because its a better router.</li>
+<li><a href="http://angular-ui.github.io/bootstrap/">UI bootstrap</a> for bootstrap components.</li>
 </ul>
 
-<h3 id="toc_5">You should avoid <em>Angularity</em> when&hellip;</h3>
+<p>These are satisfied by bower. If you look at the <code>bower.json</code> you will see them listed. The first place to start for any
+new project is usually to sort out this list of dependencies. Each bower dependency is automatically injected into the
+ <code>index.html</code> during the build process.</p>
+
+<h3 id="toc_3">Routes</h3>
+
+<p>The routes are a key part of composition, for this project they happen to be found in <code>/todo/todo-routes.js</code>.</p>
+
+<pre><code>/**
+ * &lt;p&gt;Routing for the to-do app.&lt;/p&gt;
+ * @ngInject
+ * @param {object} $StateProvider
+ * @param {object} $urlRouterProvider
+ */
+function todoRoutes($stateProvider, $urlRouterProvider) {
+  'use strict';
+  $urlRouterProvider.otherwise('/')
+  $stateProvider
+    .state('home', {
+      url:        '/:status',
+      template:   require('./view/todo.html'),
+      controller: require('./controller/todo-controller')
+    });
+}
+module.exports = todoRoutes;
+</code></pre>
+
+<p>This is a pretty simple example of <a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router">UI-router</a>, with some
+important distinctions.</p>
 
 <ul>
-<li>Your projects are all different and need customised build steps that cannot be generalised.</li>
+<li><p>As with every file we will import into the composition root, we must use the explicit annotation <code>@ngInject</code>. This
+is super important to ensure proper minification.</p></li>
+
+<li><p>We can directly <code>require()</code> the template and controller items. We do not need to hack the template cache or map the
+controller separately.</p></li>
 </ul>
 
-<h3 id="toc_6">You should be aware&hellip;</h3>
+<p>Routes are also composition so there is no reason why this cannot be defined in-line in the composition root. Similarly,
+you can split your composition root over several files as appropriate.</p>
 
-<p>We have additional features that support <a href="https://www.jetbrains.com/webstorm/">Webstorm</a> IDE and
-<a href="https://www.google.com.au/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=team%20city">Team City</a>
-Continuous Integration server.</p>
+<h3 id="toc_4">Directives</h3>
 
-<p>Following version 1.0.0 we will be looking for contributors to add first class support for other popular IDEs and CI
-reporters.</p>
+<p>The todo project maps directives in a somewhat confusing way, but does so to illustrate an important point.</p>
 
-<h3 id="toc_7">Conclusion</h3>
+<p>Each of the directives shown, <code>escapeKeyDirective</code> and <code>focusElementDirective</code> are invoked by attribute and need to read
+a value from that attribute. However, in the configuration root we can map them against any attribute and need to tell
+them what attribute that is.</p>
 
-<p>Angularity is about uniformity. Per-project customisation is minimal. There is customisation but it is focused on
-supporting different environments, such as development vs CI server.</p>
+<p>The <code>forAttribute()</code> method is a factory for creating the directive. That way we can close it as
+ <code>focusElementDirective.forAttribute('focus')</code> and yield a function for mapping.</p>
 
-<p>If you can generalise you build requirements but want different build steps to those provided then you can fork
-Angularity and make your own flavour.</p>
+<p>Lets take a closer look at that code.</p>
 
-<p>However if you develop a wide variety of applications we recommend you use <a href="http://gulpjs.com/">Gulp</a>, which Angularity
-uses under the hood.</p>
+<pre><code>focusElementDirective.forAttribute = function forAttribute(attribute) {
+  return /** @ngInject */ function ($timeout) {
+    return focusElementDirective($timeout, attribute);
+  };
+}
+</code></pre>
+
+<p>All that is happening is that we capture the given <code>attribute</code> name and pass it to the directive along with the injected
+<code>$timeout</code> dependency.</p>
+
+<p>Note the use of <code>@ngInject</code> comment inline, since it is the inner function that is provided to the Angular directive
+map.</p>
+
+<p>These implementations are maximally correct. In a practical situation you may prefer to avoid the <code>forAttribute()</code>
+factory and just hard-code the directive to a particular element. In this case you must ensure you map the directive
+against the same name in the composition root.</p>
+
+<h3 id="toc_5">Factories and Services</h3>
+
+<p>This example does not have and factories or services, but instead maps a <code>value()</code>. This is because the <code>LocalStorage</code>
+component does not require any dependency injection and does require implementation. As such it perhaps a bad example.</p>
+
+<p>Be that as it may, factories and services may be mapped just as easily by specifying an import.</p>
+
+<h2 id="toc_6">Building</h2>
+
+<h3 id="toc_7">Test</h3>
+
+<h3 id="toc_8">Watch</h3>
+
+<h3 id="toc_9">Release</h3>
 
                     </div> 
                     </section> 
                 </div> 
                 <div class="row-nav-next col-md-1">
-                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap">
+                    <a class="navigation prev" href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm">
                     <i class="fa fa-angle-right"></i>
                     </a>
                 </div>

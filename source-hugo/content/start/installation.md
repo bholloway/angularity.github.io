@@ -43,9 +43,7 @@ Choose the **default settings** whenever prompted.
 On **Windows** platform the installer will add a **path** entry to node. For that to be active you will most likely
 need to reboot. Once you can see the path to node in the console then you are ready.
 
-```
-echo %PATH%
-```
+  echo %PATH%
 
 ## Update npm
 
@@ -57,7 +55,7 @@ In that case it is worth updating.
 On windows you may have some difficulty and should follow the troubleshooting
 [instructions](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows) from the outset.
 
-Be aware however that older projects that you may also be working on may *not be compatible* with npm 2.
+Be aware however that older projects that you may also be working on may not be compatible with npm 2.
 
 ## Install Bower
 

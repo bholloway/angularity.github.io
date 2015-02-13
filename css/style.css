@@ -6,7 +6,7 @@
 ****************************** */
 
 .github-btn {
-  font-size: 11px;
+  font-size: 0.8em !important;
 }
 .github-btn,
 .github-btn .btn {
@@ -91,7 +91,7 @@ h1, h2, h3 {
 }
 
 pre code {
-    font-size: 18px !important;
+    font-size: 1.15em !important;
     font-family: 'Courier New', monospace;
 }
 
@@ -101,7 +101,6 @@ body {
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
-    font-size:16px !important;
     font-weight: 300;
 }
 
@@ -199,17 +198,15 @@ ul.sidebar-menu li ul.sub li:last-child {
 }
 
 ul.sidebar-menu li ul.sub li a {
-    font-size: 12px;
     padding: 0 0 0 32px;
-    line-height: 35px;
-    height: 35px;
+    line-height: 2.5em;
+    height: 2.5em;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #737B83;
-    font-size: 14px;
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
@@ -228,11 +225,6 @@ ul.sidebar-menu li {
     text-transform: capitalize;
 }
 
-ul.sidebar-menu li.sub-menu {
-    line-height: 15px;
-    font-size: 16px;
-}
-
 ul.sidebar-menu li a span {
     display: inline-block;
 }
@@ -242,7 +234,6 @@ ul.sidebar-menu li a {
     text-decoration: none;
     display: block;
     padding: 10px 0 10px 10px;
-    font-size: 16px;
     font-weight: 300;
     outline: none;
     -webkit-transition: all 0.3s ease;
@@ -252,6 +243,10 @@ ul.sidebar-menu li a {
     transition: all 0.3s ease;
     border-bottom: 1px solid #D7D7D7;
     overflow:hidden;
+}
+
+ul.sub.open {
+    margin-top: -7px !important;
 }
 
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
@@ -274,8 +269,8 @@ ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 }
 
 ul.sidebar-menu li a i {
-    font-size: 18px;
-    padding-right: 6px;
+    font-size: 1.2em;
+    padding-right: 0.2em;
     /*color: #CC5A5C;*/
 }
 
@@ -299,8 +294,13 @@ ul.sidebar-menu li.active a i {
     top:60px;
     right:0;
     bottom:0;
-    line-height: 1.8;
-    font-size: 19px;
+    font-size:1.25em !important;
+}
+
+blockquote p {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 0;
 }
 
 .sidebar-closed #main-content {
@@ -396,12 +396,10 @@ h1.top-menu {
     display: block;
     position:fixed;
     color: #aaaaaa;
-    font-size: 22px;
     cursor: pointer;
     bottom:10px;
     left:0;
     z-index: 100;
-    font-size: 1em;
     padding: 0.5em;
     border: 1px solid #D7D7D7;
     border-top-right-radius: 0.5em;

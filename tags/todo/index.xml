@@ -1,101 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Project on Angularity </title>
+      <title>Todo on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/project/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/todo/index.xml/</link>
     
     
     
     <updated>Mon, 15 Dec 2014 13:43:41 AEDT</updated>
-    
-    <item>
-      <title>Project Anatomy</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
-      
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
-      <description>
-
-&lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
-
-&lt;p&gt;Angularity has an &lt;a href=&#34;/tasks/init&#34;&gt;&lt;code&gt;init&lt;/code&gt;&lt;/a&gt; task that will create a new project and initialise it. By default, it will
-create a new subdirectory.&lt;/p&gt;
-
-&lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
-
-&lt;p&gt;angularity init&lt;/p&gt;
-
-&lt;p&gt;You will receive the following files.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/img/anatomy-directory.png&#34; alt=&#34;new project directory&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Composition Root&lt;/h2&gt;
-
-&lt;p&gt;The &lt;code&gt;init&lt;/code&gt; task will create an &lt;code&gt;/app&lt;/code&gt; directory with files &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;index.js&lt;/code&gt;, &lt;code&gt;index.scss&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;These files compose the primary application for this project. The entire &lt;code&gt;/app&lt;/code&gt; directory should be version controlled.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;You can create additional applications in sub-folders. However they will be development only since they will
- not be deployed by the &lt;code&gt;release&lt;/code&gt; task.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Angularity generates other directories as part of its build process. These are prefixed with &lt;code&gt;app&lt;/code&gt;, such as &lt;code&gt;app-build&lt;/code&gt;
-and &lt;code&gt;app-test&lt;/code&gt;. These generated directories should be ignored for version control.&lt;/p&gt;
-
-&lt;p&gt;All other directories are considered your local library. These files must be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into &lt;code&gt;index.js&lt;/code&gt;
-or &lt;code&gt;index.scss&lt;/code&gt; respectively.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Git Ignore&lt;/h2&gt;
-
-&lt;p&gt;Presuming you are using GIT, this file ensures version control will ignore generated directories and bower and npm
-packages.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;JS Hint Config&lt;/h2&gt;
-
-&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
-rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
-
-&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Node and Bower Config&lt;/h2&gt;
-
-&lt;p&gt;The composition roots may import from any node or bower packages. The &lt;code&gt;init&lt;/code&gt; task creates basic &lt;code&gt;package.json&lt;/code&gt; and
-&lt;code&gt;bower.json&lt;/code&gt; for node and bower respectively.&lt;/p&gt;
-
-&lt;p&gt;Each item in the bower &lt;code&gt;dependencies&lt;/code&gt; map will be considered distributions and contribute directly to the HTML. Each
-item in bower &lt;code&gt;devDependencies&lt;/code&gt; will not contribute to the HTML but may be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into the
-composition roots.&lt;/p&gt;
-
-&lt;p&gt;Each item in the node package &lt;code&gt;depencencies&lt;/code&gt; or &lt;code&gt;devDependencies&lt;/code&gt; may be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into the
-composition roots. You may use the simple &lt;code&gt;require(&amp;lt;PACKAGE_NAME&amp;gt;)&lt;/code&gt;, meaning that the experience is the same as
-developing for the node platform.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_5&#34;&gt;Karma Config&lt;/h2&gt;
-
-&lt;p&gt;Angularity uses &lt;a href=&#34;http://karma-runner.github.io/&#34;&gt;Karma&lt;/a&gt; for unit tests. This is configured using &lt;code&gt;karma.conf.js&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since Angularity performs a build step, the &lt;code&gt;files&lt;/code&gt; and &lt;code&gt;reporter&lt;/code&gt; entries will be overwritten by Angularity to create a
-derived file &lt;code&gt;/app-test/karma.conf.js&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_6&#34;&gt;&amp;hellip; Everything Else&lt;/h2&gt;
-
-&lt;p&gt;The remaining directories (baring installed bower and node packages) are considered your local library.&lt;/p&gt;
-
-&lt;p&gt;There are no special directories for sprites, images, javascript, html partials, css and scss. It is up to you what
-conventions you choose. However you organise these files, the composition root will import them will fully relative
-paths.&lt;/p&gt;
-
-&lt;p&gt;Any file can also import from bower and node packages that are installed, much like you would do when developing for
-the NodeJS platform.&lt;/p&gt;
-
-&lt;p&gt;This will be more apparent in the next section, when we look at an actual project.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Todo Example</title>
@@ -241,19 +153,6 @@ component does not require any dependency injection and does require implementat
 &lt;h3 id=&#34;toc_8&#34;&gt;Watch&lt;/h3&gt;
 
 &lt;h3 id=&#34;toc_9&#34;&gt;Release&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Webstorm</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
-      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
-      
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
-similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

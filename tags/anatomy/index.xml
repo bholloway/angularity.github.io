@@ -17,8 +17,6 @@
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
       <description>
 
-&lt;h2 id=&#34;toc_0&#34;&gt;init task&lt;/h2&gt;
-
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
 
 &lt;p&gt;Angularity has an &lt;a href=&#34;/tasks/init&#34;&gt;&lt;code&gt;init&lt;/code&gt;&lt;/a&gt; task that will create a new project and initialise it. By default, it will
@@ -26,15 +24,14 @@ create a new subdirectory.&lt;/p&gt;
 
 &lt;p&gt;All Angularity tasks will have default values for any options. So we can go ahead and invoke &lt;code&gt;init&lt;/code&gt; simply as below.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;angularity init
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;angularity init&lt;/p&gt;
 
 &lt;p&gt;You will receive the following files.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/anatomy-directory.png&#34; alt=&#34;new project directory&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Composition Root&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Composition Root&lt;/h2&gt;
 
 &lt;p&gt;The &lt;code&gt;init&lt;/code&gt; task will create an &lt;code&gt;/app&lt;/code&gt; directory with files &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;index.js&lt;/code&gt;, &lt;code&gt;index.scss&lt;/code&gt;.&lt;/p&gt;
 
@@ -51,7 +48,21 @@ and &lt;code&gt;app-test&lt;/code&gt;. These generated directories should be ign
 &lt;p&gt;All other directories are considered your local library. These files must be &lt;code&gt;require()&lt;/code&gt;d or &lt;code&gt;@import&lt;/code&gt;ed into &lt;code&gt;index.js&lt;/code&gt;
 or &lt;code&gt;index.scss&lt;/code&gt; respectively.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Dependency Management&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Git Ignore&lt;/h2&gt;
+
+&lt;p&gt;Presuming you are using GIT, this file ensures version control will ignore generated directories and bower and npm
+packages.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;JS Hint Config&lt;/h2&gt;
+
+&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
+rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
+
+&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Node and Bower Config&lt;/h2&gt;
 
 &lt;p&gt;The composition roots may import from any node or bower packages. The &lt;code&gt;init&lt;/code&gt; task creates basic &lt;code&gt;package.json&lt;/code&gt; and
 &lt;code&gt;bower.json&lt;/code&gt; for node and bower respectively.&lt;/p&gt;
@@ -64,21 +75,38 @@ composition roots.&lt;/p&gt;
 composition roots. You may use the simple &lt;code&gt;require(&amp;lt;PACKAGE_NAME&amp;gt;)&lt;/code&gt;, meaning that the experience is the same as
 developing for the node platform.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Angularity Config&lt;/h2&gt;
-
-&lt;p&gt;Angularity has a limited number of settings that control your project. These are found in &lt;code&gt;angularity.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Karma Config&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;Karma Config&lt;/h2&gt;
 
 &lt;p&gt;Angularity uses &lt;a href=&#34;http://karma-runner.github.io/&#34;&gt;Karma&lt;/a&gt; for unit tests. This is configured using &lt;code&gt;karma.conf.js&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since Angularity performs a build step, the &lt;code&gt;files&lt;/code&gt; and &lt;code&gt;reporter&lt;/code&gt; entries will be overwritten by Angularity to create a
 derived file &lt;code&gt;/app-test/karma.conf.js&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_5&#34;&gt;JS Hint&lt;/h2&gt;
+&lt;h2 id=&#34;toc_6&#34;&gt;&amp;hellip; Everything Else&lt;/h2&gt;
 
-&lt;p&gt;A javascript linter is important to ensure code quality. Angularity uses &lt;a href=&#34;http://jshint.com/&#34;&gt;JS Hint&lt;/a&gt;. The JS Hint
-rule set is encoded in the &lt;code&gt;.jshintrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;The remaining directories (baring installed bower and node packages) are considered your local library.&lt;/p&gt;
+
+&lt;p&gt;There are no special directories for sprites, images, javascript, html partials, css and scss. It is up to you what
+conventions you choose. However you organise these files, the composition root will import them will fully relative
+paths.&lt;/p&gt;
+
+&lt;p&gt;Any file can also import from bower and node packages that are installed, much like you would do when developing for
+the NodeJS platform.&lt;/p&gt;
+
+&lt;p&gt;This will be more apparent in the next section, when we look at an actual project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Webstorm</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
+similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

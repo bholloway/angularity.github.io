@@ -38,4 +38,4 @@ menu:
       Identifier: start
     - Name: Task Reference
       Weight: 3000
-      Identifier: task-reference
+      Identifier: tasks

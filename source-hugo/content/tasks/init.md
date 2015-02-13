@@ -9,7 +9,7 @@ tags:
 menu:
   main:
     parent: tasks
-prev: /start/anatomy
+prev: /start/webstorm
 next: /tasks/webstorm
 notoc: true
 weight: 3010
