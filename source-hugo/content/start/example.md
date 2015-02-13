@@ -67,8 +67,8 @@ except to point out that you may make as many additional applications as you nee
 
 ### Module definition
 
-Per the module definition we see that we can name the module anything we like - An angularity project is not split
-between angular modules. Unless we intend this project to be a module for distribution the name does not matter.
+An angularity project is not split between angular modules. Unless we intend this project to be a module for
+distribution the module name does not matter.
 
 We can see here that module definition lists a few dependencies:
 
