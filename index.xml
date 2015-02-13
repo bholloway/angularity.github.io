@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Angularity</title>
-      <link>http://localhost:1313/about/mission/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/mission/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</guid>
       <description>
 
 &lt;h1 id=&#34;toc_0&#34;&gt;&lt;img src=&#34;/assets/logo.png&#34; alt=&#34;Angularity Logo&#34; /&gt;
@@ -31,10 +31,10 @@ tools and resources known as &lt;strong&gt;Angularity&lt;/strong&gt;.&lt;/p&gt;
     
     <item>
       <title>Concept</title>
-      <link>http://localhost:1313/about/concept/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/concept/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</guid>
       <description>
 
 &lt;p&gt;Angularity is primarily a &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt; build tool.&lt;/p&gt;
@@ -134,10 +134,10 @@ the material you will find on this site is geared to Angular development.&lt;/p&
     
     <item>
       <title>Suitability</title>
-      <link>http://localhost:1313/about/suitability/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</link>
       <pubDate>Mon, 15 Dec 2014 13:42:50 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/suitability/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;You should use Angularity when&amp;hellip;&lt;/h2&gt;
@@ -193,10 +193,10 @@ uses under the hood.&lt;/p&gt;
     
     <item>
       <title>Roadmap</title>
-      <link>http://localhost:1313/about/roadmap/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://localhost:1313/about/roadmap/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</guid>
       <description>
 
 &lt;h3 id=&#34;toc_0&#34;&gt;Version 0.1.0&lt;/h3&gt;
@@ -242,10 +242,10 @@ uses under the hood.&lt;/p&gt;
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/start/installation/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/installation/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Install git&lt;/h2&gt;
@@ -374,10 +374,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://localhost:1313/start/anatomy/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/anatomy/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
       <description>
 
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
@@ -463,10 +463,10 @@ the NodeJS platform.&lt;/p&gt;
     
     <item>
       <title>Todo Example</title>
-      <link>http://localhost:1313/start/example/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/example/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -623,10 +623,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Building Todo</title>
-      <link>http://localhost:1313/start/building/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/building/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
@@ -639,10 +639,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Using Webstorm</title>
-      <link>http://localhost:1313/start/webstorm/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/webstorm/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
 similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
@@ -652,10 +652,10 @@ similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you ma
     
     <item>
       <title>Init</title>
-      <link>http://localhost:1313/tasks/init/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://localhost:1313/tasks/init/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project and optionally an IDE
   environment. The given options initialise project defaults. Where omitted the
   global default will be in effect for the project.
@@ -717,10 +717,10 @@ Options:
     
     <item>
       <title>Webstorm</title>
-      <link>http://localhost:1313/tasks/webstorm/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://localhost:1313/tasks/webstorm/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</guid>
       <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;webstorm&amp;quot; task initialises webstorm for a project in the current working
   directory and launches the IDE.
 

@@ -3,7 +3,7 @@
   <channel>
       <title>Starts on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/start/index.xml/</link>
+    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/start/installation/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/installation/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Install git&lt;/h2&gt;
@@ -143,10 +143,10 @@ This &lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34;&gt;ho
     
     <item>
       <title>Project Anatomy</title>
-      <link>http://localhost:1313/start/anatomy/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/anatomy/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</guid>
       <description>
 
 &lt;p&gt;The best place to start on project anatomy is to create a blank project.&lt;/p&gt;
@@ -232,10 +232,10 @@ the NodeJS platform.&lt;/p&gt;
     
     <item>
       <title>Todo Example</title>
-      <link>http://localhost:1313/start/example/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/example/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -392,10 +392,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Building Todo</title>
-      <link>http://localhost:1313/start/building/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/building/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
@@ -408,10 +408,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Using Webstorm</title>
-      <link>http://localhost:1313/start/webstorm/</link>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://localhost:1313/start/webstorm/</guid>
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
 similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
