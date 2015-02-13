@@ -3,7 +3,7 @@
   <channel>
       <title>Todo on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/todo/index.xml/</link>
+    <link>http://localhost:1313/tags/todo/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Todo Example</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</link>
+      <link>http://localhost:1313/start/example/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</guid>
+      <guid>http://localhost:1313/start/example/</guid>
       <description>
 
 &lt;p&gt;Now that we are familiar with a blank project, what does an actual project look like? Inevitably Angularity has a
@@ -171,10 +171,10 @@ component does not require any dependency injection and does require implementat
     
     <item>
       <title>Building Todo</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</link>
+      <link>http://localhost:1313/start/building/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</guid>
+      <guid>http://localhost:1313/start/building/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;

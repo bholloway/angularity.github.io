@@ -3,7 +3,7 @@
   <channel>
       <title>Roadmap on Angularity </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tags/roadmap/index.xml/</link>
+    <link>http://localhost:1313/tags/roadmap/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Roadmap</title>
-      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</link>
+      <link>http://localhost:1313/about/roadmap/</link>
       <pubDate>Mon, 15 Dec 2014 13:43:03 AEDT</pubDate>
       
-      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</guid>
+      <guid>http://localhost:1313/about/roadmap/</guid>
       <description>
 
 &lt;h3 id=&#34;toc_0&#34;&gt;Version 0.1.0&lt;/h3&gt;

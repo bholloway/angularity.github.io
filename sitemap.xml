@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/mission/</loc>
+    <loc>http://localhost:1313/about/mission/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/concept/</loc>
+    <loc>http://localhost:1313/about/concept/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/suitability/</loc>
+    <loc>http://localhost:1313/about/suitability/</loc>
     <lastmod>2014-12-15T13:42:50+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/about/roadmap/</loc>
+    <loc>http://localhost:1313/about/roadmap/</loc>
     <lastmod>2014-12-15T13:43:03+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/installation/</loc>
+    <loc>http://localhost:1313/start/installation/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/anatomy/</loc>
+    <loc>http://localhost:1313/start/anatomy/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/example/</loc>
+    <loc>http://localhost:1313/start/example/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/building/</loc>
+    <loc>http://localhost:1313/start/building/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</loc>
+    <loc>http://localhost:1313/start/webstorm/</loc>
     <lastmod>2014-12-15T13:43:41+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</loc>
+    <loc>http://localhost:1313/tasks/init/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</loc>
+    <loc>http://localhost:1313/tasks/webstorm/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>
   
