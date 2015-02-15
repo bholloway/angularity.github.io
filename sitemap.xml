@@ -58,6 +58,26 @@
   </url>
   
   <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</loc>
+    <lastmod>2014-12-15T13:43:30+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</loc>
+    <lastmod>2014-12-15T13:43:30+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</loc>
+    <lastmod>2014-12-15T13:43:30+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</loc>
+    <lastmod>2014-12-15T13:43:30+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/</loc>
     <lastmod>2014-12-15T13:43:30+11:00</lastmod>
   </url>

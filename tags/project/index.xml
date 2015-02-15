@@ -164,8 +164,8 @@ except to point out that you may make as many additional applications as you nee
 
 &lt;h3 id=&#34;toc_2&#34;&gt;Module definition&lt;/h3&gt;
 
-&lt;p&gt;Per the module definition we see that we can name the module anything we like - An angularity project is not split
-between angular modules. Unless we intend this project to be a module for distribution the name does not matter.&lt;/p&gt;
+&lt;p&gt;An angularity project is not split between angular modules. Unless we intend this project to be a module for
+distribution the module name does not matter.&lt;/p&gt;
 
 &lt;p&gt;We can see here that module definition lists a few dependencies:&lt;/p&gt;
 

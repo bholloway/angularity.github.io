@@ -111,6 +111,14 @@
                     
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/"> Init </a> </li>
                     
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/"> Build </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/"> Watch </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/"> Test </a> </li>
+                    
+                    <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/"> Release </a> </li>
+                    
                     <li><a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/webstorm/"> Webstorm </a> </li>
                     
                 </ul>
@@ -154,9 +162,46 @@
 
 <h2 id="toc_0">Test</h2>
 
-<h2 id="toc_1">Watch</h2>
+<p>It is good to test <a href="https://angularjs.org/">AngularJS</a> applications. The Todo application implements only a couple of
+tests but they are always nice to see running.</p>
 
-<h2 id="toc_2">Release</h2>
+<p>Run the <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>test</code></a> task from the odo project directory.</p>
+
+<pre><code>angularity test
+</code></pre>
+
+<p>This will generate an <code>/app-test</code> directory and you should see a console output indicating all tests passing.</p>
+
+<h2 id="toc_1">Build</h2>
+
+<p>Run the <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build"><code>build</code></a> task from the Todo project directory.</p>
+
+<pre><code>angularity build
+</code></pre>
+
+<p>This will perform a one-time build in an <code>/app-build</code> directory. For development however, you will find more use in the
+<a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch"><code>watch</code></a> task.</p>
+
+<h2 id="toc_2">Watch</h2>
+
+<p>The <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch"><code>watch</code></a> task is best for normal development.</p>
+
+<pre><code>angularity watch
+</code></pre>
+
+<p>It is similar to the <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build"><code>build</code></a> task. However it also watches your project for changes and serves the
+project on a <code>localhost</code> port. For the Todo application this is port <code>55555</code>.</p>
+
+<p>Navigate your browser to <a href="http://localhost:55555"><code>http://localhost:55555</code></a>.</p>
+
+<h2 id="toc_3">Release</h2>
+
+<p>The <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release"><code>release</code></a> task creates a set of deployment of files.</p>
+
+<pre><code>angularity release
+</code></pre>
+
+<p>This will generate an <code>/app-release</code> directory with a maximally flat set of files for deployment.</p>
 
                     </div> 
                     </section> 

@@ -527,8 +527,8 @@ except to point out that you may make as many additional applications as you nee
 
 &lt;h3 id=&#34;toc_2&#34;&gt;Module definition&lt;/h3&gt;
 
-&lt;p&gt;Per the module definition we see that we can name the module anything we like - An angularity project is not split
-between angular modules. Unless we intend this project to be a module for distribution the name does not matter.&lt;/p&gt;
+&lt;p&gt;An angularity project is not split between angular modules. Unless we intend this project to be a module for
+distribution the module name does not matter.&lt;/p&gt;
 
 &lt;p&gt;We can see here that module definition lists a few dependencies:&lt;/p&gt;
 
@@ -631,9 +631,46 @@ component does not require any dependency injection and does require implementat
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Test&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Watch&lt;/h2&gt;
+&lt;p&gt;It is good to test &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; applications. The Todo application implements only a couple of
+tests but they are always nice to see running.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Release&lt;/h2&gt;
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;test&lt;/code&gt;&lt;/a&gt; task from the odo project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate an &lt;code&gt;/app-test&lt;/code&gt; directory and you should see a console output indicating all tests passing.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Build&lt;/h2&gt;
+
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/build&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity build
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will perform a one-time build in an &lt;code&gt;/app-build&lt;/code&gt; directory. For development however, you will find more use in the
+&lt;a href=&#34;/tasks/watch&#34;&gt;&lt;code&gt;watch&lt;/code&gt;&lt;/a&gt; task.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Watch&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/watch&#34;&gt;&lt;code&gt;watch&lt;/code&gt;&lt;/a&gt; task is best for normal development.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity watch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is similar to the &lt;a href=&#34;/tasks/build&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/a&gt; task. However it also watches your project for changes and serves the
+project on a &lt;code&gt;localhost&lt;/code&gt; port. For the Todo application this is port &lt;code&gt;55555&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Navigate your browser to &lt;a href=&#34;http://localhost:55555&#34;&gt;&lt;code&gt;http://localhost:55555&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Release&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/release&#34;&gt;&lt;code&gt;release&lt;/code&gt;&lt;/a&gt; task creates a set of deployment of files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angularity release
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will generate an &lt;code&gt;/app-release&lt;/code&gt; directory with a maximally flat set of files for deployment.&lt;/p&gt;
 </description>
     </item>
     
@@ -713,6 +750,42 @@ Options:
   --ide              Run an IDE initialisation task            [default: &amp;quot;none&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Build</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Watch</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release</title>
+      <link>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</link>
+      <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
+      
+      <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
+      <description></description>
     </item>
     
     <item>

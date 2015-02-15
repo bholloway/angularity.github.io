@@ -9,10 +9,10 @@ tags:
 menu:
   main:
     parent: tasks
-prev: /tasks/init
-next: /tasks/watch
+prev: /tasks/release
+next: /about/mission
 notoc: true
-weight: 3020
+weight: 3060
 ---
 ```
   The "webstorm" task initialises webstorm for a project in the current working

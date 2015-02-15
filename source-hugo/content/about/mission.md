@@ -9,7 +9,7 @@ tags:
 menu:
   main:
     parent: about
-prev: /start/project
+prev: /tasks/webstorm
 next: /about/concept
 notoc: true
 weight: 1010

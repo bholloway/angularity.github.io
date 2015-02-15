@@ -10,7 +10,7 @@ menu:
   main:
     parent: tasks
 prev: /start/webstorm
-next: /tasks/webstorm
+next: /tasks/build
 notoc: true
 weight: 3010
 ---
