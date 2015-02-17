@@ -14,3 +14,20 @@ next: /tasks/release
 notoc: true
 weight: 3040
 ---
+```
+  The "test" task performs a one time build and karma test of all .spec.js
+  files in the project.
+
+Examples:
+  angularity test    Run this task
+
+
+Options:
+  --help, -h, -?       This help message
+  --reporter, -r       Specify a custom JsHint reporter to use. Either a
+                       locally npm installed module, or an asolute path to one.
+                                         [default: "angularity-jshint-reporter"]
+  --karmareporter, -k  Specify a custom Karma reporter to use. Either a locally
+                       npm installed module, or an asolute path to one.
+                                          [default: "angularity-karma-reporter"]
+```

@@ -21,7 +21,7 @@ weight: 2040
 It is good to test [AngularJS](https://angularjs.org/) applications. The Todo application implements only a couple of
 tests but they are always nice to see running.
 
-Run the [`test`](/tasks/test) task from the odo project directory.
+Run the [`test`](/tasks/test) task from the Todo project directory.
 
     angularity test
 
@@ -45,7 +45,8 @@ The [`watch`](/tasks/watch) task is best for normal development.
 It is similar to the [`build`](/tasks/build) task. However it also watches your project for changes and serves the
 project on a `localhost` port. For the Todo application this is port `55555`.
 
-Navigate your browser to [`http://localhost:55555`](http://localhost:55555).
+Navigate your browser to [`http://localhost:55555`](http://localhost:55555) and you will see a rudimentary Todo
+application.
 
 ## Release
 
