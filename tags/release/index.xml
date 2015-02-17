@@ -15,7 +15,22 @@
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;release&amp;quot; task performs a single build and exports the build files along
+  with bower components to a release directory.
+
+Examples:
+  angularity release       Run this task
+  angularity release -n    Run this task but do not minify built javascript
+
+
+Options:
+  --help, -h, -?    This help message
+  --unminified, -u  Inhibit minification of javascript          [default: false]
+  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
+                    npm installed module, or an asolute path to one.
+                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
   </channel>

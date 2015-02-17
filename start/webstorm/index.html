@@ -158,10 +158,73 @@
                     <section class="panel">
                     <div class="panel-body">
 
+
+
 <blockquote>
-<p>Angularity favours development in the <a href="https://www.jetbrains.com/webstorm/">Webstorm</a> IDE. In time we hope to
+<p>Angularity favours development in the <a href="https://www.jetbrains.com/webstorm/">Webstorm IDE</a>. In time we hope to
 similarly support other popular IDEs. If you don&rsquo;t use Webstorm you may skip this section.</p>
 </blockquote>
+
+<p>Ensure that the <a href="https://www.jetbrains.com/webstorm/">Webstorm IDE</a> is <strong>not running</strong>.</p>
+
+<p>Run the <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>webstorm</code></a> task from the Todo project directory.</p>
+
+<pre><code>webstorm
+</code></pre>
+
+<p>This will initialise a Webstorm project and other non-project features. It will attempt to launch Webstorm with the new
+project.</p>
+
+<blockquote>
+<p>If you have a standard installation path this should be automatic. Otherwise you will need to specify the path to the
+executable. You should save this path as the default value using the <code>--defaults</code> flag. Refer to the
+<a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>webstorm</code></a> task for more information.</p>
+</blockquote>
+
+<h2 id="toc_0">Tools</h2>
+
+<p>The <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>webstorm</code></a> task will have added external tools that run Angularity build-related tasks.</p>
+
+<p>Running tasks with these tools is superior to running from a terminal because Webstorm will <strong>hotlink</strong> filenames where
+they appear, allowing you to go directly to the code.</p>
+
+<p>You can find these under the <code>Tools</code> menu.</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/webstorm-external-tools.png" alt="new template" />
+</p>
+
+<p>The <code>watch</code> task should be your go-to for development. It builds and serves the application.</p>
+
+<blockquote>
+<p>Avoid using the <code>--unminified</code> option unless you are setting breakpoints (and need variable names to not be mangled by
+minification). With source maps you should be running minified all the time. This avoids any surprises when you
+release your application.</p>
+</blockquote>
+
+<p>Go ahead and select <code>Tools</code> &gt; <code>Angularity</code> &gt; <code>watch</code> so that we may run the application below.</p>
+
+<h2 id="toc_1">Run</h2>
+
+<p>The <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>webstorm</code></a> task will have added debug settings for each application in your <code>/app</code> folder.</p>
+
+<p>You can find these under the <code>Run</code> menu or opposite the breadcrumbs in the IDE header bar.</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/webstorm-run-config.png" alt="run configuration" />
+</p>
+
+<p>Go ahead and select <code>angularity-todo-es5</code> and hit the bug icon. This will launch your default browser to
+<a href="http://localhost:55555"><code>http://localhost:55555</code></a> and you will see a rudimentary Todo application.</p>
+
+<p>You will need to install the Jetbrains plugin in order for Webstorm to connect its debugger.</p>
+
+<h2 id="toc_2">Templates</h2>
+
+<p>The <a href="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test"><code>webstorm</code></a> task adds some file templates consistent with Angularity style.</p>
+
+<p>Choose a folder and <code>RIGHT-CLICK</code>. Choose <code>New</code> &gt; <code>angularity-*</code>.</p>
+
+<p><img src="http://demo.mathletics.com/static.mathletics.com/angularity.github.io/img/webstorm-new-template.png" alt="new template" />
+</p>
 
                     </div> 
                     </section> 

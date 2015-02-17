@@ -15,7 +15,21 @@
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;build&amp;quot; task performs a single build of the javascript and SASS
+  composition root(s).
+
+Examples:
+  angularity build       Run this task
+  angularity build -u    Run this task but do not minify javascript
+
+
+Options:
+  --help, -h, -?       This help message
+  --unminified, -u     Inhibit minification of javascript                       [default: false]
+  --reporter, -r       Specify a custom JsHint reporter to use. Either a
+                       locally npm installed module, or an asolute path to one. [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
   </channel>

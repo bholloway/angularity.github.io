@@ -634,7 +634,7 @@ component does not require any dependency injection and does require implementat
 &lt;p&gt;It is good to test &lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt; applications. The Todo application implements only a couple of
 tests but they are always nice to see running.&lt;/p&gt;
 
-&lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;test&lt;/code&gt;&lt;/a&gt; task from the odo project directory.&lt;/p&gt;
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;test&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;angularity test
 &lt;/code&gt;&lt;/pre&gt;
@@ -661,7 +661,8 @@ tests but they are always nice to see running.&lt;/p&gt;
 &lt;p&gt;It is similar to the &lt;a href=&#34;/tasks/build&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/a&gt; task. However it also watches your project for changes and serves the
 project on a &lt;code&gt;localhost&lt;/code&gt; port. For the Todo application this is port &lt;code&gt;55555&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Navigate your browser to &lt;a href=&#34;http://localhost:55555&#34;&gt;&lt;code&gt;http://localhost:55555&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Navigate your browser to &lt;a href=&#34;http://localhost:55555&#34;&gt;&lt;code&gt;http://localhost:55555&lt;/code&gt;&lt;/a&gt; and you will see a rudimentary Todo
+application.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Release&lt;/h2&gt;
 
@@ -680,10 +681,73 @@ project on a &lt;code&gt;localhost&lt;/code&gt; port. For the Todo application t
       <pubDate>Mon, 15 Dec 2014 13:43:41 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/start/webstorm/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm&lt;/a&gt; IDE. In time we hope to
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Angularity favours development in the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm IDE&lt;/a&gt;. In time we hope to
 similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you may skip this section.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;Ensure that the &lt;a href=&#34;https://www.jetbrains.com/webstorm/&#34;&gt;Webstorm IDE&lt;/a&gt; is &lt;strong&gt;not running&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Run the &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task from the Todo project directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;webstorm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will initialise a Webstorm project and other non-project features. It will attempt to launch Webstorm with the new
+project.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you have a standard installation path this should be automatic. Otherwise you will need to specify the path to the
+executable. You should save this path as the default value using the &lt;code&gt;--defaults&lt;/code&gt; flag. Refer to the
+&lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task will have added external tools that run Angularity build-related tasks.&lt;/p&gt;
+
+&lt;p&gt;Running tasks with these tools is superior to running from a terminal because Webstorm will &lt;strong&gt;hotlink&lt;/strong&gt; filenames where
+they appear, allowing you to go directly to the code.&lt;/p&gt;
+
+&lt;p&gt;You can find these under the &lt;code&gt;Tools&lt;/code&gt; menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/webstorm-external-tools.png&#34; alt=&#34;new template&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;watch&lt;/code&gt; task should be your go-to for development. It builds and serves the application.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Avoid using the &lt;code&gt;--unminified&lt;/code&gt; option unless you are setting breakpoints (and need variable names to not be mangled by
+minification). With source maps you should be running minified all the time. This avoids any surprises when you
+release your application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go ahead and select &lt;code&gt;Tools&lt;/code&gt; &amp;gt; &lt;code&gt;Angularity&lt;/code&gt; &amp;gt; &lt;code&gt;watch&lt;/code&gt; so that we may run the application below.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Run&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task will have added debug settings for each application in your &lt;code&gt;/app&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;You can find these under the &lt;code&gt;Run&lt;/code&gt; menu or opposite the breadcrumbs in the IDE header bar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/webstorm-run-config.png&#34; alt=&#34;run configuration&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Go ahead and select &lt;code&gt;angularity-todo-es5&lt;/code&gt; and hit the bug icon. This will launch your default browser to
+&lt;a href=&#34;http://localhost:55555&#34;&gt;&lt;code&gt;http://localhost:55555&lt;/code&gt;&lt;/a&gt; and you will see a rudimentary Todo application.&lt;/p&gt;
+
+&lt;p&gt;You will need to install the Jetbrains plugin in order for Webstorm to connect its debugger.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Templates&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;/tasks/test&#34;&gt;&lt;code&gt;webstorm&lt;/code&gt;&lt;/a&gt; task adds some file templates consistent with Angularity style.&lt;/p&gt;
+
+&lt;p&gt;Choose a folder and &lt;code&gt;RIGHT-CLICK&lt;/code&gt;. Choose &lt;code&gt;New&lt;/code&gt; &amp;gt; &lt;code&gt;angularity-*&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/webstorm-new-template.png&#34; alt=&#34;new template&#34; /&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -693,39 +757,33 @@ similarly support other popular IDEs. If you don&amp;rsquo;t use Webstorm you ma
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/init/</guid>
-      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project and optionally an IDE
-  environment. The given options initialise project defaults. Where omitted the
-  global default will be in effect for the project.
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;init&amp;quot; task initialises a blank project. The given options initialise
+  project defaults. Where omitted the global default will be in effect for the
+  project.
 
   The following steps are taken. Some steps are gated by respective a flag.
   Default options may be globally defined or reset using the --defaults
   option.
 
-  * project directory    exists, else create    --subdir
-  * /app                 exists, else create
-  * /app/*.html          exists, else create
-  * /app/*.scss          exists, else create
-  * angularity.json      exists, else create
-  * package.json         exists, else create    --npm
-  * bower.json           exists, else create    --bower
-  * karma.conf.js        exists, else create    --karma
-  * .jshintrc            exists, else create    --jshint
-  * .gitignore           exists, else create    --gitignore
-  * run IDE task                                --ide
+  * project directory exists, else create
+  * /app              exists, else create
+  * /app/*.html       exists, else create
+  * /app/*.scss       exists, else create
+  * angularity.json   exists, else create
+  * package.json      exists, else create    --npm
+  * bower.json        exists, else create    --bower
+  * karma.conf.js     exists, else create    --karma
+  * .jshintrc         exists, else create    --jshint
+  * .gitignore        exists, else create    --gitignore
 
-  By default, a subdirectory is created for the project
+  If a package.json is present initialisation will occur in the current
+  directory. Otherwise a sub-directory iscreated per the project name
 
   Where run on an exising project existing files will not be altered, delete
   existing files in order to change properties.
 
   Both the npm and bower packages are initially set private which you will need
   to clear in order to publish.
-
-  Available IDE tasks include:
-  webstorm
-
-  Any given IDE is initialised per its task defaults. Use the task separately
-  to review these options.
 
 Examples:
   angularity init -n todo -i webstorm      Create &amp;quot;todo&amp;quot; and initialise webstorm
@@ -736,7 +794,6 @@ Examples:
 Options:
   --help, -h, -?     This help message
   --defaults, -z     Set defaults
-  --subdir, -s       Create a sub-directory per name             [default: true]
   --name, -n         The project name                    [default: &amp;quot;my-project&amp;quot;]
   --version, -v      The project version                      [default: &amp;quot;0.0.0&amp;quot;]
   --description, -d  The project description                       [default: &amp;quot;&amp;quot;]
@@ -747,7 +804,6 @@ Options:
   --karma            Create karma.conf.js                        [default: true]
   --jshint           Create .jshintrc                            [default: true]
   --gitignore        Create .gitignore                           [default: true]
-  --ide              Run an IDE initialisation task            [default: &amp;quot;none&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -758,7 +814,21 @@ Options:
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/build/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;build&amp;quot; task performs a single build of the javascript and SASS
+  composition root(s).
+
+Examples:
+  angularity build       Run this task
+  angularity build -u    Run this task but do not minify javascript
+
+
+Options:
+  --help, -h, -?       This help message
+  --unminified, -u     Inhibit minification of javascript                       [default: false]
+  --reporter, -r       Specify a custom JsHint reporter to use. Either a
+                       locally npm installed module, or an asolute path to one. [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
@@ -767,7 +837,26 @@ Options:
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/watch/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;watch&amp;quot; task performs an initial build and then serves the application on
+  localhost at the given port. It then watches the project and performs rebuild
+  of Javascript and/or SASS compositions upon change. This is followed by HTML
+  injection and browser reload.
+
+Examples:
+  angularity watch            Run this task
+  angularity watch -p 8080    Run this task and serve at http://localhost:8080
+  angularity watch -n         Run this task but do not minify javascript
+
+
+Options:
+  --help, -h, -?    This help message
+  --unminified, -u  Inhibit minification of javascript          [default: false]
+  --port, -p        A port for the development web server       [default: 55555]
+  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
+                    npm installed module, or an asolute path to one.
+                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
@@ -776,7 +865,23 @@ Options:
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/test/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;test&amp;quot; task performs a one time build and karma test of all .spec.js
+  files in the project.
+
+Examples:
+  angularity test    Run this task
+
+
+Options:
+  --help, -h, -?       This help message
+  --reporter, -r       Specify a custom JsHint reporter to use. Either a
+                       locally npm installed module, or an asolute path to one.
+                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+  --karmareporter, -k  Specify a custom Karma reporter to use. Either a locally
+                       npm installed module, or an asolute path to one.
+                                          [default: &amp;quot;angularity-karma-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
@@ -785,7 +890,22 @@ Options:
       <pubDate>Mon, 15 Dec 2014 13:43:30 AEDT</pubDate>
       
       <guid>http://demo.mathletics.com/static.mathletics.com/angularity.github.io/tasks/release/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;  The &amp;quot;release&amp;quot; task performs a single build and exports the build files along
+  with bower components to a release directory.
+
+Examples:
+  angularity release       Run this task
+  angularity release -n    Run this task but do not minify built javascript
+
+
+Options:
+  --help, -h, -?    This help message
+  --unminified, -u  Inhibit minification of javascript          [default: false]
+  --reporter, -r    Specify a custom JsHint reporter to use. Either a locally
+                    npm installed module, or an asolute path to one.
+                                         [default: &amp;quot;angularity-jshint-reporter&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
